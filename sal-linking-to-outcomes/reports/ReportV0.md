@@ -49,7 +49,7 @@ No pledge / buy-in → do not treat them as part of this special track casually.
 
 ---
 
-## 2.2 Daily session timing (locked for V0)
+## 2.2 Session timing (initial plan for V0)
 
 | Block | Time | What |
 |-------|------|------|
@@ -94,7 +94,7 @@ Fixed: SAL = **90 min** · live connect = **20 min** before · window ≈ **45 d
 3. Core stack — Python → SQL → Excel → mini capstone  
 4. IPS after every 3 learning sessions  
 5. Weekly eval at week end  
-6. Each evening: **20 min live connect (8:00–8:20)** + **90 min SAL (8:30–10:00)**  
+6. During Session Days: **20 min live connect (8:00–8:20)** + **90 min SAL (8:30–10:00)**  
 7. Prefer **fresh dedicated SAL** for this cohort; reuse dump only where fit is strong  
 
 **Out of V0:** same-field worker path · heavy ML maths · GenAI depth · “dump and forget” content release  
@@ -156,8 +156,8 @@ Prefer **fresh dedicated SAL** for this cohort; dump matches below are fallback 
 
 | Item | Status |
 |------|--------|
-| Problem & solution framing | Locked |
-| Working style + pledge + timing | Locked |
+| Problem & solution framing | Defined (initial plan) |
+| Working style + pledge + timing | Defined (initial plan) |
 | Personas & cases | Defined |
 | Execution order | **Students first**, then Other field |
 | Session + reuse table | In this report (section 6) |
