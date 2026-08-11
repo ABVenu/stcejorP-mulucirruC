@@ -1,0 +1,23 @@
+Launchpad_Block,Block_Title,Reuse_Status,Priority_Year,Fallback_Year,Existing_Session_Title,IsPublished,Duration_Sec,Fit_Quality,Applies_To_Cases,Action_Required,Notes
+O1,Launchpad Orientation - How to Learn Before Day 1,No,-,-,,,,-,S3;R2;D3,Record net-new,No English 2026/2025 match found in SAL dump
+O2,Computer Basics + Google Colab Setup,No,-,-,,,,-,S3;D3,Record net-new,No Colab/computer-basics session found
+O3,Working in Notebooks - Run Cells and Read Errors,No,-,-,,,,-,S3;D3,Record net-new,Create short session on running cells and reading errors
+T1,Computational Thinking and Pseudo-code,Yes,2025,2025,PSDU02-MU02_S01: Introduction to Flowchart and Problem Solving - I,true,5764,Good,S3;D3,Reuse as-is,QC verified. Alt: FTSDM01S1_2512_DSA_S01. Note: PSDU02-MU02_S01 prefix shared across many sessions - match full title only
+T2,Logic Tracing and Debugging Mindset,No,-,-,,,,-,S3,Record net-new,For D3 fold debug tips into Python labs
+C1,Career Map - Why This Switch and Where It Leads,No,-,-,,,,-,D3,Record net-new,Early career framing needed for different-field persona
+P1,Python - Variables Types Expressions and I/O,Yes,2026,2025,FDN_Tech_1: Python Basics and Problem Discussions,true,6060,Strong,S3;R2;D3,Reuse as-is,Alt 2026: PSDU07-MU08_S1: Python Basics and problem discussions; Alt 2025: FTSDM00S1_2504_Coding_S01: Programming Foundation
+P2,Python - Conditionals and Logical Operators,Yes,2026,2025,FDN_Tech_2: Python Building Block: Operators and conditional statements in python,true,6032,Strong,S3;R2;D3,Reuse as-is,Alt 2025: cc_b4_s2: Python Building Block: Operators and conditional statements in python
+P3,Python - Loops (for and while),Yes,2026,2025,FDN_Tech_4: Understanding break continue and Nested Loops,true,6374,Good,S3;R2;D3,Reuse as-is,QC verified. Alt 2025: FDN_Tech_3 or cc_b4_s3. Do NOT use KAN_/TAM_/TEL_ FDN_Tech_3 (regional 2026)
+P4,Python - Functions (Reuse and Return),Yes,2025,2025,cc_b4_s5: Advanced Python Functions,true,10137,Good,S3;R2;D3,Reuse with light edit,No clean 2026 match; trim to Launchpad scope
+P5,Python - Strings (Slice Methods and f-strings),Partial,2025,2025,PTDSM00S1_2504_S05: Data Structures in Python,unknown,,Partial,S3;D3,Extract segment from combined session,QC verified: SAL topics include Strings Lists Dictionaries Sets; IsPublished empty in SAL
+P6,Python - Lists (Index Slice and Loop Patterns),Partial,2025,2025,PTDSM00S1_2504_S05: Data Structures in Python,unknown,,Partial,S3;R2;D3,Reuse segment from combined session,QC verified: same asset as P5/P7; Jan 2025
+P7,Python - Dictionaries (Keys and Lookups),Partial,2025,2025,PTDSM00S1_2504_S05: Data Structures in Python,unknown,,Partial,S3;R2;D3,Reuse segment from combined session,QC verified: same asset; Alt Dictionaries sets and tuples (PT-DS-01) is older track
+P8,Python Problem Lab - Mix Structures Loops and Functions,Partial,2026,2025,PSDU07-MU08_S1: Python Basics and problem discussions,true,5768,Partial,S3;R2;D3,Adapt or supplement,QC verified: overlaps P1 alt asset; use as practice supplement not dedicated lab
+G1,Git and GitHub Basics (light),Yes,2025,2025,FTSDM01S2_2512_JS_S02: Introduction to Git and Github,true,,Good,S3;D3,Optional reuse,Optional for Launchpad v1; not in R2 sequence
+M1,Maths for Data - Percentages Averages and Reading Charts,Yes,2025,2025,PBAU08-MU06_S01: Arithmetic Essentials: Averages Ratios Percentages,true,8706,Strong,S3;D3,Reuse as-is,Direct fit for Launchpad M1
+M2,Descriptive Stats Intuition - Centre and Spread,Yes,2025,2025,PBAU04-MU01_S02: The Heart of Data: Central Tendency and Dispersion Demystified,true,8850,Strong,S3;R2;D3,Reuse as-is,Alt: CC_BLOCK_2_S3: The Power of Numbers: Unveiling Statistics in Data Science
+M3,Functions Graphs and Slope Intuition,No,-,-,,,,-,S3;R2;D3,Record net-new,Prepares for Module 1 masterclass on functions and graphs
+M4,Probability Intuition - Chance and Events,Yes,2025,2025,CC_BLOCK_2_S3: The Bell Curve Unveiled: Navigating the World of Normal Distributions,true,9270,Good,S3;R2;D3,Reuse with light edit,Trim to intuition level; avoid heavy distribution math
+M5,Vectors and Matrices as Data (Tiny Examples),Partial,2025,2025,CC_BLOCK_2_S1: Applications of Numpy,true,,Partial,S3;R2;D3,Reuse with light edit,Alt: PDSU07-MU01_S03: Text Vectorization (NLP angle; not pure linear algebra)
+M6,Gradient Descent Story - Learning by Walking Downhill,No,-,-,,,,-,S3;R2;D3,Record net-new,No suitable English session found in 2026 or 2025
+A1,AI ML and Data Science - Map of This Course,Yes,2026,2025,PSDU06-MU06_S04: Understanding Artificial Intelligence Language Models and Effective Prompting,true,6615,Good,S3;R2;D3,Reuse with light edit,Alt 2025: PDSU06-MU02_S01: Introduction to Machine Learning and Problem-Solving Approach
