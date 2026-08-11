@@ -145,6 +145,47 @@ Prefer **fresh dedicated SAL** for this cohort; dump matches below are fallback 
 | **Partial** (adapt) | 10 | C1, IPS-1…4, P5, P6, P7, X2, Cap |
 | **N/A** (weekly evals) | 7 | E-W1 … E-W7 |
 
+---
+
+## 6.1 Fallback plan — Other field provides only 2 sessions/week
+
+If a learner from **Working in a different field** cannot do 3 sessions/week, we switch them to this **2 sessions/week** variant.
+
+**IPS rule remains same:** after every **3 learning sessions** (**IPS-1, IPS-2, IPS-3**).
+**Weekly eval remains:** end of every week (**E-W1 … E-W7**).
+
+| # | Week | Type | Code | Session title | Pillar | Duration | Must complete | Reuse | Year | Existing SAL video (best match) | Fit | Reuse notes |
+|---|------|------|------|---------------|--------|----------|--------------|--------|-------|--------------------------------|-----|-------------|
+| 1 | 1 | Learn | C1 | Computer Basics — Files, Browser & First Notebook | Computer | 90 min | Yes | Partial | 2025 | `FTSDM00S1_2512_Coding_S01: Programming Foundation` | Partial | Colab wrap net-new |
+| 2 | 1 | Learn | M1 | Maths for Analytics — %, Averages & Reading Tables | Maths | 90 min | Yes | Yes | 2025 | `PBAU08-MU01_S01: Arithmetic Essentials: Averages, Ratios, Percentages` | Strong | Direct fit |
+| — | 1 | Eval | E-W1 | Weekly Eval 1 — Computer + Maths | Evaluation | ~30–45 min | Yes | N/A | — | — | — | Quiz + 1 short task |
+| 3 | 2 | Learn | P1 | Python — Variables, Types, Expressions & I/O | Python | 90 min | Yes | Yes | 2026 | `FDN_Tech_1: Python Basics and Problem Discussions` | Strong | Alt: PSDU07-MU08_S1 |
+| 4 | 2 | IPS | IPS-1 | Interview Problem Solving 1 — Logic & Simple Patterns | Interview PS | 90 min | Yes | Partial | 2025 | `FTSDM01S1_2512_DSA_S01: Introduction to FlowChart & Problem Solving -1` | Good | Retitle as interview PS |
+| 5 | 3 | Learn | P2 | Python — Conditionals & Logical Operators | Python | 90 min | Yes | Yes | 2026 | `FDN_Tech_2: Python Building Block: Operators and conditional statements in python` | Strong | — |
+| 6 | 3 | Learn | P3 | Python — Loops (`for` / `while`) | Python | 90 min | Yes | Yes | 2026 | `FDN_Tech_4: Understanding break, continue, and Nested Loops` | Good | — |
+| — | 3 | Eval | E-W2 | Weekly Eval 2 — Conditionals + Loops | Evaluation | ~30–45 min | Yes | N/A | — | — | — | 2 coding problems |
+| 7 | 4 | Learn | P4 | Python — Functions (Reuse & Return) | Python | 90 min | Yes | Yes | 2025 | `CC_Block_02_S01: Advanced Python Functions` | Good | Trim to analytics scope |
+| 8 | 4 | IPS | IPS-2 | Interview Problem Solving 2 — Conditionals, Loops & Functions | Interview PS | 90 min | Yes | Partial | 2025 | `FTSDM00S1_2512_PS_S01: Problem Solving: Logic Operator and Conditional statements` | Partial | Add interview framing |
+| 9 | 5 | Learn | P5 | Python — Strings & Lists | Python | 90 min | Yes | Yes | 2025 | `PTDSM00S1_2504_S05: Data Structures in Python` | Partial | Extract strings+lists segment |
+| 10 | 5 | Learn | P6 | Python — Dictionaries & Lookups | Python | 90 min | Yes | Partial | 2025 | `PTDSM00S1_2504_S05: Data Structures in Python` | Partial | Use dict segment |
+| — | 5 | Eval | E-W3 | Weekly Eval 3 — Functions + Strings/Lists + Dicts | Evaluation | ~30–45 min | Yes | N/A | — | — | — | Timed mini-set |
+| 11 | 6 | Learn | Q1 | SQL — SELECT, WHERE, ORDER BY, LIMIT | SQL | 90 min | Yes | Yes | 2025 | `FTTEM03S2_2515_JSQ206_S01: Introduction to SQL and Databases` | Good | — |
+| 12 | 6 | IPS | IPS-3 | Interview Problem Solving 3 — Data Structures (Lists/Dicts) | Interview PS | 90 min | Yes | Partial | 2025 | `FTSDM01S1_2512_DSA_S02: Introduction to Flowchart & Problem Solving 2` | Partial | Net-new interview problems preferred |
+| 13 | 7 | Learn | X1 | Excel — Functions, Lookups & Cleaning | Excel | 90 min | Yes | Yes | 2025 | `CC_BLOCK_2_S4: Functions in Excel` | Strong | Excel checkpoint |
+| — | 6 | Eval | E-W4 | Weekly Eval 4 — SQL SELECT | Evaluation | ~30–45 min | Yes | N/A | — | — | — | Query worksheet |
+| — | 7 | Eval | E-W7 | Final Readiness Eval — Excel + SQL | Evaluation | ~45–60 min | Yes | N/A | — | — | — | Analytics placement bar |
+
+### QC for fallback plan
+
+| QC item | Expected |
+|--------|----------|
+| SAL sessions (learning + IPS) | **13** |
+| Learning sessions | **10** |
+| IPS sessions | **3** |
+| IPS placement rule | After learning #3, #6, #9 |
+| Weekly evals | **E-W1 … E-W7** (end of each week) |
+| Session timing | Live connect 8:00–8:20, SAL 8:30–10:00 |
+
 **2026 Python spine:** `FDN_Tech_1` → `FDN_Tech_2` → `FDN_Tech_4`  
 **2025 Analytics spine:** Arithmetic Essentials → SQL Aggregations/Joins → Functions in Excel  
 
