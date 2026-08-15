@@ -1,0 +1,604 @@
+Week,Session Number,Title,Domain,Title from Dump,Dump Session ID,Part Count,Video Part Names,Video Links (all parts from Topics),Video Links JSON,Total Parts Duration,Content Fit,Topics QC,Dump Data Warning,Match Status,Plan
+1,1.1,Python — Introduction to programming + Python basics,Python,FDN_Tech_1: Python Basics and Problem Discussions,6a324afd70f9341990ad7cfb,8,"1. Introduction to programming language
+2. Introduction to programming language - Revision
+3. Introduction to programming language - IA Discussion
+4. Introduction to python and variables
+5. Introduction to python and variables - Revision
+6. Introduction to data types
+7. Introduction to data types - Revision
+8. Session Feedback","1. https://cdn.masaischool.com/hls-videos/158459/6a2c04d30b4e7313aec25f28/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/6756eb497cb2703e9e93e4c4/6756de4063a84726545f5ff3/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6756eb497cb2703e9e93e4c4/6756de4063a84726545f5ff0/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/6756eb497cb2703e9e93e4c4/6756de40d60f7be9e276e6c7/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/6756eb497cb2703e9e93e4c4/6756de40d60f7be9e276e6c5/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/6756eb497cb2703e9e93e4c4/6756de40d60f7be9e276e6c0/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/6756eb497cb2703e9e93e4c4/6756de405222d1a7afdc9728/master.m3u8
+8. https://cdn.masaischool.com/hls-videos/158462/6a2c068d0b4e7313aec25f2c/master.m3u8","[{""part"": 1, ""name"": ""Introduction to programming language"", ""duration_sec"": 2142.499918000007, ""url"": ""https://cdn.masaischool.com/hls-videos/158459/6a2c04d30b4e7313aec25f28/master.m3u8""}, {""part"": 2, ""name"": ""Introduction to programming language - Revision"", ""duration_sec"": 551.566667, ""url"": ""https://cdn.masaischool.com/sal-videos/6756eb497cb2703e9e93e4c4/6756de4063a84726545f5ff3/master.m3u8""}, {""part"": 3, ""name"": ""Introduction to programming language - IA Discussion"", ""duration_sec"": 207.216667, ""url"": ""https://cdn.masaischool.com/sal-videos/6756eb497cb2703e9e93e4c4/6756de4063a84726545f5ff0/master.m3u8""}, {""part"": 4, ""name"": ""Introduction to python and variables"", ""duration_sec"": 914.85, ""url"": ""https://cdn.masaischool.com/sal-videos/6756eb497cb2703e9e93e4c4/6756de40d60f7be9e276e6c7/master.m3u8""}, {""part"": 5, ""name"": ""Introduction to python and variables - Revision"", ""duration_sec"": 471.566667, ""url"": ""https://cdn.masaischool.com/sal-videos/6756eb497cb2703e9e93e4c4/6756de40d60f7be9e276e6c5/master.m3u8""}, {""part"": 6, ""name"": ""Introduction to data types"", ""duration_sec"": 985.7, ""url"": ""https://cdn.masaischool.com/sal-videos/6756eb497cb2703e9e93e4c4/6756de40d60f7be9e276e6c0/master.m3u8""}, {""part"": 7, ""name"": ""Introduction to data types - Revision"", ""duration_sec"": 371.983333, ""url"": ""https://cdn.masaischool.com/sal-videos/6756eb497cb2703e9e93e4c4/6756de405222d1a7afdc9728/master.m3u8""}, {""part"": 8, ""name"": ""Session Feedback"", ""duration_sec"": 59.999997999999984, ""url"": ""https://cdn.masaischool.com/hls-videos/158462/6a2c068d0b4e7313aec25f2c/master.m3u8""}]",95m05s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (8 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+1,1.2,Python — Operators and conditional statements,Python,FDN_Tech_2: Python Building Block: Operators and conditional statements in python,6a2bf91c71a0310a05c77ddd,5,"1. Mathematical operators
+2. Mathematical operators - Revision
+3. Mathematical operators - IA Discussion
+4. Conditional statements
+5. Conditional statements - Revision","1. https://cdn.masaischool.com/hls-videos/158461/6a2c04e50b4e7313aec25f2a/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/67584a45d2a87ed37198b7e7/6758472706dc6d2987d0fdd7/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67584a45d2a87ed37198b7e7/67584727cf41893ec56beb31/master.m3u8
+4. https://cdn.masaischool.com/hls-videos/158460/6a2c04db0b4e7313aec25f29/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67584a45d2a87ed37198b7e7/67584727977ce5909271b2f7/master.m3u8","[{""part"": 1, ""name"": ""Mathematical operators"", ""duration_sec"": 2981.4998810000106, ""url"": ""https://cdn.masaischool.com/hls-videos/158461/6a2c04e50b4e7313aec25f2a/master.m3u8""}, {""part"": 2, ""name"": ""Mathematical operators - Revision"", ""duration_sec"": 429.583, ""url"": ""https://cdn.masaischool.com/sal-videos/67584a45d2a87ed37198b7e7/6758472706dc6d2987d0fdd7/master.m3u8""}, {""part"": 3, ""name"": ""Mathematical operators - IA Discussion"", ""duration_sec"": 257.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67584a45d2a87ed37198b7e7/67584727cf41893ec56beb31/master.m3u8""}, {""part"": 4, ""name"": ""Conditional statements"", ""duration_sec"": 1755.6332650000054, ""url"": ""https://cdn.masaischool.com/hls-videos/158460/6a2c04db0b4e7313aec25f29/master.m3u8""}, {""part"": 5, ""name"": ""Conditional statements - Revision"", ""duration_sec"": 350.633, ""url"": ""https://cdn.masaischool.com/sal-videos/67584a45d2a87ed37198b7e7/67584727977ce5909271b2f7/master.m3u8""}]",96m14s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (5 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+1,1.3,Python — Control flow: conditionals and loops,Python,FDN_Tech_3: Mastering Control Flow: Conditional and Loop in Python,6a3526ea70f9341990b1a706,6,"1. While Loops - Concept
+2. While Loops - Revision
+3. IA Discussion
+4. For Loops - Concept
+5. For Loops - Revision
+6. IA Discussion","1. https://cdn.masaischool.com/hls-videos/158849/6a33b7550b4e7313aec260cd/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/67597b935f06a365b17c4be7/675975d94b6d869434a86842/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67597b935f06a365b17c4be7/6759761afea2465d7e53d307/master.m3u8
+4. https://cdn.masaischool.com/hls-videos/158850/6a33b79a0b4e7313aec260ce/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67597b935f06a365b17c4be7/6759788efea2465d7e53e621/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67597b935f06a365b17c4be7/675978c14b6d869434a87ecd/master.m3u8","[{""part"": 1, ""name"": ""While Loops - Concept"", ""duration_sec"": 3170.2332080000115, ""url"": ""https://cdn.masaischool.com/hls-videos/158849/6a33b7550b4e7313aec260cd/master.m3u8""}, {""part"": 2, ""name"": ""While Loops - Revision"", ""duration_sec"": 411.5, ""url"": ""https://cdn.masaischool.com/sal-videos/67597b935f06a365b17c4be7/675975d94b6d869434a86842/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 207.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67597b935f06a365b17c4be7/6759761afea2465d7e53d307/master.m3u8""}, {""part"": 4, ""name"": ""For Loops - Concept"", ""duration_sec"": 1807.2332620000054, ""url"": ""https://cdn.masaischool.com/hls-videos/158850/6a33b79a0b4e7313aec260ce/master.m3u8""}, {""part"": 5, ""name"": ""For Loops - Revision"", ""duration_sec"": 352.433, ""url"": ""https://cdn.masaischool.com/sal-videos/67597b935f06a365b17c4be7/6759788efea2465d7e53e621/master.m3u8""}, {""part"": 6, ""name"": ""IA Discussion"", ""duration_sec"": 207.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67597b935f06a365b17c4be7/675978c14b6d869434a87ecd/master.m3u8""}]",102m35s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (6 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+2,2.1,"Python — break, continue, and nested loops",Python,"FDN_Tech_4: Understanding break, continue, and Nested Loops",6a3e87829cb306ef33d40829,5,"1. Break and Continue concept
+2. Break and Continue Revision
+3. IA Discussion
+4. Nested Loops Concept
+5. Nested Loops Revision","1. https://cdn.masaischool.com/hls-videos/160100/6a3e742f0b4e7313aec263bb/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/675ae6a486fcca88cd6e56a1/675ae0b3000463ee4da30208/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/675ae6a486fcca88cd6e56a1/675ae0e3594ead3fde98144f/master.m3u8
+4. https://cdn.masaischool.com/hls-videos/160101/6a3e75110b4e7313aec263bc/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/675ae6a486fcca88cd6e56a1/675ae168c0b4be8ebd80d014/master.m3u8","[{""part"": 1, ""name"": ""Break and Continue concept"", ""duration_sec"": 2834.16655500001, ""url"": ""https://cdn.masaischool.com/hls-videos/160100/6a3e742f0b4e7313aec263bb/master.m3u8""}, {""part"": 2, ""name"": ""Break and Continue Revision"", ""duration_sec"": 489.6, ""url"": ""https://cdn.masaischool.com/sal-videos/675ae6a486fcca88cd6e56a1/675ae0b3000463ee4da30208/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 300.65, ""url"": ""https://cdn.masaischool.com/sal-videos/675ae6a486fcca88cd6e56a1/675ae0e3594ead3fde98144f/master.m3u8""}, {""part"": 4, ""name"": ""Nested Loops Concept"", ""duration_sec"": 1715.866598000005, ""url"": ""https://cdn.masaischool.com/hls-videos/160101/6a3e75110b4e7313aec263bc/master.m3u8""}, {""part"": 5, ""name"": ""Nested Loops Revision"", ""duration_sec"": 732.983, ""url"": ""https://cdn.masaischool.com/sal-videos/675ae6a486fcca88cd6e56a1/675ae168c0b4be8ebd80d014/master.m3u8""}]",101m13s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (5 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+2,2.2,"Python — IDEs, Anaconda, loops & conditionals in action",Python,"PTBAM01S1_2504_S01: IDEs, Control Flow, and Data Structures",678e69ed675aec20b216e605,7,"1. Ides & Anaconda Installation Concept
+2. Ides & Anaconda Installation Revision
+3. IA Discussion
+4. Loops and Conditionals statements in action Concept
+5. Loops and Conditionals statements in action Revision
+6. Data Structures in action concept
+7. Data Structures in action Revision","1. https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/676844938f5e80dcc0b25e05/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/676844b22fbe90b354d36c19/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/676845468f5e80dcc0b26119/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/676844d02fbe90b354d36cc2/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/676844f0a080a6ad1603baa8/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/676845092fbe90b354d36d9c/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/67684527a080a6ad1603bb77/master.m3u8","[{""part"": 1, ""name"": ""Ides & Anaconda Installation Concept"", ""duration_sec"": 3576.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/676844938f5e80dcc0b25e05/master.m3u8""}, {""part"": 2, ""name"": ""Ides & Anaconda Installation Revision"", ""duration_sec"": 633.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/676844b22fbe90b354d36c19/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 323.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/676845468f5e80dcc0b26119/master.m3u8""}, {""part"": 4, ""name"": ""Loops and Conditionals statements in action Concept"", ""duration_sec"": 1941.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/676844d02fbe90b354d36cc2/master.m3u8""}, {""part"": 5, ""name"": ""Loops and Conditionals statements in action Revision"", ""duration_sec"": 1503.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/676844f0a080a6ad1603baa8/master.m3u8""}, {""part"": 6, ""name"": ""Data Structures in action concept"", ""duration_sec"": 2070.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/676845092fbe90b354d36d9c/master.m3u8""}, {""part"": 7, ""name"": ""Data Structures in action Revision"", ""duration_sec"": 1467.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6768757e2e40300d15aec1ab/67684527a080a6ad1603bb77/master.m3u8""}]",191m53s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (7 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+2,2.3,Python — The power of functions,Python,PTBAM01S1_2512_S03: The Power of Python Functions,67d8647015193d6d14bd7954,7,"1. New Scene
+2. New Scene
+3. New Scene
+4. New Scene
+5. New Scene
+6. New Scene
+7. New Scene","1. https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8dc299aa18a0c2743938/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8de0f936951f1cb65f17/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8f0799aa18a0c27449bb/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8e1599aa18a0c2743caf/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8e0199aa18a0c2743bf9/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8e46f936951f1cb66352/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8e65f936951f1cb664a4/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 2247.55, ""url"": ""https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8dc299aa18a0c2743938/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 522.083, ""url"": ""https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8de0f936951f1cb65f17/master.m3u8""}, {""part"": 3, ""name"": ""New Scene"", ""duration_sec"": 344.75, ""url"": ""https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8f0799aa18a0c27449bb/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 2266.683, ""url"": ""https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8e1599aa18a0c2743caf/master.m3u8""}, {""part"": 5, ""name"": ""New Scene"", ""duration_sec"": 1123.283, ""url"": ""https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8e0199aa18a0c2743bf9/master.m3u8""}, {""part"": 6, ""name"": ""New Scene"", ""duration_sec"": 1484.283, ""url"": ""https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8e46f936951f1cb66352/master.m3u8""}, {""part"": 7, ""name"": ""New Scene"", ""duration_sec"": 1093.817, ""url"": ""https://cdn.masaischool.com/sal-videos/676e9013631470e143da5fac/676e8e65f936951f1cb664a4/master.m3u8""}]",151m22s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (7 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+3,3.1,Python — Advanced functions,Python,CC_Block_02_S01: Advanced Python Functions,684fbecedceadf1bb49a7627,7,"1. New Scene
+2. New Scene
+3. New Scene
+4. New Scene
+5. New Scene
+6. New Scene
+7. New Scene","1. https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed5804ee6c592aacf519f/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed5a199aa18a0c27639cf/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed6694ee6c592aacf582e/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed5c34ee6c592aacf5396/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed5e499aa18a0c2763c17/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed6004ee6c592aacf554f/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed625f936951f1cb85d5d/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 2512.75, ""url"": ""https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed5804ee6c592aacf519f/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 1218.15, ""url"": ""https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed5a199aa18a0c27639cf/master.m3u8""}, {""part"": 3, ""name"": ""New Scene"", ""duration_sec"": 364.283, ""url"": ""https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed6694ee6c592aacf582e/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 1722.017, ""url"": ""https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed5c34ee6c592aacf5396/master.m3u8""}, {""part"": 5, ""name"": ""New Scene"", ""duration_sec"": 1102.083, ""url"": ""https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed5e499aa18a0c2763c17/master.m3u8""}, {""part"": 6, ""name"": ""New Scene"", ""duration_sec"": 1453.417, ""url"": ""https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed6004ee6c592aacf554f/master.m3u8""}, {""part"": 7, ""name"": ""New Scene"", ""duration_sec"": 1035.95, ""url"": ""https://cdn.masaischool.com/sal-videos/676edd0c631470e143e02dbe/676ed625f936951f1cb85d5d/master.m3u8""}]",156m49s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (7 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+3,3.2,"Python — Role in data science, regex & exception handling",Python,PTBAM01S1_2504_S02: Mastering Regex and Exception Handling,678f4dbb675aec20b221bf7e,7,"1. Python's Role in Data Science: A High-Level Overview Concept
+2. Python's Role in Data Science: A High-Level Overview Revision
+3. IA Discussion
+4. Mastering Regex: Unlock the Power of Pattern Matching Concept
+5. Mastering Regex: Unlock the Power of Pattern Matching Revision
+6. Exception Handling: Building Resilient Python Applications Concept
+7. Exception Handling: Building Resilient Python Applications Revision","1. https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d32c25c466f600fef3ae7/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d32e6fb87dca19b540ab3/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d34c2fb87dca19b541502/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d339de52b1079305b2543/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d33c0e52b1079305b2609/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d3428e52b1079305b281f/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d34375c466f600fef430b/master.m3u8","[{""part"": 1, ""name"": ""Python's Role in Data Science: A High-Level Overview Concept"", ""duration_sec"": 1471.0, ""url"": ""https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d32c25c466f600fef3ae7/master.m3u8""}, {""part"": 2, ""name"": ""Python's Role in Data Science: A High-Level Overview Revision"", ""duration_sec"": 573.0, ""url"": ""https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d32e6fb87dca19b540ab3/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 357.0, ""url"": ""https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d34c2fb87dca19b541502/master.m3u8""}, {""part"": 4, ""name"": ""Mastering Regex: Unlock the Power of Pattern Matching Concept"", ""duration_sec"": 1694.0, ""url"": ""https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d339de52b1079305b2543/master.m3u8""}, {""part"": 5, ""name"": ""Mastering Regex: Unlock the Power of Pattern Matching Revision"", ""duration_sec"": 1288.0, ""url"": ""https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d33c0e52b1079305b2609/master.m3u8""}, {""part"": 6, ""name"": ""Exception Handling: Building Resilient Python Applications Concept"", ""duration_sec"": 2133.0, ""url"": ""https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d3428e52b1079305b281f/master.m3u8""}, {""part"": 7, ""name"": ""Exception Handling: Building Resilient Python Applications Revision"", ""duration_sec"": 1401.0, ""url"": ""https://cdn.masaischool.com/sal-videos/676d372bfca95c6dc3285ab5/676d34375c466f600fef430b/master.m3u8""}]",148m37s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (7 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+3,3.3,Python — Code modularization,Python,PTBAM01S2_2505_S01: Understanding the Code Modulerization,6797d2138e04cb37cb880056,7,"1. New Scene
+2. New Scene
+3. IA Discussion
+4. New Scene
+5. New Scene
+6. New Scene
+7. New Scene","1. https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/67739bad78796e577c9d3e71/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/6773b81978796e577c9dd234/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/6773bf8178796e577c9e1557/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/6773ba514ee6c592aae75ffa/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/6773be0378796e577c9e0824/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/6773be2578796e577c9e09d6/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/6773bf4878796e577c9e13b8/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 2034.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/67739bad78796e577c9d3e71/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 1097.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/6773b81978796e577c9dd234/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 333.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/6773bf8178796e577c9e1557/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 2451.15, ""url"": ""https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/6773ba514ee6c592aae75ffa/master.m3u8""}, {""part"": 5, ""name"": ""New Scene"", ""duration_sec"": 1103.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/6773be0378796e577c9e0824/master.m3u8""}, {""part"": 6, ""name"": ""New Scene"", ""duration_sec"": 1848.083, ""url"": ""https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/6773be2578796e577c9e09d6/master.m3u8""}, {""part"": 7, ""name"": ""New Scene"", ""duration_sec"": 1105.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6773dfdefbc02bfb9b42adf0/6773bf4878796e577c9e13b8/master.m3u8""}]",166m11s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (7 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+4,4.1,"Python — Data structures (lists, strings, sets, tuples, dicts)",Python,PTBAM00S1_2504_S05: Data Structures in Python,67938e5f5c1716b998075305,9,"1. Lists - Concept
+2. Lists - Revision
+3. IA Discussion
+4. Strings - Concept
+5. Strings - Revision
+6. Set and Tuples
+7. Set and Tuples - Revision
+8. Dictionaries
+9. Dictionaries","1. https://cdn.masaischool.com/sal-videos/675c348086fcca88cd71aaed/675c31834b1ce9ca6c96d235/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/675c348086fcca88cd71aaed/675c322875669f4edaec6d0a/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/675c348086fcca88cd71aaed/675c32c575669f4edaec731b/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/675c348086fcca88cd71aaed/675c32614b1ce9ca6c96dc23/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/675c348086fcca88cd71aaed/675c329075669f4edaec703d/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/675d0c7686fcca88cd729342/675d0a70c9f25eced4da3de0/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/675d0c7686fcca88cd729342/675d0a9f75669f4edaf2da85/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/675d0c7686fcca88cd729342/675d0ac64b1ce9ca6c9d2eeb/master.m3u8
+9. https://cdn.masaischool.com/sal-videos/675d0c7686fcca88cd729342/675d0ae975669f4edaf2dc3f/master.m3u8","[{""part"": 1, ""name"": ""Lists - Concept"", ""duration_sec"": 1765.5, ""url"": ""https://cdn.masaischool.com/sal-videos/675c348086fcca88cd71aaed/675c31834b1ce9ca6c96d235/master.m3u8""}, {""part"": 2, ""name"": ""Lists - Revision"", ""duration_sec"": 334.267, ""url"": ""https://cdn.masaischool.com/sal-videos/675c348086fcca88cd71aaed/675c322875669f4edaec6d0a/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 171.0, ""url"": ""https://cdn.masaischool.com/sal-videos/675c348086fcca88cd71aaed/675c32c575669f4edaec731b/master.m3u8""}, {""part"": 4, ""name"": ""Strings - Concept"", ""duration_sec"": 833.033, ""url"": ""https://cdn.masaischool.com/sal-videos/675c348086fcca88cd71aaed/675c32614b1ce9ca6c96dc23/master.m3u8""}, {""part"": 5, ""name"": ""Strings - Revision"", ""duration_sec"": 302.467, ""url"": ""https://cdn.masaischool.com/sal-videos/675c348086fcca88cd71aaed/675c329075669f4edaec703d/master.m3u8""}, {""part"": 6, ""name"": ""Set and Tuples"", ""duration_sec"": 2317.1, ""url"": ""https://cdn.masaischool.com/sal-videos/675d0c7686fcca88cd729342/675d0a70c9f25eced4da3de0/master.m3u8""}, {""part"": 7, ""name"": ""Set and Tuples - Revision"", ""duration_sec"": 223.733, ""url"": ""https://cdn.masaischool.com/sal-videos/675d0c7686fcca88cd729342/675d0a9f75669f4edaf2da85/master.m3u8""}, {""part"": 8, ""name"": ""Dictionaries"", ""duration_sec"": 1819.25, ""url"": ""https://cdn.masaischool.com/sal-videos/675d0c7686fcca88cd729342/675d0ac64b1ce9ca6c9d2eeb/master.m3u8""}, {""part"": 9, ""name"": ""Dictionaries"", ""duration_sec"": 303.45, ""url"": ""https://cdn.masaischool.com/sal-videos/675d0c7686fcca88cd729342/675d0ae975669f4edaf2dc3f/master.m3u8""}]",134m30s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (9 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+4,4.2,"Python — Classes, objects and constructors (OOP)",Python,PTBAM01S2_2505_S02: Application of class objects and constructos,6798cb875968d8d661c53158,7,"1. New Scene
+2. New Scene
+3. New Scene
+4. New Scene
+5. New Scene
+6. New Scene
+7. New Scene","1. https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765a280759e7f9b0766be5/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765ac96a4b9b81791cd6d9/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765bb06a4b9b81791cdb48/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765b03fa0467715ebb93af/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765b2a6a4b9b81791cd898/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765b586a4b9b81791cd9d7/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765b690759e7f9b07670fe/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 1933.0, ""url"": ""https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765a280759e7f9b0766be5/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 981.483, ""url"": ""https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765ac96a4b9b81791cd6d9/master.m3u8""}, {""part"": 3, ""name"": ""New Scene"", ""duration_sec"": 324.0, ""url"": ""https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765bb06a4b9b81791cdb48/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 1996.817, ""url"": ""https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765b03fa0467715ebb93af/master.m3u8""}, {""part"": 5, ""name"": ""New Scene"", ""duration_sec"": 1208.483, ""url"": ""https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765b2a6a4b9b81791cd898/master.m3u8""}, {""part"": 6, ""name"": ""New Scene"", ""duration_sec"": 1516.75, ""url"": ""https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765b586a4b9b81791cd9d7/master.m3u8""}, {""part"": 7, ""name"": ""New Scene"", ""duration_sec"": 1000.55, ""url"": ""https://cdn.masaischool.com/sal-videos/677670dae9b7943a15cd5af9/67765b690759e7f9b07670fe/master.m3u8""}]",149m21s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (7 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+4,4.3,Git and GitHub — introduction,Python,FTSDM01S2_2512_JS_S02: Introduction to Git and Github,67d8547915193d6d14bd1196,5,"1. New Scene
+2. New Scene
+3. IA Discussion
+4. New Scene
+5. New Scene","1. https://cdn.masaischool.com/sal-videos/6772b180631470e143eaac32/6772ad4c4ee6c592aae251e9/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/6772b180631470e143eaac32/6772adfa78796e577c98d65f/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6772b180631470e143eaac32/6772ae9ef936951f1ccb5947/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/6772b180631470e143eaac32/6772ae49f936951f1ccb56d0/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/6772b180631470e143eaac32/6772ae744ee6c592aae25c76/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 2419.6, ""url"": ""https://cdn.masaischool.com/sal-videos/6772b180631470e143eaac32/6772ad4c4ee6c592aae251e9/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 883.267, ""url"": ""https://cdn.masaischool.com/sal-videos/6772b180631470e143eaac32/6772adfa78796e577c98d65f/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 326.2, ""url"": ""https://cdn.masaischool.com/sal-videos/6772b180631470e143eaac32/6772ae9ef936951f1ccb5947/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 2080.867, ""url"": ""https://cdn.masaischool.com/sal-videos/6772b180631470e143eaac32/6772ae49f936951f1ccb56d0/master.m3u8""}, {""part"": 5, ""name"": ""New Scene"", ""duration_sec"": 635.6, ""url"": ""https://cdn.masaischool.com/sal-videos/6772b180631470e143eaac32/6772ae744ee6c592aae25c76/master.m3u8""}]",105m46s,PASS — Git (tool),PASS,,matched (5 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+5,5.1,Python — Prep / practice consolidation,Python,Python Prep Session,67865c798645e0134f592718,7,"1. New Scene
+2. New Scene
+3. New Scene
+4. New Scene
+5. New Scene
+6. New Scene
+7. New Scene","1. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/678659bd61e6f9f4a6ac2d58/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/678659df61e6f9f4a6ac2e5f/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865aa45c56862cc7797a18/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a031ca67b92b07eb37d/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a245c56862cc779751a/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a575c56862cc7797764/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a7d1ca67b92b07eb88c/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 1494.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/678659bd61e6f9f4a6ac2d58/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 432.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/678659df61e6f9f4a6ac2e5f/master.m3u8""}, {""part"": 3, ""name"": ""New Scene"", ""duration_sec"": 319.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865aa45c56862cc7797a18/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 1292.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a031ca67b92b07eb37d/master.m3u8""}, {""part"": 5, ""name"": ""New Scene"", ""duration_sec"": 365.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a245c56862cc779751a/master.m3u8""}, {""part"": 6, ""name"": ""New Scene"", ""duration_sec"": 1000.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a575c56862cc7797764/master.m3u8""}, {""part"": 7, ""name"": ""New Scene"", ""duration_sec"": 449.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a7d1ca67b92b07eb88c/master.m3u8""}]",89m11s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (7 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+5,5.2,"Numbers for data work — averages, ratios, percentages",Maths,"PBAU08-MU01_S01: Arithmetic Essentials: Averages, Ratios, Percentages",6846b22b618c42616900145e,6,"1. New Scene 1.0
+2. New Scene 1.1
+3. New Scene 2.0
+4. New Scene 2.1
+5. New Scene 3.0
+6. New Scene 3.1","1. https://cdn.masaischool.com/sal-videos/69280885f40b4e4e61094282/6846a3e00f8d7a05185ab40e/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/69280885f40b4e4e61094282/6846a3f72ea48d13d46a48ae/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6862392ca44425acb355c500/6846a4022ea48d13d46a48f7/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/688782f914073865a3651e28/6846a40a0f8d7a05185ab55a/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/688782f914073865a3651e28/6846a4162ea48d13d46a4a48/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/6862392ca44425acb355c500/6846a4202ea48d13d46a4a9e/master.m3u8","[{""part"": 1, ""name"": ""New Scene 1.0"", ""duration_sec"": 2173.767, ""url"": ""https://cdn.masaischool.com/sal-videos/69280885f40b4e4e61094282/6846a3e00f8d7a05185ab40e/master.m3u8""}, {""part"": 2, ""name"": ""New Scene 1.1"", ""duration_sec"": 295.083, ""url"": ""https://cdn.masaischool.com/sal-videos/69280885f40b4e4e61094282/6846a3f72ea48d13d46a48ae/master.m3u8""}, {""part"": 3, ""name"": ""New Scene 2.0"", ""duration_sec"": 3316.4, ""url"": ""https://cdn.masaischool.com/sal-videos/6862392ca44425acb355c500/6846a4022ea48d13d46a48f7/master.m3u8""}, {""part"": 4, ""name"": ""New Scene 2.1"", ""duration_sec"": 399.55, ""url"": ""https://cdn.masaischool.com/sal-videos/688782f914073865a3651e28/6846a40a0f8d7a05185ab55a/master.m3u8""}, {""part"": 5, ""name"": ""New Scene 3.0"", ""duration_sec"": 2024.75, ""url"": ""https://cdn.masaischool.com/sal-videos/688782f914073865a3651e28/6846a4162ea48d13d46a4a48/master.m3u8""}, {""part"": 6, ""name"": ""New Scene 3.1"", ""duration_sec"": 496.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6862392ca44425acb355c500/6846a4202ea48d13d46a4a9e/master.m3u8""}]",145m06s,PASS — Maths support Topics,PASS,,matched (6 parts) · content-fit OK · Support for SQL aggregates & Excel — not ML maths,Students · PSE Focus · 3 sessions/week · 15 weeks
+5,5.3,Excel — Interface orientation (early soft start before SQL deep-dive),Excel,PTDSM04S1_2517_EXL105_S01: Understanding the Excel Interface,6807a3f604872b17930d0b8b,4,"1. Scene 1
+2. IA Discussion
+3. Scene 2
+4. Scene 3","1. https://cdn.masaischool.com/sal-videos/687e16a714073865a3621e5f/6807a207855623b55844fbd2/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/687e16a714073865a3621e5f/6807a2b4855623b5584501a2/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/687e16a714073865a3621e5f/6807a22ad303e0cbd2dd4c88/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/682b5dc41b0b84e7b3a63106/6807a244d303e0cbd2dd4d33/master.m3u8","[{""part"": 1, ""name"": ""Scene 1"", ""duration_sec"": 1120.617000000001, ""url"": ""https://cdn.masaischool.com/sal-videos/687e16a714073865a3621e5f/6807a207855623b55844fbd2/master.m3u8""}, {""part"": 2, ""name"": ""IA Discussion"", ""duration_sec"": 579.7960000000006, ""url"": ""https://cdn.masaischool.com/sal-videos/687e16a714073865a3621e5f/6807a2b4855623b5584501a2/master.m3u8""}, {""part"": 3, ""name"": ""Scene 2"", ""duration_sec"": 1187.4190000000003, ""url"": ""https://cdn.masaischool.com/sal-videos/687e16a714073865a3621e5f/6807a22ad303e0cbd2dd4c88/master.m3u8""}, {""part"": 4, ""name"": ""Scene 3"", ""duration_sec"": 1567.0019999999972, ""url"": ""https://cdn.masaischool.com/sal-videos/682b5dc41b0b84e7b3a63106/6807a244d303e0cbd2dd4d33/master.m3u8""}]",74m15s,PASS — Excel Topics/title,PASS,,matched (4 parts) · content-fit OK · Pedagogy: light Excel familiarity before SQL weeks,Students · PSE Focus · 3 sessions/week · 15 weeks
+6,6.1,SQL — Introduction to SQL and databases,SQL,FTTEM03S2_2514_JSQ206_S01: Introduction to SQL and Databases,67eb02aa3a4f39308727e9fb,5,"1. Subtopic 1
+2. Subtopic 1 Pitfall
+3. IA Discussion
+4. Subtopic 2
+5. Subtopic 2 Pitfall","1. https://cdn.masaischool.com/sal-videos/68da31832a1d2494e9360ba5/67eaf4f27a575d7c9e1cde85/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/68da31832a1d2494e9360ba5/67eaf4e387f6061fd163a0b9/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67eb02aa3a4f39308727e9fb/67eaedc787f6061fd1634f18/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/68344122907eb74ce6920d70/67eaf4e387f6061fd163a0b7/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67f3d96dcbc216dc7bb5c03b/67eaf4e387f6061fd163a0b5/master.m3u8","[{""part"": 1, ""name"": ""Subtopic 1"", ""duration_sec"": 3002.833, ""url"": ""https://cdn.masaischool.com/sal-videos/68da31832a1d2494e9360ba5/67eaf4f27a575d7c9e1cde85/master.m3u8""}, {""part"": 2, ""name"": ""Subtopic 1 Pitfall"", ""duration_sec"": 545.3, ""url"": ""https://cdn.masaischool.com/sal-videos/68da31832a1d2494e9360ba5/67eaf4e387f6061fd163a0b9/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 181.567, ""url"": ""https://cdn.masaischool.com/sal-videos/67eb02aa3a4f39308727e9fb/67eaedc787f6061fd1634f18/master.m3u8""}, {""part"": 4, ""name"": ""Subtopic 2"", ""duration_sec"": 2774.267, ""url"": ""https://cdn.masaischool.com/sal-videos/68344122907eb74ce6920d70/67eaf4e387f6061fd163a0b7/master.m3u8""}, {""part"": 5, ""name"": ""Subtopic 2 Pitfall"", ""duration_sec"": 546.833, ""url"": ""https://cdn.masaischool.com/sal-videos/67f3d96dcbc216dc7bb5c03b/67eaf4e387f6061fd163a0b5/master.m3u8""}]",117m31s,PASS — SQL Topics/title,PASS,,matched (5 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+6,6.2,SQL — Essentials: the language of databases,SQL,PTDSM02S1_2505_S03: SQL Essentials: The Language of Databases Unraveled,679b6beca51f661bced93470,9,"1. Arthimetic operators with SELECT
+2. Arthimetic operators with SELECT - Rev
+3. IA Discussion
+4. Arthimetic operators with WHERE
+5. Arthimetic operators with WHERE - Rev
+6. Comparison operators in SQL
+7. Comparison operators in SQL - Rev
+8. Logical Operators in SQL
+9. Logical Operators in SQL - Rev","1. https://cdn.masaischool.com/sal-videos/67c04b836b5ef7003eb63cae/679b53b71103c2cb78ea3652/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/6803dfa204872b1793ce7e00/679b540a1103c2cb78ea38a7/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67b36d5989eb30ad69401fcd/679b576544d70d0c8293e109/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/6803dfa204872b1793ce7e00/679b5435656e75cfc09cf7f9/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67fc1b03824e0d7b6c08f581/679b5457656e75cfc09cf89e/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67fc1b03824e0d7b6c08f581/679b54a044d70d0c8293cb8d/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/6803dfa204872b1793ce7e00/679b56f844d70d0c8293ddde/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/67fc1b03824e0d7b6c08f581/679b5717656e75cfc09d0cec/master.m3u8
+9. https://cdn.masaischool.com/sal-videos/67fc1b03824e0d7b6c08f581/679b573a44d70d0c8293e000/master.m3u8","[{""part"": 1, ""name"": ""Arthimetic operators with SELECT"", ""duration_sec"": 2700.7, ""url"": ""https://cdn.masaischool.com/sal-videos/67c04b836b5ef7003eb63cae/679b53b71103c2cb78ea3652/master.m3u8""}, {""part"": 2, ""name"": ""Arthimetic operators with SELECT - Rev"", ""duration_sec"": 897.567, ""url"": ""https://cdn.masaischool.com/sal-videos/6803dfa204872b1793ce7e00/679b540a1103c2cb78ea38a7/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 259.883, ""url"": ""https://cdn.masaischool.com/sal-videos/67b36d5989eb30ad69401fcd/679b576544d70d0c8293e109/master.m3u8""}, {""part"": 4, ""name"": ""Arthimetic operators with WHERE"", ""duration_sec"": 1662.75, ""url"": ""https://cdn.masaischool.com/sal-videos/6803dfa204872b1793ce7e00/679b5435656e75cfc09cf7f9/master.m3u8""}, {""part"": 5, ""name"": ""Arthimetic operators with WHERE - Rev"", ""duration_sec"": 708.733, ""url"": ""https://cdn.masaischool.com/sal-videos/67fc1b03824e0d7b6c08f581/679b5457656e75cfc09cf89e/master.m3u8""}, {""part"": 6, ""name"": ""Comparison operators in SQL"", ""duration_sec"": 1067.017, ""url"": ""https://cdn.masaischool.com/sal-videos/67fc1b03824e0d7b6c08f581/679b54a044d70d0c8293cb8d/master.m3u8""}, {""part"": 7, ""name"": ""Comparison operators in SQL - Rev"", ""duration_sec"": 637.68, ""url"": ""https://cdn.masaischool.com/sal-videos/6803dfa204872b1793ce7e00/679b56f844d70d0c8293ddde/master.m3u8""}, {""part"": 8, ""name"": ""Logical Operators in SQL"", ""duration_sec"": 1050.567, ""url"": ""https://cdn.masaischool.com/sal-videos/67fc1b03824e0d7b6c08f581/679b5717656e75cfc09d0cec/master.m3u8""}, {""part"": 9, ""name"": ""Logical Operators in SQL - Rev"", ""duration_sec"": 501.9, ""url"": ""https://cdn.masaischool.com/sal-videos/67fc1b03824e0d7b6c08f581/679b573a44d70d0c8293e000/master.m3u8""}]",158m07s,PASS — SQL Topics/title,PASS,,matched (9 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+6,6.3,"SQL — Searching, filtering & power functions",SQL,"CC_BLOCK_2_S2:Data Sleuthing: Searching, Filtering & Power Functions in SQL",68598b79a44425acb3641210,11,"1. Searching in SQL using LIKE
+2. Searching in SQL using LIKE - Rev
+3. IA Discussion
+4. Searching using BETWEEN
+5. Searching using BETWEEN - Rev
+6. Aggregate Function in SQL
+7. Aggregate Function in SQL - Rev
+8. String Function in SQL
+9. String Function in SQL - Rev
+10. Power fuctions in SQL
+11. Power fuctions in SQL - Rev","1. https://cdn.masaischool.com/sal-videos/67c93deaa0ef177e3b377526/679cb8efb1df5bb493827097/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/67acaf9d61865246e4c9abb7/679cb93131cb129377970159/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67b36d7889eb30ad694020ad/679cba77b1df5bb4938279e3/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67acaf9d61865246e4c9abb7/679cb986c9afcbb7ca55eead/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67e209013a4f3930874faa88/679cb9a631cb1293779703fb/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67e209013a4f3930874faa88/679cb9c0b1df5bb4938274ee/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/67acaf9d61865246e4c9abb7/679cb9dd31cb129377970589/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/67acaf9d61865246e4c9abb7/679cb9fcb1df5bb4938276ac/master.m3u8
+9. https://cdn.masaischool.com/sal-videos/67acaf9d61865246e4c9abb7/679cba1bb1df5bb49382777e/master.m3u8
+10. https://cdn.masaischool.com/sal-videos/67e209013a4f3930874faa88/679cba39b1df5bb493827855/master.m3u8
+11. https://cdn.masaischool.com/sal-videos/679cbee9f62596df9334a56a/679cba54c9afcbb7ca55f41b/master.m3u8","[{""part"": 1, ""name"": ""Searching in SQL using LIKE"", ""duration_sec"": 2193.117, ""url"": ""https://cdn.masaischool.com/sal-videos/67c93deaa0ef177e3b377526/679cb8efb1df5bb493827097/master.m3u8""}, {""part"": 2, ""name"": ""Searching in SQL using LIKE - Rev"", ""duration_sec"": 432.867, ""url"": ""https://cdn.masaischool.com/sal-videos/67acaf9d61865246e4c9abb7/679cb93131cb129377970159/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 271.9, ""url"": ""https://cdn.masaischool.com/sal-videos/67b36d7889eb30ad694020ad/679cba77b1df5bb4938279e3/master.m3u8""}, {""part"": 4, ""name"": ""Searching using BETWEEN"", ""duration_sec"": 636.267, ""url"": ""https://cdn.masaischool.com/sal-videos/67acaf9d61865246e4c9abb7/679cb986c9afcbb7ca55eead/master.m3u8""}, {""part"": 5, ""name"": ""Searching using BETWEEN - Rev"", ""duration_sec"": 347.333, ""url"": ""https://cdn.masaischool.com/sal-videos/67e209013a4f3930874faa88/679cb9a631cb1293779703fb/master.m3u8""}, {""part"": 6, ""name"": ""Aggregate Function in SQL"", ""duration_sec"": 543.433, ""url"": ""https://cdn.masaischool.com/sal-videos/67e209013a4f3930874faa88/679cb9c0b1df5bb4938274ee/master.m3u8""}, {""part"": 7, ""name"": ""Aggregate Function in SQL - Rev"", ""duration_sec"": 233.867, ""url"": ""https://cdn.masaischool.com/sal-videos/67acaf9d61865246e4c9abb7/679cb9dd31cb129377970589/master.m3u8""}, {""part"": 8, ""name"": ""String Function in SQL"", ""duration_sec"": 970.817, ""url"": ""https://cdn.masaischool.com/sal-videos/67acaf9d61865246e4c9abb7/679cb9fcb1df5bb4938276ac/master.m3u8""}, {""part"": 9, ""name"": ""String Function in SQL - Rev"", ""duration_sec"": 268.933, ""url"": ""https://cdn.masaischool.com/sal-videos/67acaf9d61865246e4c9abb7/679cba1bb1df5bb49382777e/master.m3u8""}, {""part"": 10, ""name"": ""Power fuctions in SQL"", ""duration_sec"": 373.817, ""url"": ""https://cdn.masaischool.com/sal-videos/67e209013a4f3930874faa88/679cba39b1df5bb493827855/master.m3u8""}, {""part"": 11, ""name"": ""Power fuctions in SQL - Rev"", ""duration_sec"": 283.467, ""url"": ""https://cdn.masaischool.com/sal-videos/679cbee9f62596df9334a56a/679cba54c9afcbb7ca55f41b/master.m3u8""}]",109m16s,PASS — SQL Topics/title,PASS,,matched (11 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+7,7.1,"SQL — String, date & type conversion functions",SQL,"CC_BLOCK_2_S2:Transforming Data: String, Date, and Type Conversion Functions in SQL",685aee53a44425acb3999c1a,8,"1. Getting the Current Date and Time
+2. Getting the Current Date and Time - Pitfall
+3. IA Discussion
+4. Extracting the date and time components
+5. Extracting the date and time components - Pitfall
+6. Arithmetic of dates
+7. Arithmetic of dates - pitfall
+8. Summary","1. https://cdn.masaischool.com/sal-videos/67f2a4cbcbc216dc7baac10c/67ab1345cff8b1323a619169/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/67f2a4cbcbc216dc7baac10c/67ab13d2feefe705cbe275bb/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67bc95c997a9f4c620ad3540/67ab15c7e5458a03493da3a4/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67bc95c997a9f4c620ad3540/67ab144fe5458a03493d9abc/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67bc95c997a9f4c620ad3540/67ab14e7feefe705cbe27f93/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67bc95c997a9f4c620ad3540/67ab1535feefe705cbe2814f/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/67eaacd63a4f3930871bfb10/67ab156de5458a03493da1d9/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/6803dfa704872b1793cebbdb/67ab15a2feefe705cbe283f5/master.m3u8","[{""part"": 1, ""name"": ""Getting the Current Date and Time"", ""duration_sec"": 2309.233, ""url"": ""https://cdn.masaischool.com/sal-videos/67f2a4cbcbc216dc7baac10c/67ab1345cff8b1323a619169/master.m3u8""}, {""part"": 2, ""name"": ""Getting the Current Date and Time - Pitfall"", ""duration_sec"": 659.817, ""url"": ""https://cdn.masaischool.com/sal-videos/67f2a4cbcbc216dc7baac10c/67ab13d2feefe705cbe275bb/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 365.483, ""url"": ""https://cdn.masaischool.com/sal-videos/67bc95c997a9f4c620ad3540/67ab15c7e5458a03493da3a4/master.m3u8""}, {""part"": 4, ""name"": ""Extracting the date and time components"", ""duration_sec"": 2051.95, ""url"": ""https://cdn.masaischool.com/sal-videos/67bc95c997a9f4c620ad3540/67ab144fe5458a03493d9abc/master.m3u8""}, {""part"": 5, ""name"": ""Extracting the date and time components - Pitfall"", ""duration_sec"": 634.483, ""url"": ""https://cdn.masaischool.com/sal-videos/67bc95c997a9f4c620ad3540/67ab14e7feefe705cbe27f93/master.m3u8""}, {""part"": 6, ""name"": ""Arithmetic of dates"", ""duration_sec"": 2390.617, ""url"": ""https://cdn.masaischool.com/sal-videos/67bc95c997a9f4c620ad3540/67ab1535feefe705cbe2814f/master.m3u8""}, {""part"": 7, ""name"": ""Arithmetic of dates - pitfall"", ""duration_sec"": 562.55, ""url"": ""https://cdn.masaischool.com/sal-videos/67eaacd63a4f3930871bfb10/67ab156de5458a03493da1d9/master.m3u8""}, {""part"": 8, ""name"": ""Summary"", ""duration_sec"": 189.35, ""url"": ""https://cdn.masaischool.com/sal-videos/6803dfa704872b1793cebbdb/67ab15a2feefe705cbe283f5/master.m3u8""}]",152m43s,PASS — SQL Topics/title,PASS,,matched (8 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+7,7.2,"SQL — Aggregations: GROUP BY, HAVING, ORDER BY, LIMIT",SQL,"PBAU02-MU01_S01: Mastering Aggregations: GROUP BY, HAVING, ORDER BY, LIMIT  Demystified",68342d6a907eb74ce68dd391,11,"1. Grouping of data in categories
+2. Grouping of data in categories
+3. IA Discussion
+4. Group by with Having
+5. Group by with Having
+6. Ordering of data
+7. Ordering of data
+8. Limiting the data
+9. Limiting the data
+10. Understanding the order of execution of a query
+11. Understanding the order of execution of a query","1. https://cdn.masaischool.com/sal-videos/67d8691b15193d6d14bd98bf/67a1dd1bc9afcbb7ca6fe18e/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/67d8691b15193d6d14bd98bf/67a1dd3831cb129377b0ea0e/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67aa2c13a8eec6909a699328/67a1e3a3c9afcbb7ca70003c/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67d8691b15193d6d14bd98bf/67a1dd63c9afcbb7ca6fe31b/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67bc827597a9f4c620ad15eb/67a1dd92c9afcbb7ca6fe4a1/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67bc827597a9f4c620ad15eb/67a1ddc1b1df5bb4939c8526/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/67bc827597a9f4c620ad15eb/67a1dde231cb129377b0ed39/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/67bc827597a9f4c620ad15eb/67a1de16b1df5bb4939c86b1/master.m3u8
+9. https://cdn.masaischool.com/sal-videos/67ff75d5824e0d7b6c4facb3/67a1de55b1df5bb4939c87c5/master.m3u8
+10. https://cdn.masaischool.com/sal-videos/67ff75d5824e0d7b6c4facb3/67a1de73c9afcbb7ca6fe93e/master.m3u8
+11. https://cdn.masaischool.com/sal-videos/67ff75d5824e0d7b6c4facb3/67a1dea1b1df5bb4939c8996/master.m3u8","[{""part"": 1, ""name"": ""Grouping of data in categories"", ""duration_sec"": 1372.817, ""url"": ""https://cdn.masaischool.com/sal-videos/67d8691b15193d6d14bd98bf/67a1dd1bc9afcbb7ca6fe18e/master.m3u8""}, {""part"": 2, ""name"": ""Grouping of data in categories"", ""duration_sec"": 485.083, ""url"": ""https://cdn.masaischool.com/sal-videos/67d8691b15193d6d14bd98bf/67a1dd3831cb129377b0ea0e/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 318.417, ""url"": ""https://cdn.masaischool.com/sal-videos/67aa2c13a8eec6909a699328/67a1e3a3c9afcbb7ca70003c/master.m3u8""}, {""part"": 4, ""name"": ""Group by with Having"", ""duration_sec"": 1495.017, ""url"": ""https://cdn.masaischool.com/sal-videos/67d8691b15193d6d14bd98bf/67a1dd63c9afcbb7ca6fe31b/master.m3u8""}, {""part"": 5, ""name"": ""Group by with Having"", ""duration_sec"": 498.617, ""url"": ""https://cdn.masaischool.com/sal-videos/67bc827597a9f4c620ad15eb/67a1dd92c9afcbb7ca6fe4a1/master.m3u8""}, {""part"": 6, ""name"": ""Ordering of data"", ""duration_sec"": 1484.683, ""url"": ""https://cdn.masaischool.com/sal-videos/67bc827597a9f4c620ad15eb/67a1ddc1b1df5bb4939c8526/master.m3u8""}, {""part"": 7, ""name"": ""Ordering of data"", ""duration_sec"": 486.483, ""url"": ""https://cdn.masaischool.com/sal-videos/67bc827597a9f4c620ad15eb/67a1dde231cb129377b0ed39/master.m3u8""}, {""part"": 8, ""name"": ""Limiting the data"", ""duration_sec"": 1084.217, ""url"": ""https://cdn.masaischool.com/sal-videos/67bc827597a9f4c620ad15eb/67a1de16b1df5bb4939c86b1/master.m3u8""}, {""part"": 9, ""name"": ""Limiting the data"", ""duration_sec"": 491.55, ""url"": ""https://cdn.masaischool.com/sal-videos/67ff75d5824e0d7b6c4facb3/67a1de55b1df5bb4939c87c5/master.m3u8""}, {""part"": 10, ""name"": ""Understanding the order of execution of a query"", ""duration_sec"": 1638.417, ""url"": ""https://cdn.masaischool.com/sal-videos/67ff75d5824e0d7b6c4facb3/67a1de73c9afcbb7ca6fe93e/master.m3u8""}, {""part"": 11, ""name"": ""Understanding the order of execution of a query"", ""duration_sec"": 908.483, ""url"": ""https://cdn.masaischool.com/sal-videos/67ff75d5824e0d7b6c4facb3/67a1dea1b1df5bb4939c8996/master.m3u8""}]",171m04s,PASS — SQL Topics/title,PASS,,matched (11 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+7,7.3,SQL — Joins: connecting relational tables,SQL,PBAU02-MU01_S02: Mastering SQL Joins: Connecting the Dots in Relational Databases,68342d6a907eb74ce68dd9de,11,"1. Recogning the need of joins while fetching data
+2. Recogning the need of joins while fetching data
+3. IA Discussion
+4. Understanding the left and right join
+5. Understanding the left and right join
+6. Understanding the inner and outer join
+7. Understanding the inner and outer join
+8. Understanding the cross and self join
+9. Understanding the cross and self join
+10. Summary
+11. Summary","1. https://cdn.masaischool.com/sal-videos/67b36e8889eb30ad694025bf/67a320ecc82041cdc3743628/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/680f5de7961de35e624ece5c/67a3210a3dde702a6fd728f0/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/680f5de7961de35e624ece5c/67a32262a3a1f8e40adad593/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/680f5de7961de35e624ece5c/67a32127a3a1f8e40adad0b5/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67fc1b04824e0d7b6c090379/67a32150c82041cdc37437dc/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/680f5de7961de35e624ece5c/67a32170c82041cdc3743873/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/680f5de7961de35e624ece5c/67a3218ac82041cdc37438c7/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/67fc1b04824e0d7b6c090379/67a321ab3dde702a6fd72b51/master.m3u8
+9. https://cdn.masaischool.com/sal-videos/67b36e8889eb30ad694025bf/67a321dd3dde702a6fd72bf4/master.m3u8
+10. https://cdn.masaischool.com/sal-videos/67d8693815193d6d14bd99bf/67a321ffa3a1f8e40adad3e1/master.m3u8
+11. https://cdn.masaischool.com/sal-videos/67d8693815193d6d14bd99bf/67a3223c3dde702a6fd72d7f/master.m3u8","[{""part"": 1, ""name"": ""Recogning the need of joins while fetching data"", ""duration_sec"": 1276.083, ""url"": ""https://cdn.masaischool.com/sal-videos/67b36e8889eb30ad694025bf/67a320ecc82041cdc3743628/master.m3u8""}, {""part"": 2, ""name"": ""Recogning the need of joins while fetching data"", ""duration_sec"": 457.283, ""url"": ""https://cdn.masaischool.com/sal-videos/680f5de7961de35e624ece5c/67a3210a3dde702a6fd728f0/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 330.35, ""url"": ""https://cdn.masaischool.com/sal-videos/680f5de7961de35e624ece5c/67a32262a3a1f8e40adad593/master.m3u8""}, {""part"": 4, ""name"": ""Understanding the left and right join"", ""duration_sec"": 1277.15, ""url"": ""https://cdn.masaischool.com/sal-videos/680f5de7961de35e624ece5c/67a32127a3a1f8e40adad0b5/master.m3u8""}, {""part"": 5, ""name"": ""Understanding the left and right join"", ""duration_sec"": 572.883, ""url"": ""https://cdn.masaischool.com/sal-videos/67fc1b04824e0d7b6c090379/67a32150c82041cdc37437dc/master.m3u8""}, {""part"": 6, ""name"": ""Understanding the inner and outer join"", ""duration_sec"": 1814.817, ""url"": ""https://cdn.masaischool.com/sal-videos/680f5de7961de35e624ece5c/67a32170c82041cdc3743873/master.m3u8""}, {""part"": 7, ""name"": ""Understanding the inner and outer join"", ""duration_sec"": 882.95, ""url"": ""https://cdn.masaischool.com/sal-videos/680f5de7961de35e624ece5c/67a3218ac82041cdc37438c7/master.m3u8""}, {""part"": 8, ""name"": ""Understanding the cross and self join"", ""duration_sec"": 1548.083, ""url"": ""https://cdn.masaischool.com/sal-videos/67fc1b04824e0d7b6c090379/67a321ab3dde702a6fd72b51/master.m3u8""}, {""part"": 9, ""name"": ""Understanding the cross and self join"", ""duration_sec"": 424.617, ""url"": ""https://cdn.masaischool.com/sal-videos/67b36e8889eb30ad694025bf/67a321dd3dde702a6fd72bf4/master.m3u8""}, {""part"": 10, ""name"": ""Summary"", ""duration_sec"": 1626.283, ""url"": ""https://cdn.masaischool.com/sal-videos/67d8693815193d6d14bd99bf/67a321ffa3a1f8e40adad3e1/master.m3u8""}, {""part"": 11, ""name"": ""Summary"", ""duration_sec"": 543.217, ""url"": ""https://cdn.masaischool.com/sal-videos/67d8693815193d6d14bd99bf/67a3223c3dde702a6fd72d7f/master.m3u8""}]",179m14s,PASS — SQL Topics/title,PASS,,matched (11 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+8,8.1,SQL — Joins and data validation,SQL,FTTEM03S2_2514_JSQ206_S03: Joins and Data Validation,67ed203c856aee18d077950d,5,"1. Scene 1
+2. Rev 1
+3. IA Discussion
+4. Scene 2
+5. Rev 2","1. https://cdn.masaischool.com/sal-videos/6863f62aa44425acb3978d26/67ed0f2b292035ad5abaa89d/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/6863f62aa44425acb3978d26/67ed0f2b0a4dc664a744aa50/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6863f62aa44425acb3978d26/67ed0f2b0a4dc664a744aa4d/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/68b567555585f2fccecc8736/67ed0f2b0a4dc664a744aa54/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/68b567555585f2fccecc8736/67ed0f2bf7cb247edee98c24/master.m3u8","[{""part"": 1, ""name"": ""Scene 1"", ""duration_sec"": 3242.633, ""url"": ""https://cdn.masaischool.com/sal-videos/6863f62aa44425acb3978d26/67ed0f2b292035ad5abaa89d/master.m3u8""}, {""part"": 2, ""name"": ""Rev 1"", ""duration_sec"": 543.3, ""url"": ""https://cdn.masaischool.com/sal-videos/6863f62aa44425acb3978d26/67ed0f2b0a4dc664a744aa50/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 206.467, ""url"": ""https://cdn.masaischool.com/sal-videos/6863f62aa44425acb3978d26/67ed0f2b0a4dc664a744aa4d/master.m3u8""}, {""part"": 4, ""name"": ""Scene 2"", ""duration_sec"": 3005.967, ""url"": ""https://cdn.masaischool.com/sal-videos/68b567555585f2fccecc8736/67ed0f2b0a4dc664a744aa54/master.m3u8""}, {""part"": 5, ""name"": ""Rev 2"", ""duration_sec"": 601.233, ""url"": ""https://cdn.masaischool.com/sal-videos/68b567555585f2fccecc8736/67ed0f2bf7cb247edee98c24/master.m3u8""}]",126m40s,PASS — SQL Topics/title,PASS,,matched (5 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+8,8.2,SQL — Subqueries,SQL,CC_BLOCK_2_S2:Subqueries,685c366fa44425acb3cc0af4,7,"1. New Scene
+2. New Scene
+3. IA Discussion
+4. New Scene
+5. Subtopic-2 Pitfall
+6. New Scene
+7. Summary","1. https://cdn.masaischool.com/sal-videos/67c6ec2c392524c6d0d63886/67abb3ea4ca1ec11d8138e3c/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/67c6ec2c392524c6d0d63886/67abb4085c22d9156063c3c9/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67d86a1915193d6d14bd9f20/67abb4c121d48360ef5cb73b/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67b41b8289eb30ad69441198/67abb42721d48360ef5cb348/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67e20a223a4f3930874fd1e5/67ac57022495ea095f971ee1/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67b41b8289eb30ad69441198/67abb46f21d48360ef5cb50a/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/67d869ab15193d6d14bd9c25/67abb4995c22d9156063c729/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 2051.55, ""url"": ""https://cdn.masaischool.com/sal-videos/67c6ec2c392524c6d0d63886/67abb3ea4ca1ec11d8138e3c/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 531.45, ""url"": ""https://cdn.masaischool.com/sal-videos/67c6ec2c392524c6d0d63886/67abb4085c22d9156063c3c9/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 340.417, ""url"": ""https://cdn.masaischool.com/sal-videos/67d86a1915193d6d14bd9f20/67abb4c121d48360ef5cb73b/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 3270.55, ""url"": ""https://cdn.masaischool.com/sal-videos/67b41b8289eb30ad69441198/67abb42721d48360ef5cb348/master.m3u8""}, {""part"": 5, ""name"": ""Subtopic-2 Pitfall"", ""duration_sec"": 733.35, ""url"": ""https://cdn.masaischool.com/sal-videos/67e20a223a4f3930874fd1e5/67ac57022495ea095f971ee1/master.m3u8""}, {""part"": 6, ""name"": ""New Scene"", ""duration_sec"": 1935.15, ""url"": ""https://cdn.masaischool.com/sal-videos/67b41b8289eb30ad69441198/67abb46f21d48360ef5cb50a/master.m3u8""}, {""part"": 7, ""name"": ""Summary"", ""duration_sec"": 189.617, ""url"": ""https://cdn.masaischool.com/sal-videos/67d869ab15193d6d14bd9c25/67abb4995c22d9156063c729/master.m3u8""}]",150m52s,PASS — SQL Topics/title,PASS,,matched (7 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+8,8.3,SQL — CTEs,SQL,CC_BLOCK_2_S2:CTE's,685d8b8ba44425acb300adee,8,"1. New Scene
+2. New Scene
+3. IA Discussion
+4. New Scene
+5. New Scene
+6. New Scene
+7. New Scene
+8. Summary","1. https://cdn.masaischool.com/sal-videos/688c40d114073865a3e639ed/67adcaee550aec9cf4109dae/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/688c40d114073865a3e639ed/67ada8feb288419593e87964/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67f2a4cccbc216dc7baacfe4/67adacadb288419593e890aa/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67f2a4cccbc216dc7baacfe4/67ada5270cc89afb1bebb742/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67f2a4cccbc216dc7baacfe4/67adabe70cc89afb1bebf63b/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/6803dfa804872b1793cecab3/67adcb16b288419593e939f3/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/6803dfa804872b1793cecab3/67adcb3e550aec9cf410a0e3/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/683d706e907eb74ce6232257/67adcb58b288419593e93c02/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 1840.6, ""url"": ""https://cdn.masaischool.com/sal-videos/688c40d114073865a3e639ed/67adcaee550aec9cf4109dae/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 626.95, ""url"": ""https://cdn.masaischool.com/sal-videos/688c40d114073865a3e639ed/67ada8feb288419593e87964/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 348.817, ""url"": ""https://cdn.masaischool.com/sal-videos/67f2a4cccbc216dc7baacfe4/67adacadb288419593e890aa/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 2626.217, ""url"": ""https://cdn.masaischool.com/sal-videos/67f2a4cccbc216dc7baacfe4/67ada5270cc89afb1bebb742/master.m3u8""}, {""part"": 5, ""name"": ""New Scene"", ""duration_sec"": 603.617, ""url"": ""https://cdn.masaischool.com/sal-videos/67f2a4cccbc216dc7baacfe4/67adabe70cc89afb1bebf63b/master.m3u8""}, {""part"": 6, ""name"": ""New Scene"", ""duration_sec"": 2370.217, ""url"": ""https://cdn.masaischool.com/sal-videos/6803dfa804872b1793cecab3/67adcb16b288419593e939f3/master.m3u8""}, {""part"": 7, ""name"": ""New Scene"", ""duration_sec"": 570.883, ""url"": ""https://cdn.masaischool.com/sal-videos/6803dfa804872b1793cecab3/67adcb3e550aec9cf410a0e3/master.m3u8""}, {""part"": 8, ""name"": ""Summary"", ""duration_sec"": 189.95, ""url"": ""https://cdn.masaischool.com/sal-videos/683d706e907eb74ce6232257/67adcb58b288419593e93c02/master.m3u8""}]",152m57s,PASS — SQL Topics/title,PASS,,matched (8 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+9,9.1,SQL — Window functions: ranking,SQL,CC_BLOCK_2_S2:Window Functions: Ranking Data in Style,685d8b8da44425acb3013e15,9,"1. Need for window functions in sql
+2. Need for window functions in sql - Pitfall
+3. Need for window functions in sql - IA Session
+4. Understanding the structure of query
+5. Understanding the structure of query - Pitfall
+6. Different types of ranking window functions
+7. Different types of ranking window functions - Pitfall
+8. Subtopic 4
+9. Summary","1. https://cdn.masaischool.com/sal-videos/680f5110961de35e624386d4/67b34bfb3224e5c4cfc9739d/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/6818b288961de35e6206a9c9/67b34c08afc06fd649da51bc/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6818b288961de35e6206a9c9/67b34c1f3224e5c4cfc97488/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/685d8b8ea44425acb30149d8/67b34c353224e5c4cfc9752b/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/685d8b8ea44425acb30149d8/67b34c42a088b0540c0eaff4/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/680f5110961de35e624386d4/67b38b13a088b0540c0fece4/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/680f5110961de35e624386d4/67b34c5ea088b0540c0eb0a7/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/68468861618c426169f2a5f1/67b34c6a3224e5c4cfc9769d/master.m3u8
+9. https://cdn.masaischool.com/sal-videos/6818b288961de35e6206a9c9/67b34c76afc06fd649da5521/master.m3u8","[{""part"": 1, ""name"": ""Need for window functions in sql"", ""duration_sec"": 1411.483, ""url"": ""https://cdn.masaischool.com/sal-videos/680f5110961de35e624386d4/67b34bfb3224e5c4cfc9739d/master.m3u8""}, {""part"": 2, ""name"": ""Need for window functions in sql - Pitfall"", ""duration_sec"": 641.683, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b288961de35e6206a9c9/67b34c08afc06fd649da51bc/master.m3u8""}, {""part"": 3, ""name"": ""Need for window functions in sql - IA Session"", ""duration_sec"": 347.883, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b288961de35e6206a9c9/67b34c1f3224e5c4cfc97488/master.m3u8""}, {""part"": 4, ""name"": ""Understanding the structure of query"", ""duration_sec"": 1771.15, ""url"": ""https://cdn.masaischool.com/sal-videos/685d8b8ea44425acb30149d8/67b34c353224e5c4cfc9752b/master.m3u8""}, {""part"": 5, ""name"": ""Understanding the structure of query - Pitfall"", ""duration_sec"": 405.35, ""url"": ""https://cdn.masaischool.com/sal-videos/685d8b8ea44425acb30149d8/67b34c42a088b0540c0eaff4/master.m3u8""}, {""part"": 6, ""name"": ""Different types of ranking window functions"", ""duration_sec"": 1701.417, ""url"": ""https://cdn.masaischool.com/sal-videos/680f5110961de35e624386d4/67b38b13a088b0540c0fece4/master.m3u8""}, {""part"": 7, ""name"": ""Different types of ranking window functions - Pitfall"", ""duration_sec"": 483.75, ""url"": ""https://cdn.masaischool.com/sal-videos/680f5110961de35e624386d4/67b34c5ea088b0540c0eb0a7/master.m3u8""}, {""part"": 8, ""name"": ""Subtopic 4"", ""duration_sec"": 1846.35, ""url"": ""https://cdn.masaischool.com/sal-videos/68468861618c426169f2a5f1/67b34c6a3224e5c4cfc9769d/master.m3u8""}, {""part"": 9, ""name"": ""Summary"", ""duration_sec"": 152.017, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b288961de35e6206a9c9/67b34c76afc06fd649da5521/master.m3u8""}]",146m01s,PASS — SQL Topics/title,PASS,,matched (9 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+9,9.2,"SQL — Window functions: LAG, LEAD, NTILE",SQL,"CC_BLOCK_2_S3:Moving Through Time: Exploring LAG, LEAD, and NTILE in SQL",68618575a44425acb346dcb6,10,"1. Moving Through Time and data 1.0
+2. Moving Through Time and data 1.0 Pitfall
+3. Moving Through Time and data 1.0 IA Session
+4. Moving Through Time and data 2.0
+5. Moving Through Time and data 2.0 Pitfall
+6. Moving Through Time and data 3.0
+7. Moving Through Time and data 3.0 Pitfall
+8. Moving Through Time and data 4.0
+9. Moving Through Time and data 4.0 Pitfall
+10. Summary","1. https://cdn.masaischool.com/sal-videos/68468861618c426169f2a926/67b4b2fc48dc35fae3b82572/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/68468861618c426169f2a926/67b4b30d48dc35fae3b825d0/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67b4fbd2fcc543f161a14c5d/67b4b32048dc35fae3b8262b/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67d86afa15193d6d14bda4b8/67b4b32bc2f97ed1fe789a89/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/687e16a314073865a3613e03/67b4b335c2f97ed1fe789acb/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/68618577a44425acb34791ec/67b4b3488f8d12020de6fe72/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/68618577a44425acb34791ec/67b4b35348dc35fae3b826fe/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/68468867618c426169f45dfd/67b4b369c2f97ed1fe789b8c/master.m3u8
+9. https://cdn.masaischool.com/sal-videos/68468867618c426169f45dfd/67b4b373c2f97ed1fe789bab/master.m3u8
+10. https://cdn.masaischool.com/sal-videos/687e16a314073865a3613e03/67b4b37ec2f97ed1fe789bd6/master.m3u8","[{""part"": 1, ""name"": ""Moving Through Time and data 1.0"", ""duration_sec"": 792.283, ""url"": ""https://cdn.masaischool.com/sal-videos/68468861618c426169f2a926/67b4b2fc48dc35fae3b82572/master.m3u8""}, {""part"": 2, ""name"": ""Moving Through Time and data 1.0 Pitfall"", ""duration_sec"": 1064.417, ""url"": ""https://cdn.masaischool.com/sal-videos/68468861618c426169f2a926/67b4b30d48dc35fae3b825d0/master.m3u8""}, {""part"": 3, ""name"": ""Moving Through Time and data 1.0 IA Session"", ""duration_sec"": 347.883, ""url"": ""https://cdn.masaischool.com/sal-videos/67b4fbd2fcc543f161a14c5d/67b4b32048dc35fae3b8262b/master.m3u8""}, {""part"": 4, ""name"": ""Moving Through Time and data 2.0"", ""duration_sec"": 1894.35, ""url"": ""https://cdn.masaischool.com/sal-videos/67d86afa15193d6d14bda4b8/67b4b32bc2f97ed1fe789a89/master.m3u8""}, {""part"": 5, ""name"": ""Moving Through Time and data 2.0 Pitfall"", ""duration_sec"": 829.15, ""url"": ""https://cdn.masaischool.com/sal-videos/687e16a314073865a3613e03/67b4b335c2f97ed1fe789acb/master.m3u8""}, {""part"": 6, ""name"": ""Moving Through Time and data 3.0"", ""duration_sec"": 1919.683, ""url"": ""https://cdn.masaischool.com/sal-videos/68618577a44425acb34791ec/67b4b3488f8d12020de6fe72/master.m3u8""}, {""part"": 7, ""name"": ""Moving Through Time and data 3.0 Pitfall"", ""duration_sec"": 540.083, ""url"": ""https://cdn.masaischool.com/sal-videos/68618577a44425acb34791ec/67b4b35348dc35fae3b826fe/master.m3u8""}, {""part"": 8, ""name"": ""Moving Through Time and data 4.0"", ""duration_sec"": 1127.417, ""url"": ""https://cdn.masaischool.com/sal-videos/68468867618c426169f45dfd/67b4b369c2f97ed1fe789b8c/master.m3u8""}, {""part"": 9, ""name"": ""Moving Through Time and data 4.0 Pitfall"", ""duration_sec"": 581.217, ""url"": ""https://cdn.masaischool.com/sal-videos/68468867618c426169f45dfd/67b4b373c2f97ed1fe789bab/master.m3u8""}, {""part"": 10, ""name"": ""Summary"", ""duration_sec"": 170.55, ""url"": ""https://cdn.masaischool.com/sal-videos/687e16a314073865a3613e03/67b4b37ec2f97ed1fe789bd6/master.m3u8""}]",154m27s,PASS — SQL Topics/title,PASS,,matched (10 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+9,9.3,SQL — Pivoting with CASE WHEN,SQL,CC_BLOCK_2_S3:Turning Data on Its Head: Pivoting with CASE WHEN in SQL,6862b730a44425acb3764562,8,"1. Understanding the Need for CASE WHEN
+2. Understanding the Need for CASE WHEN
+3. Understanding the Need for CASE WHEN
+4. Understanding the Syntax of CASE WHEN
+5. Understanding the Syntax of CASE WHEN
+6. Understanding Pivoting with CASE WHEN
+7. Understanding Pivoting with CASE WHEN
+8. Summary","1. https://cdn.masaischool.com/sal-videos/67c04bce6b5ef7003eb63f2d/67b5dd7548dc35fae3be98ad/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/68623927a44425acb353c716/67b5dd848f8d12020ded77a2/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/68623927a44425acb353c716/67b5de368f8d12020ded7cbf/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/68623927a44425acb353c716/67b5de41c2f97ed1fe7f135c/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/6803dfac04872b1793cef18f/67b5de4e8f8d12020ded7d40/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/6803dfac04872b1793cef18f/67b5de5848dc35fae3be9e6e/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/6803dfac04872b1793cef18f/67b5de628f8d12020ded7dbc/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/6803dfac04872b1793cef18f/67b5de6b48dc35fae3be9ed7/master.m3u8","[{""part"": 1, ""name"": ""Understanding the Need for CASE WHEN"", ""duration_sec"": 1287.15, ""url"": ""https://cdn.masaischool.com/sal-videos/67c04bce6b5ef7003eb63f2d/67b5dd7548dc35fae3be98ad/master.m3u8""}, {""part"": 2, ""name"": ""Understanding the Need for CASE WHEN"", ""duration_sec"": 506.35, ""url"": ""https://cdn.masaischool.com/sal-videos/68623927a44425acb353c716/67b5dd848f8d12020ded77a2/master.m3u8""}, {""part"": 3, ""name"": ""Understanding the Need for CASE WHEN"", ""duration_sec"": 347.883, ""url"": ""https://cdn.masaischool.com/sal-videos/68623927a44425acb353c716/67b5de368f8d12020ded7cbf/master.m3u8""}, {""part"": 4, ""name"": ""Understanding the Syntax of CASE WHEN"", ""duration_sec"": 945.417, ""url"": ""https://cdn.masaischool.com/sal-videos/68623927a44425acb353c716/67b5de41c2f97ed1fe7f135c/master.m3u8""}, {""part"": 5, ""name"": ""Understanding the Syntax of CASE WHEN"", ""duration_sec"": 770.083, ""url"": ""https://cdn.masaischool.com/sal-videos/6803dfac04872b1793cef18f/67b5de4e8f8d12020ded7d40/master.m3u8""}, {""part"": 6, ""name"": ""Understanding Pivoting with CASE WHEN"", ""duration_sec"": 1195.217, ""url"": ""https://cdn.masaischool.com/sal-videos/6803dfac04872b1793cef18f/67b5de5848dc35fae3be9e6e/master.m3u8""}, {""part"": 7, ""name"": ""Understanding Pivoting with CASE WHEN"", ""duration_sec"": 605.417, ""url"": ""https://cdn.masaischool.com/sal-videos/6803dfac04872b1793cef18f/67b5de628f8d12020ded7dbc/master.m3u8""}, {""part"": 8, ""name"": ""Summary"", ""duration_sec"": 160.55, ""url"": ""https://cdn.masaischool.com/sal-videos/6803dfac04872b1793cef18f/67b5de6b48dc35fae3be9ed7/master.m3u8""}]",96m58s,PASS — SQL Topics/title,PASS,WARNING: Same CDN video set as the other Excel session (VLOOKUP). Verify content before use; dump may have mislinked Pivot vs VLookup.,matched (8 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+10,10.1,SQL — MySQL in action: CRUD,SQL,"CC_BLOCK_2_S2:MySQL in Action: Creating, Reading, Updating, and Deleting Data",68585126a44425acb341d9bf,10,"1. Recognition of CRUD in REAL life
+2. Recognition of CRUD in REAL life - Rev
+3. IA Discussion
+4. Need of tabular data and multiple tables
+5. Need of tabular data and multiple tables
+6. Understanding database relationship and structure
+7. Understanding database relationship and structure - Rev
+8. Hands on MySQL workbench -1
+9. Hands on MySQL workbench -2
+10. Hands on MySQL workbench -2 - Rev","1. https://cdn.masaischool.com/sal-videos/67b36d1d89eb30ad69401d77/679a2d578f96ab411431cf9e/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/67b36d1d89eb30ad69401d77/679a2e07d9e47ae5876a6909/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67bdceae97a9f4c620c0c9b8/679a2e78d9e47ae5876a6c29/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67bdceae97a9f4c620c0c9b8/679a2d738f96ab411431d040/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67a757437f67c4ed3da515b9/679a324cd9e47ae5876a8e08/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67f2a4c9cbc216dc7baa7f03/679a2d938f96ab411431d12b/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/67c6eae3392524c6d0d5fadf/679a32718f96ab411431fb14/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/67c6eae3392524c6d0d5fadf/679a2db3590dd63677c5577b/master.m3u8
+9. https://cdn.masaischool.com/sal-videos/6822fad1a6e2ef55336e450b/679a2de1590dd63677c55898/master.m3u8
+10. https://cdn.masaischool.com/sal-videos/6822fad1a6e2ef55336e450b/679a2e4bd9e47ae5876a6af2/master.m3u8","[{""part"": 1, ""name"": ""Recognition of CRUD in REAL life"", ""duration_sec"": 1040.033, ""url"": ""https://cdn.masaischool.com/sal-videos/67b36d1d89eb30ad69401d77/679a2d578f96ab411431cf9e/master.m3u8""}, {""part"": 2, ""name"": ""Recognition of CRUD in REAL life - Rev"", ""duration_sec"": 422.99700000000024, ""url"": ""https://cdn.masaischool.com/sal-videos/67b36d1d89eb30ad69401d77/679a2e07d9e47ae5876a6909/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 302.717, ""url"": ""https://cdn.masaischool.com/sal-videos/67bdceae97a9f4c620c0c9b8/679a2e78d9e47ae5876a6c29/master.m3u8""}, {""part"": 4, ""name"": ""Need of tabular data and multiple tables"", ""duration_sec"": 1076.067, ""url"": ""https://cdn.masaischool.com/sal-videos/67bdceae97a9f4c620c0c9b8/679a2d738f96ab411431d040/master.m3u8""}, {""part"": 5, ""name"": ""Need of tabular data and multiple tables"", ""duration_sec"": 974.0380000000021, ""url"": ""https://cdn.masaischool.com/sal-videos/67a757437f67c4ed3da515b9/679a324cd9e47ae5876a8e08/master.m3u8""}, {""part"": 6, ""name"": ""Understanding database relationship and structure"", ""duration_sec"": 1630.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67f2a4c9cbc216dc7baa7f03/679a2d938f96ab411431d12b/master.m3u8""}, {""part"": 7, ""name"": ""Understanding database relationship and structure - Rev"", ""duration_sec"": 359.49800000000005, ""url"": ""https://cdn.masaischool.com/sal-videos/67c6eae3392524c6d0d5fadf/679a32718f96ab411431fb14/master.m3u8""}, {""part"": 8, ""name"": ""Hands on MySQL workbench -1"", ""duration_sec"": 1129.8180000000025, ""url"": ""https://cdn.masaischool.com/sal-videos/67c6eae3392524c6d0d5fadf/679a2db3590dd63677c5577b/master.m3u8""}, {""part"": 9, ""name"": ""Hands on MySQL workbench -2"", ""duration_sec"": 1054.267, ""url"": ""https://cdn.masaischool.com/sal-videos/6822fad1a6e2ef55336e450b/679a2de1590dd63677c55898/master.m3u8""}, {""part"": 10, ""name"": ""Hands on MySQL workbench -2 - Rev"", ""duration_sec"": 310.767, ""url"": ""https://cdn.masaischool.com/sal-videos/6822fad1a6e2ef55336e450b/679a2e4bd9e47ae5876a6af2/master.m3u8""}]",138m20s,PASS — SQL Topics/title,PASS,,matched (10 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+10,10.2,SQL — Database normalization essentials,SQL,PTDSM02S5_2509_SQL_S02: The Art of Data Organization: Database Normalization Explained,67c03d818a51d4611b1150c7,9,"1. Table Constraints
+2. Table Constraints - Pitfall
+3. IA Discussion
+4. Why Do We Need Normalization?
+5. Why Do We Need Normalization? - Pitfall
+6. Types of normalization
+7. Types of normalization - Pitfall
+8. Reinforcing the Normalization
+9. Summary","1. https://cdn.masaischool.com/sal-videos/67e20bb43a4f3930874ffe80/67bdb9176a057bd76554cbe4/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/67e20bb43a4f3930874ffe80/67c008abec1f99cb1ce8dcf9/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67e20bb43a4f3930874ffe80/67c00d6fec1f99cb1ce904e7/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67eaca4c3a4f393087231527/67c00915db588480169db127/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67eaca4c3a4f393087231527/67c009d0ec1f99cb1ce8e528/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67eaca4c3a4f393087231527/67c00a86db588480169dbbe6/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/67eaca4c3a4f393087231527/67c00bf8db588480169dc748/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/67fc1b0d824e0d7b6c098004/67c00c0a3e62e53909913bb9/master.m3u8
+9. https://cdn.masaischool.com/sal-videos/67fc1b0d824e0d7b6c098004/67c00d653e62e539099148e9/master.m3u8","[{""part"": 1, ""name"": ""Table Constraints"", ""duration_sec"": 1426.617, ""url"": ""https://cdn.masaischool.com/sal-videos/67e20bb43a4f3930874ffe80/67bdb9176a057bd76554cbe4/master.m3u8""}, {""part"": 2, ""name"": ""Table Constraints - Pitfall"", ""duration_sec"": 531.217, ""url"": ""https://cdn.masaischool.com/sal-videos/67e20bb43a4f3930874ffe80/67c008abec1f99cb1ce8dcf9/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 347.883, ""url"": ""https://cdn.masaischool.com/sal-videos/67e20bb43a4f3930874ffe80/67c00d6fec1f99cb1ce904e7/master.m3u8""}, {""part"": 4, ""name"": ""Why Do We Need Normalization?"", ""duration_sec"": 1526.417, ""url"": ""https://cdn.masaischool.com/sal-videos/67eaca4c3a4f393087231527/67c00915db588480169db127/master.m3u8""}, {""part"": 5, ""name"": ""Why Do We Need Normalization? - Pitfall"", ""duration_sec"": 398.283, ""url"": ""https://cdn.masaischool.com/sal-videos/67eaca4c3a4f393087231527/67c009d0ec1f99cb1ce8e528/master.m3u8""}, {""part"": 6, ""name"": ""Types of normalization"", ""duration_sec"": 1302.15, ""url"": ""https://cdn.masaischool.com/sal-videos/67eaca4c3a4f393087231527/67c00a86db588480169dbbe6/master.m3u8""}, {""part"": 7, ""name"": ""Types of normalization - Pitfall"", ""duration_sec"": 425.617, ""url"": ""https://cdn.masaischool.com/sal-videos/67eaca4c3a4f393087231527/67c00bf8db588480169dc748/master.m3u8""}, {""part"": 8, ""name"": ""Reinforcing the Normalization"", ""duration_sec"": 424.683, ""url"": ""https://cdn.masaischool.com/sal-videos/67fc1b0d824e0d7b6c098004/67c00c0a3e62e53909913bb9/master.m3u8""}, {""part"": 9, ""name"": ""Summary"", ""duration_sec"": 270.617, ""url"": ""https://cdn.masaischool.com/sal-videos/67fc1b0d824e0d7b6c098004/67c00d653e62e539099148e9/master.m3u8""}]",110m53s,PASS — SQL Topics/title,PASS,,matched (9 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+10,10.3,SQL — ER diagrams & one-to-one joins,SQL,PTDSM02S5_2509_SQL_S03: The Blueprint of Databases: ER Diagrams and One-to-One Joins,67c043c91a9adeef902017f9,8,"1. How will you understand a company’s database
+2. How will you understand a company’s database - Pitfall
+3. IA Discussion
+4. Understanding Relationships in an ER Diagram
+5. Understanding Relationships in an ER Diagram - Pitfall
+6. Creating a database with ER diagram
+7. Creating a database with ER diagram - Pitfall
+8. Summary","1. https://cdn.masaischool.com/sal-videos/6822fad7a6e2ef55336eed22/67c01a12db588480169e7429/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/6822fad7a6e2ef55336eed22/67c01a18ec1f99cb1ce9a3fb/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6822fad7a6e2ef55336eed22/67c01f85db588480169ea69e/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67e20b973a4f3930874ffda5/67c01a733e62e5390991ea8c/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67e20b973a4f3930874ffda5/67c01a9eec1f99cb1ce9a7c9/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67e20b973a4f3930874ffda5/67c01e94db588480169e9d44/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/67e20b973a4f3930874ffda5/67c01e99ec1f99cb1ce9cd1c/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/6822fad7a6e2ef55336eed22/67c01f703e62e5390992191c/master.m3u8","[{""part"": 1, ""name"": ""How will you understand a company’s database"", ""duration_sec"": 1281.55, ""url"": ""https://cdn.masaischool.com/sal-videos/6822fad7a6e2ef55336eed22/67c01a12db588480169e7429/master.m3u8""}, {""part"": 2, ""name"": ""How will you understand a company’s database - Pitfall"", ""duration_sec"": 382.55, ""url"": ""https://cdn.masaischool.com/sal-videos/6822fad7a6e2ef55336eed22/67c01a18ec1f99cb1ce9a3fb/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 347.883, ""url"": ""https://cdn.masaischool.com/sal-videos/6822fad7a6e2ef55336eed22/67c01f85db588480169ea69e/master.m3u8""}, {""part"": 4, ""name"": ""Understanding Relationships in an ER Diagram"", ""duration_sec"": 1315.217, ""url"": ""https://cdn.masaischool.com/sal-videos/67e20b973a4f3930874ffda5/67c01a733e62e5390991ea8c/master.m3u8""}, {""part"": 5, ""name"": ""Understanding Relationships in an ER Diagram - Pitfall"", ""duration_sec"": 449.75, ""url"": ""https://cdn.masaischool.com/sal-videos/67e20b973a4f3930874ffda5/67c01a9eec1f99cb1ce9a7c9/master.m3u8""}, {""part"": 6, ""name"": ""Creating a database with ER diagram"", ""duration_sec"": 1363.283, ""url"": ""https://cdn.masaischool.com/sal-videos/67e20b973a4f3930874ffda5/67c01e94db588480169e9d44/master.m3u8""}, {""part"": 7, ""name"": ""Creating a database with ER diagram - Pitfall"", ""duration_sec"": 609.55, ""url"": ""https://cdn.masaischool.com/sal-videos/67e20b973a4f3930874ffda5/67c01e99ec1f99cb1ce9cd1c/master.m3u8""}, {""part"": 8, ""name"": ""Summary"", ""duration_sec"": 201.017, ""url"": ""https://cdn.masaischool.com/sal-videos/6822fad7a6e2ef55336eed22/67c01f703e62e5390992191c/master.m3u8""}]",99m11s,PASS — SQL Topics/title,PASS,,matched (8 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+11,11.1,Excel — Functions in Excel,Excel,CCP_BLOCK_1_S04: Functions in Excel,6845ea7d618c426169ee2dd8,7,"1. Scene 1
+2. rev 1
+3. IA Discussion
+4. Scene 2
+5. rev 2
+6. Scene 3
+7. rev 3","1. https://cdn.masaischool.com/sal-videos/6818b299961de35e620c3a88/680a4d50bfddaecdcbce0420/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/680f511f961de35e6247be16/680a4ee0ea5df7672d6ef4d0/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6818b298961de35e620be7e0/680a50a58e3471afc1798f3e/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/6818b298961de35e620be7e0/680a4d79bfddaecdcbce0551/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/6818b298961de35e620be7e0/680a4ef7ea5df7672d6ef530/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/68998a3deb3c263fe60f437d/680a4d91bfddaecdcbce0635/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/68d271ab2a1d2494e90f0354/680a4f09bfddaecdcbce11ca/master.m3u8","[{""part"": 1, ""name"": ""Scene 1"", ""duration_sec"": 2842.2099999999828, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b299961de35e620c3a88/680a4d50bfddaecdcbce0420/master.m3u8""}, {""part"": 2, ""name"": ""rev 1"", ""duration_sec"": 653.9930000000007, ""url"": ""https://cdn.masaischool.com/sal-videos/680f511f961de35e6247be16/680a4ee0ea5df7672d6ef4d0/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 401.9330000000002, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b298961de35e620be7e0/680a50a58e3471afc1798f3e/master.m3u8""}, {""part"": 4, ""name"": ""Scene 2"", ""duration_sec"": 1833.967, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b298961de35e620be7e0/680a4d79bfddaecdcbce0551/master.m3u8""}, {""part"": 5, ""name"": ""rev 2"", ""duration_sec"": 722.0620000000009, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b298961de35e620be7e0/680a4ef7ea5df7672d6ef530/master.m3u8""}, {""part"": 6, ""name"": ""Scene 3"", ""duration_sec"": 1591.160999999998, ""url"": ""https://cdn.masaischool.com/sal-videos/68998a3deb3c263fe60f437d/680a4d91bfddaecdcbce0635/master.m3u8""}, {""part"": 7, ""name"": ""rev 3"", ""duration_sec"": 1160.4310000000005, ""url"": ""https://cdn.masaischool.com/sal-videos/68d271ab2a1d2494e90f0354/680a4f09bfddaecdcbce11ca/master.m3u8""}]",153m26s,PASS — Excel Topics/title,PASS,,matched (7 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+11,11.2,Excel — Functions practice / alternate cohort recording,Excel,CC_BLOCK_2_S4:Functions in Excel,686acbf75b865b2f6c89c854,7,"1. Scene 1
+2. rev 1
+3. IA Discussion
+4. Scene 2
+5. rev 2
+6. Scene 3
+7. rev 3","1. https://cdn.masaischool.com/sal-videos/6818b299961de35e620c3a88/680a4d50bfddaecdcbce0420/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/680f511f961de35e6247be16/680a4ee0ea5df7672d6ef4d0/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6818b298961de35e620be7e0/680a50a58e3471afc1798f3e/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/6818b298961de35e620be7e0/680a4d79bfddaecdcbce0551/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/6818b298961de35e620be7e0/680a4ef7ea5df7672d6ef530/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/68998a3deb3c263fe60f437d/680a4d91bfddaecdcbce0635/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/68d271ab2a1d2494e90f0354/680a4f09bfddaecdcbce11ca/master.m3u8","[{""part"": 1, ""name"": ""Scene 1"", ""duration_sec"": 2842.2099999999828, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b299961de35e620c3a88/680a4d50bfddaecdcbce0420/master.m3u8""}, {""part"": 2, ""name"": ""rev 1"", ""duration_sec"": 653.9930000000007, ""url"": ""https://cdn.masaischool.com/sal-videos/680f511f961de35e6247be16/680a4ee0ea5df7672d6ef4d0/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 401.9330000000002, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b298961de35e620be7e0/680a50a58e3471afc1798f3e/master.m3u8""}, {""part"": 4, ""name"": ""Scene 2"", ""duration_sec"": 1833.961999999996, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b298961de35e620be7e0/680a4d79bfddaecdcbce0551/master.m3u8""}, {""part"": 5, ""name"": ""rev 2"", ""duration_sec"": 722.0620000000009, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b298961de35e620be7e0/680a4ef7ea5df7672d6ef530/master.m3u8""}, {""part"": 6, ""name"": ""Scene 3"", ""duration_sec"": 1591.160999999998, ""url"": ""https://cdn.masaischool.com/sal-videos/68998a3deb3c263fe60f437d/680a4d91bfddaecdcbce0635/master.m3u8""}, {""part"": 7, ""name"": ""rev 3"", ""duration_sec"": 1160.4310000000005, ""url"": ""https://cdn.masaischool.com/sal-videos/68d271ab2a1d2494e90f0354/680a4f09bfddaecdcbce11ca/master.m3u8""}]",153m26s,PASS — Excel Topics/title,PASS,,matched (7 parts) · content-fit OK · Second pass / alternate recording for fluency,Students · PSE Focus · 3 sessions/week · 15 weeks
+11,11.3,"Excel — VLOOKUP, XLOOKUP & HLOOKUP",Excel,"cc_b4_s2 : VLookup, XLookup & HLookup",68b7b86f5585f2fcceed0032,6,"1. Scene 1
+2. Scene 2
+3. IA Scene
+4. Scene 1
+5. Scene 2
+6. Scene 1","1. https://cdn.masaischool.com/sal-videos/68623937a44425acb358e0f4/6811df9735a0578c601a88bd/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/68ecb1ae39def7aec89e0cdd/6811dfa98a78fc5b701529f9/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/68ecb1ae39def7aec89e0cdd/6811dfb635a0578c601a8a39/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/68ecb1ae39def7aec89e0cdd/6811dfc29af7de0c15c26332/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/689a47d75fcb3af5972dc499/6811dfcc8a78fc5b70152b79/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/689a47d75fcb3af5972dc499/6811dfdb8a78fc5b70152c31/master.m3u8","[{""part"": 1, ""name"": ""Scene 1"", ""duration_sec"": 1822.1, ""url"": ""https://cdn.masaischool.com/sal-videos/68623937a44425acb358e0f4/6811df9735a0578c601a88bd/master.m3u8""}, {""part"": 2, ""name"": ""Scene 2"", ""duration_sec"": 824.967, ""url"": ""https://cdn.masaischool.com/sal-videos/68ecb1ae39def7aec89e0cdd/6811dfa98a78fc5b701529f9/master.m3u8""}, {""part"": 3, ""name"": ""IA Scene"", ""duration_sec"": 375.533, ""url"": ""https://cdn.masaischool.com/sal-videos/68ecb1ae39def7aec89e0cdd/6811dfb635a0578c601a8a39/master.m3u8""}, {""part"": 4, ""name"": ""Scene 1"", ""duration_sec"": 2369.1, ""url"": ""https://cdn.masaischool.com/sal-videos/68ecb1ae39def7aec89e0cdd/6811dfc29af7de0c15c26332/master.m3u8""}, {""part"": 5, ""name"": ""Scene 2"", ""duration_sec"": 1077.6, ""url"": ""https://cdn.masaischool.com/sal-videos/689a47d75fcb3af5972dc499/6811dfcc8a78fc5b70152b79/master.m3u8""}, {""part"": 6, ""name"": ""Scene 1"", ""duration_sec"": 1428.467, ""url"": ""https://cdn.masaischool.com/sal-videos/689a47d75fcb3af5972dc499/6811dfdb8a78fc5b70152c31/master.m3u8""}]",131m38s,PASS — Excel Topics/title,PASS,WARNING: Same CDN video set as the other Excel session (Pivot). Verify content before use; dump may have mislinked Pivot vs VLookup.,matched (6 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+12,12.1,Excel — Pivot tables and charts,Excel,CCP_BLOCK_1_S04: Pivot tables and charts,684738c2618c426169074cba,6,"1. Scene 1
+2. Scene 2
+3. IA Scene
+4. Scene 1
+5. Scene 2
+6. Scene 1","1. https://cdn.masaischool.com/sal-videos/68623937a44425acb358e0f4/6811df9735a0578c601a88bd/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/68ecb1ae39def7aec89e0cdd/6811dfa98a78fc5b701529f9/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/68ecb1ae39def7aec89e0cdd/6811dfb635a0578c601a8a39/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/68ecb1ae39def7aec89e0cdd/6811dfc29af7de0c15c26332/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/689a47d75fcb3af5972dc499/6811dfcc8a78fc5b70152b79/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/689a47d75fcb3af5972dc499/6811dfdb8a78fc5b70152c31/master.m3u8","[{""part"": 1, ""name"": ""Scene 1"", ""duration_sec"": 1822.1, ""url"": ""https://cdn.masaischool.com/sal-videos/68623937a44425acb358e0f4/6811df9735a0578c601a88bd/master.m3u8""}, {""part"": 2, ""name"": ""Scene 2"", ""duration_sec"": 824.967, ""url"": ""https://cdn.masaischool.com/sal-videos/68ecb1ae39def7aec89e0cdd/6811dfa98a78fc5b701529f9/master.m3u8""}, {""part"": 3, ""name"": ""IA Scene"", ""duration_sec"": 375.533, ""url"": ""https://cdn.masaischool.com/sal-videos/68ecb1ae39def7aec89e0cdd/6811dfb635a0578c601a8a39/master.m3u8""}, {""part"": 4, ""name"": ""Scene 1"", ""duration_sec"": 2369.1, ""url"": ""https://cdn.masaischool.com/sal-videos/68ecb1ae39def7aec89e0cdd/6811dfc29af7de0c15c26332/master.m3u8""}, {""part"": 5, ""name"": ""Scene 2"", ""duration_sec"": 1077.6, ""url"": ""https://cdn.masaischool.com/sal-videos/689a47d75fcb3af5972dc499/6811dfcc8a78fc5b70152b79/master.m3u8""}, {""part"": 6, ""name"": ""Scene 1"", ""duration_sec"": 1428.467, ""url"": ""https://cdn.masaischool.com/sal-videos/689a47d75fcb3af5972dc499/6811dfdb8a78fc5b70152c31/master.m3u8""}]",131m38s,PASS — Excel Topics/title,PASS,WARNING: Same CDN video set as the other Excel session (VLOOKUP). Verify content before use; dump may have mislinked Pivot vs VLookup.,matched (6 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+12,12.2,Excel — Visualizing data with dashboards,Excel,CC_BLOCK_2_S4:Visualizing Data with Dashboards,687002d25b865b2f6c1f7e7f,6,"1. Scene 1
+2. Scene 2
+3. Scene IA
+4. Scene 1
+5. Scene 2
+6. Scene 1","1. https://cdn.masaischool.com/sal-videos/691acf0502d7d50d9dc6187b/68380c89f98f4865d56477ca/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fa7f2/68380c9573474c2687caf418/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/68da528d2a1d2494e94183da/68380ca06e1554aada431f51/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/68da528d2a1d2494e94183da/68380cabf98f4865d56478d5/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/68da528d2a1d2494e94183da/68380cba6e1554aada43205a/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/684fcf7adceadf1bb4a0956d/68380cc473474c2687caf57b/master.m3u8","[{""part"": 1, ""name"": ""Scene 1"", ""duration_sec"": 2322.5, ""url"": ""https://cdn.masaischool.com/sal-videos/691acf0502d7d50d9dc6187b/68380c89f98f4865d56477ca/master.m3u8""}, {""part"": 2, ""name"": ""Scene 2"", ""duration_sec"": 765.933, ""url"": ""https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fa7f2/68380c9573474c2687caf418/master.m3u8""}, {""part"": 3, ""name"": ""Scene IA"", ""duration_sec"": 287.867, ""url"": ""https://cdn.masaischool.com/sal-videos/68da528d2a1d2494e94183da/68380ca06e1554aada431f51/master.m3u8""}, {""part"": 4, ""name"": ""Scene 1"", ""duration_sec"": 2312.0, ""url"": ""https://cdn.masaischool.com/sal-videos/68da528d2a1d2494e94183da/68380cabf98f4865d56478d5/master.m3u8""}, {""part"": 5, ""name"": ""Scene 2"", ""duration_sec"": 752.3, ""url"": ""https://cdn.masaischool.com/sal-videos/68da528d2a1d2494e94183da/68380cba6e1554aada43205a/master.m3u8""}, {""part"": 6, ""name"": ""Scene 1"", ""duration_sec"": 1473.6, ""url"": ""https://cdn.masaischool.com/sal-videos/684fcf7adceadf1bb4a0956d/68380cc473474c2687caf57b/master.m3u8""}]",131m54s,PASS — Excel Topics/title,PASS,,matched (6 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+12,12.3,Excel — End-to-end dashboard,Excel,CCP_Block_1_S04: End to End Dashboard,684b121bdceadf1bb4805464,5,"1. New Scene
+2. New Scene
+3. New Scene
+4. New Scene
+5. New Scene","1. https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fc735/68394f306fcb7db8d6cda245/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fc735/68394f47c1c930f556659773/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/684b121bdceadf1bb4805464/68394f55c1c930f5566597de/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/68da528d2a1d2494e941a323/68394f62c1c930f556659824/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/691acf0502d7d50d9dc637c4/68394f6f71151e6b58514317/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 1995.733, ""url"": ""https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fc735/68394f306fcb7db8d6cda245/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 779.233, ""url"": ""https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fc735/68394f47c1c930f556659773/master.m3u8""}, {""part"": 3, ""name"": ""New Scene"", ""duration_sec"": 338.267, ""url"": ""https://cdn.masaischool.com/sal-videos/684b121bdceadf1bb4805464/68394f55c1c930f5566597de/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 1620.2, ""url"": ""https://cdn.masaischool.com/sal-videos/68da528d2a1d2494e941a323/68394f62c1c930f556659824/master.m3u8""}, {""part"": 5, ""name"": ""New Scene"", ""duration_sec"": 1332.967, ""url"": ""https://cdn.masaischool.com/sal-videos/691acf0502d7d50d9dc637c4/68394f6f71151e6b58514317/master.m3u8""}]",101m06s,PASS — Excel Topics/title,PASS,,matched (5 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+13,13.1,Excel — Dashboarding practice,Excel,PTDSM04S2_2518_EXL105_S04: DashBoarding,68151a2c961de35e62e18760,6,"1. Scene 1
+2. Scene 2
+3. Scene IA
+4. Scene 1
+5. Scene 2
+6. Scene 1","1. https://cdn.masaischool.com/sal-videos/68342d6f907eb74ce68f8930/6815140532010edd9601baa9/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/68342d6f907eb74ce68f8930/6815147f32010edd9601bd26/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6822fae7a6e2ef5533754ed6/68151489e63aea8598549817/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/68342d6f907eb74ce68f8930/68151495e63aea8598549847/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/6818b29e961de35e620ded29/681514a0c4342f3361539e69/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/6818b29e961de35e620ded29/681514acc4342f3361539ea2/master.m3u8","[{""part"": 1, ""name"": ""Scene 1"", ""duration_sec"": 2785.7419999999856, ""url"": ""https://cdn.masaischool.com/sal-videos/68342d6f907eb74ce68f8930/6815140532010edd9601baa9/master.m3u8""}, {""part"": 2, ""name"": ""Scene 2"", ""duration_sec"": 1038.7000000000019, ""url"": ""https://cdn.masaischool.com/sal-videos/68342d6f907eb74ce68f8930/6815147f32010edd9601bd26/master.m3u8""}, {""part"": 3, ""name"": ""Scene IA"", ""duration_sec"": 334.6000000000001, ""url"": ""https://cdn.masaischool.com/sal-videos/6822fae7a6e2ef5533754ed6/68151489e63aea8598549817/master.m3u8""}, {""part"": 4, ""name"": ""Scene 1"", ""duration_sec"": 2000.7579999999944, ""url"": ""https://cdn.masaischool.com/sal-videos/68342d6f907eb74ce68f8930/68151495e63aea8598549847/master.m3u8""}, {""part"": 5, ""name"": ""Scene 2"", ""duration_sec"": 916.5270000000017, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b29e961de35e620ded29/681514a0c4342f3361539e69/master.m3u8""}, {""part"": 6, ""name"": ""Scene 1"", ""duration_sec"": 1121.6260000000013, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b29e961de35e620ded29/681514acc4342f3361539ea2/master.m3u8""}]",136m38s,PASS — Excel Topics/title,PASS,,matched (6 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+13,13.2,Excel — End-to-end dashboard (alternate),Excel,CC_BLOCK_2_S4:End to End Dashboard,687002d35b865b2f6c1fc735,5,"1. New Scene
+2. New Scene
+3. New Scene
+4. New Scene
+5. New Scene","1. https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fc735/68394f306fcb7db8d6cda245/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fc735/68394f47c1c930f556659773/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/684b121bdceadf1bb4805464/68394f55c1c930f5566597de/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/68da528d2a1d2494e941a323/68394f62c1c930f556659824/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/691acf0502d7d50d9dc637c4/68394f6f71151e6b58514317/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 1995.733, ""url"": ""https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fc735/68394f306fcb7db8d6cda245/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 779.233, ""url"": ""https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fc735/68394f47c1c930f556659773/master.m3u8""}, {""part"": 3, ""name"": ""New Scene"", ""duration_sec"": 338.267, ""url"": ""https://cdn.masaischool.com/sal-videos/684b121bdceadf1bb4805464/68394f55c1c930f5566597de/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 1620.2, ""url"": ""https://cdn.masaischool.com/sal-videos/68da528d2a1d2494e941a323/68394f62c1c930f556659824/master.m3u8""}, {""part"": 5, ""name"": ""New Scene"", ""duration_sec"": 1332.967, ""url"": ""https://cdn.masaischool.com/sal-videos/691acf0502d7d50d9dc637c4/68394f6f71151e6b58514317/master.m3u8""}]",101m06s,PASS — Excel Topics/title,PASS,,matched (5 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+13,13.3,Excel — Prep session,Excel,DS-Excel-Prep Session,6787c5620408f8242b7f0299,5,"1. New Scene
+2. New Scene
+3. New Scene
+4. New Scene
+5. New Scene","1. https://cdn.masaischool.com/sal-videos/6787c5620408f8242b7f0299/6787c1465bdf3d7d16d23033/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/6787c5620408f8242b7f0299/6787c45b5bdf3d7d16d241dd/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6787c5620408f8242b7f0299/6787c1245bdf3d7d16d22f0d/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/6787c5620408f8242b7f0299/6787b9bd5bdf3d7d16d1fe3f/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/6787c5620408f8242b7f0299/6787c3555bdf3d7d16d23d5e/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 1822.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6787c5620408f8242b7f0299/6787c1465bdf3d7d16d23033/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 345.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6787c5620408f8242b7f0299/6787c45b5bdf3d7d16d241dd/master.m3u8""}, {""part"": 3, ""name"": ""New Scene"", ""duration_sec"": 1054.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6787c5620408f8242b7f0299/6787c1245bdf3d7d16d22f0d/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 421.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6787c5620408f8242b7f0299/6787b9bd5bdf3d7d16d1fe3f/master.m3u8""}, {""part"": 5, ""name"": ""New Scene"", ""duration_sec"": 404.0, ""url"": ""https://cdn.masaischool.com/sal-videos/6787c5620408f8242b7f0299/6787c3555bdf3d7d16d23d5e/master.m3u8""}]",67m26s,PASS — Excel Topics/title,PASS,,matched (5 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+14,14.1,Excel — Revision,Excel,Excel_Revision,6790da49b7a5f00a0a56b5de,7,"1. Fundamentals of Excel
+2. Fundamentals of Excel - Rev
+3. IA Discussion
+4. Advanced Data Handling
+5. Advanced Data Handling - Rev
+6. Visualization in Excel
+7. Visualization in Excel - Rev","1. https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/679092e3d696a7af3b29be8c/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/67909274d696a7af3b29bb19/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/6790d794d696a7af3b2bc77e/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/679097de062dc45cb277a969/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/679098762b98d1337549d1c7/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/67909879062dc45cb277adeb/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/6790989f2b98d1337549d347/master.m3u8","[{""part"": 1, ""name"": ""Fundamentals of Excel"", ""duration_sec"": 1351.883, ""url"": ""https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/679092e3d696a7af3b29be8c/master.m3u8""}, {""part"": 2, ""name"": ""Fundamentals of Excel - Rev"", ""duration_sec"": 612.95, ""url"": ""https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/67909274d696a7af3b29bb19/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 718.216, ""url"": ""https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/6790d794d696a7af3b2bc77e/master.m3u8""}, {""part"": 4, ""name"": ""Advanced Data Handling"", ""duration_sec"": 1373.35, ""url"": ""https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/679097de062dc45cb277a969/master.m3u8""}, {""part"": 5, ""name"": ""Advanced Data Handling - Rev"", ""duration_sec"": 782.417, ""url"": ""https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/679098762b98d1337549d1c7/master.m3u8""}, {""part"": 6, ""name"": ""Visualization in Excel"", ""duration_sec"": 1245.75, ""url"": ""https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/67909879062dc45cb277adeb/master.m3u8""}, {""part"": 7, ""name"": ""Visualization in Excel - Rev"", ""duration_sec"": 635.55, ""url"": ""https://cdn.masaischool.com/sal-videos/6790da49b7a5f00a0a56b5de/6790989f2b98d1337549d347/master.m3u8""}]",112m00s,PASS — Excel Topics/title,PASS,,matched (7 parts) · content-fit OK,Students · PSE Focus · 3 sessions/week · 15 weeks
+14,14.2,Numbers for Excel/SQL — statistics overview (descriptive),Maths,CCP_Block_1: The Power of Numbers: Unveiling Statistics in Data Science,68409664b3353985f57d175d,9,"1. What is Statistics and Its Role in Data Science
+2. Understanding Data Types (Categorical & Numerical)
+3. Understanding Data Types (Categorical & Numerical) - Pitfall
+4. Types of Numerical Data (Discrete & Continuous)
+5. Types of Numerical Data (Discrete & Continuous) - Pitfall
+6. Scales of Measurement (Nominal, Ordinal, Interval, Ratio)
+7. Scales of Measurement (Nominal, Ordinal, Interval, Ratio) - Pitfall
+8. IA Discussion
+9. Summary","1. https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d948fccbc68914a35a86cd/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/682b5dc71b0b84e7b3a68c26/67d9498aefcecbdea76c243c/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d9497945ef0663b06c67ec/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d949e145ef0663b06c6af8/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d94a2c45ef0663b06c6cc3/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d94c8745ef0663b06c8179/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d94c7ecbc68914a35aa471/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d94cfb45ef0663b06c87a0/master.m3u8
+9. https://cdn.masaischool.com/sal-videos/687e16a414073865a3614984/67d94d3b45ef0663b06c8b24/master.m3u8","[{""part"": 1, ""name"": ""What is Statistics and Its Role in Data Science"", ""duration_sec"": 1467.667, ""url"": ""https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d948fccbc68914a35a86cd/master.m3u8""}, {""part"": 2, ""name"": ""Understanding Data Types (Categorical & Numerical)"", ""duration_sec"": 1651.767, ""url"": ""https://cdn.masaischool.com/sal-videos/682b5dc71b0b84e7b3a68c26/67d9498aefcecbdea76c243c/master.m3u8""}, {""part"": 3, ""name"": ""Understanding Data Types (Categorical & Numerical) - Pitfall"", ""duration_sec"": 562.95, ""url"": ""https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d9497945ef0663b06c67ec/master.m3u8""}, {""part"": 4, ""name"": ""Types of Numerical Data (Discrete & Continuous)"", ""duration_sec"": 1474.883, ""url"": ""https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d949e145ef0663b06c6af8/master.m3u8""}, {""part"": 5, ""name"": ""Types of Numerical Data (Discrete & Continuous) - Pitfall"", ""duration_sec"": 419.133, ""url"": ""https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d94a2c45ef0663b06c6cc3/master.m3u8""}, {""part"": 6, ""name"": ""Scales of Measurement (Nominal, Ordinal, Interval, Ratio)"", ""duration_sec"": 1863.267, ""url"": ""https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d94c8745ef0663b06c8179/master.m3u8""}, {""part"": 7, ""name"": ""Scales of Measurement (Nominal, Ordinal, Interval, Ratio) - Pitfall"", ""duration_sec"": 456.533, ""url"": ""https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d94c7ecbc68914a35aa471/master.m3u8""}, {""part"": 8, ""name"": ""IA Discussion"", ""duration_sec"": 212.017, ""url"": ""https://cdn.masaischool.com/sal-videos/67d963e98a19e315e7b7e1a8/67d94cfb45ef0663b06c87a0/master.m3u8""}, {""part"": 9, ""name"": ""Summary"", ""duration_sec"": 49.8, ""url"": ""https://cdn.masaischool.com/sal-videos/687e16a414073865a3614984/67d94d3b45ef0663b06c8b24/master.m3u8""}]",135m58s,PASS — Maths support Topics,PASS,,matched (9 parts) · content-fit OK · Support for reading Excel/SQL outputs — not ML path,Students · PSE Focus · 3 sessions/week · 15 weeks
+14,14.3,Central tendency & dispersion (for pivot/SQL summaries),Maths,PDSU04-MU02_S02: The Heart of Data: Central Tendency and Dispersion Demystified,68468868618c426169f46d3b,8,"1. Introduction to Frequency Tables and Class Intervals
+2. Introduction to Frequency Tables and Class Intervals - Pitfall
+3. IA Discussion
+4. Visualizing Data: Histograms, Bar Charts, and Pie Charts
+5. Visualizing Data: Histograms, Bar Charts, and Pie Charts - Pitfall
+6. Data Distributions (Uniform, Normal, and Skewed)
+7. Data Distributions (Uniform, Normal, and Skewed) - Pitfall
+8. Summary","1. https://cdn.masaischool.com/sal-videos/6803dfb604872b1793cff431/67da94270f9569535c003a5e/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/6822fadaa6e2ef55336f6b19/67da985ade27d6cecd7e77f3/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67dacd568a19e315e7f03af2/67daa886f5c570a31e709658/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67dacd568a19e315e7f03af2/67da9988f5c570a31e70260c/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67dacd568a19e315e7f03af2/67daa653de27d6cecd7edd6e/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67dacd568a19e315e7f03af2/67daa83ff5c570a31e709477/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/67dacd568a19e315e7f03af2/67daa83b0f9569535c00d3c9/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/6803dfb604872b1793cff431/67daa86ade27d6cecd7eea2c/master.m3u8","[{""part"": 1, ""name"": ""Introduction to Frequency Tables and Class Intervals"", ""duration_sec"": 2054.717, ""url"": ""https://cdn.masaischool.com/sal-videos/6803dfb604872b1793cff431/67da94270f9569535c003a5e/master.m3u8""}, {""part"": 2, ""name"": ""Introduction to Frequency Tables and Class Intervals - Pitfall"", ""duration_sec"": 669.45, ""url"": ""https://cdn.masaischool.com/sal-videos/6822fadaa6e2ef55336f6b19/67da985ade27d6cecd7e77f3/master.m3u8""}, {""part"": 3, ""name"": ""IA Discussion"", ""duration_sec"": 299.25, ""url"": ""https://cdn.masaischool.com/sal-videos/67dacd568a19e315e7f03af2/67daa886f5c570a31e709658/master.m3u8""}, {""part"": 4, ""name"": ""Visualizing Data: Histograms, Bar Charts, and Pie Charts"", ""duration_sec"": 1915.117, ""url"": ""https://cdn.masaischool.com/sal-videos/67dacd568a19e315e7f03af2/67da9988f5c570a31e70260c/master.m3u8""}, {""part"": 5, ""name"": ""Visualizing Data: Histograms, Bar Charts, and Pie Charts - Pitfall"", ""duration_sec"": 600.017, ""url"": ""https://cdn.masaischool.com/sal-videos/67dacd568a19e315e7f03af2/67daa653de27d6cecd7edd6e/master.m3u8""}, {""part"": 6, ""name"": ""Data Distributions (Uniform, Normal, and Skewed)"", ""duration_sec"": 1918.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67dacd568a19e315e7f03af2/67daa83ff5c570a31e709477/master.m3u8""}, {""part"": 7, ""name"": ""Data Distributions (Uniform, Normal, and Skewed) - Pitfall"", ""duration_sec"": 677.7, ""url"": ""https://cdn.masaischool.com/sal-videos/67dacd568a19e315e7f03af2/67daa83b0f9569535c00d3c9/master.m3u8""}, {""part"": 8, ""name"": ""Summary"", ""duration_sec"": 116.817, ""url"": ""https://cdn.masaischool.com/sal-videos/6803dfb604872b1793cff431/67daa86ade27d6cecd7eea2c/master.m3u8""}]",137m31s,PASS — Maths support Topics,PASS,,matched (8 parts) · content-fit OK · Support for interpreting aggregates,Students · PSE Focus · 3 sessions/week · 15 weeks
+15,15.1,Integration — SQL window/ranking review for interviews,SQL,CC_BLOCK_2_S2:Window Functions: Ranking Data in Style,685d8b8da44425acb3013e15,9,"1. Need for window functions in sql
+2. Need for window functions in sql - Pitfall
+3. Need for window functions in sql - IA Session
+4. Understanding the structure of query
+5. Understanding the structure of query - Pitfall
+6. Different types of ranking window functions
+7. Different types of ranking window functions - Pitfall
+8. Subtopic 4
+9. Summary","1. https://cdn.masaischool.com/sal-videos/680f5110961de35e624386d4/67b34bfb3224e5c4cfc9739d/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/6818b288961de35e6206a9c9/67b34c08afc06fd649da51bc/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/6818b288961de35e6206a9c9/67b34c1f3224e5c4cfc97488/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/685d8b8ea44425acb30149d8/67b34c353224e5c4cfc9752b/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/685d8b8ea44425acb30149d8/67b34c42a088b0540c0eaff4/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/680f5110961de35e624386d4/67b38b13a088b0540c0fece4/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/680f5110961de35e624386d4/67b34c5ea088b0540c0eb0a7/master.m3u8
+8. https://cdn.masaischool.com/sal-videos/68468861618c426169f2a5f1/67b34c6a3224e5c4cfc9769d/master.m3u8
+9. https://cdn.masaischool.com/sal-videos/6818b288961de35e6206a9c9/67b34c76afc06fd649da5521/master.m3u8","[{""part"": 1, ""name"": ""Need for window functions in sql"", ""duration_sec"": 1411.483, ""url"": ""https://cdn.masaischool.com/sal-videos/680f5110961de35e624386d4/67b34bfb3224e5c4cfc9739d/master.m3u8""}, {""part"": 2, ""name"": ""Need for window functions in sql - Pitfall"", ""duration_sec"": 641.683, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b288961de35e6206a9c9/67b34c08afc06fd649da51bc/master.m3u8""}, {""part"": 3, ""name"": ""Need for window functions in sql - IA Session"", ""duration_sec"": 347.883, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b288961de35e6206a9c9/67b34c1f3224e5c4cfc97488/master.m3u8""}, {""part"": 4, ""name"": ""Understanding the structure of query"", ""duration_sec"": 1771.15, ""url"": ""https://cdn.masaischool.com/sal-videos/685d8b8ea44425acb30149d8/67b34c353224e5c4cfc9752b/master.m3u8""}, {""part"": 5, ""name"": ""Understanding the structure of query - Pitfall"", ""duration_sec"": 405.35, ""url"": ""https://cdn.masaischool.com/sal-videos/685d8b8ea44425acb30149d8/67b34c42a088b0540c0eaff4/master.m3u8""}, {""part"": 6, ""name"": ""Different types of ranking window functions"", ""duration_sec"": 1701.417, ""url"": ""https://cdn.masaischool.com/sal-videos/680f5110961de35e624386d4/67b38b13a088b0540c0fece4/master.m3u8""}, {""part"": 7, ""name"": ""Different types of ranking window functions - Pitfall"", ""duration_sec"": 483.75, ""url"": ""https://cdn.masaischool.com/sal-videos/680f5110961de35e624386d4/67b34c5ea088b0540c0eb0a7/master.m3u8""}, {""part"": 8, ""name"": ""Subtopic 4"", ""duration_sec"": 1846.35, ""url"": ""https://cdn.masaischool.com/sal-videos/68468861618c426169f2a5f1/67b34c6a3224e5c4cfc9769d/master.m3u8""}, {""part"": 9, ""name"": ""Summary"", ""duration_sec"": 152.017, ""url"": ""https://cdn.masaischool.com/sal-videos/6818b288961de35e6206a9c9/67b34c76afc06fd649da5521/master.m3u8""}]",146m01s,PASS — SQL Topics/title,PASS,,matched (9 parts) · content-fit OK · Capstone week: interview-oriented SQL reuse,Students · PSE Focus · 3 sessions/week · 15 weeks
+15,15.2,Integration — Excel dashboard final pass,Excel,PBAU07-MU01_S04: End to End Dashboard,6839823c907eb74ce60288b1,5,"1. New Scene
+2. New Scene
+3. New Scene
+4. New Scene
+5. New Scene","1. https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fc735/68394f306fcb7db8d6cda245/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fc735/68394f47c1c930f556659773/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/684b121bdceadf1bb4805464/68394f55c1c930f5566597de/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/68da528d2a1d2494e941a323/68394f62c1c930f556659824/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/691acf0502d7d50d9dc637c4/68394f6f71151e6b58514317/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 1995.733, ""url"": ""https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fc735/68394f306fcb7db8d6cda245/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 779.233, ""url"": ""https://cdn.masaischool.com/sal-videos/687002d35b865b2f6c1fc735/68394f47c1c930f556659773/master.m3u8""}, {""part"": 3, ""name"": ""New Scene"", ""duration_sec"": 338.267, ""url"": ""https://cdn.masaischool.com/sal-videos/684b121bdceadf1bb4805464/68394f55c1c930f5566597de/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 1620.2, ""url"": ""https://cdn.masaischool.com/sal-videos/68da528d2a1d2494e941a323/68394f62c1c930f556659824/master.m3u8""}, {""part"": 5, ""name"": ""New Scene"", ""duration_sec"": 1332.967, ""url"": ""https://cdn.masaischool.com/sal-videos/691acf0502d7d50d9dc637c4/68394f6f71151e6b58514317/master.m3u8""}]",101m06s,PASS — Excel Topics/title,PASS,,matched (5 parts) · content-fit OK · Capstone week: Excel deliverable,Students · PSE Focus · 3 sessions/week · 15 weeks
+15,15.3,Integration — Python prep final consolidation,Python,Python Prep Session,67865c798645e0134f592718,7,"1. New Scene
+2. New Scene
+3. New Scene
+4. New Scene
+5. New Scene
+6. New Scene
+7. New Scene","1. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/678659bd61e6f9f4a6ac2d58/master.m3u8
+2. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/678659df61e6f9f4a6ac2e5f/master.m3u8
+3. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865aa45c56862cc7797a18/master.m3u8
+4. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a031ca67b92b07eb37d/master.m3u8
+5. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a245c56862cc779751a/master.m3u8
+6. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a575c56862cc7797764/master.m3u8
+7. https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a7d1ca67b92b07eb88c/master.m3u8","[{""part"": 1, ""name"": ""New Scene"", ""duration_sec"": 1494.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/678659bd61e6f9f4a6ac2d58/master.m3u8""}, {""part"": 2, ""name"": ""New Scene"", ""duration_sec"": 432.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/678659df61e6f9f4a6ac2e5f/master.m3u8""}, {""part"": 3, ""name"": ""New Scene"", ""duration_sec"": 319.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865aa45c56862cc7797a18/master.m3u8""}, {""part"": 4, ""name"": ""New Scene"", ""duration_sec"": 1292.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a031ca67b92b07eb37d/master.m3u8""}, {""part"": 5, ""name"": ""New Scene"", ""duration_sec"": 365.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a245c56862cc779751a/master.m3u8""}, {""part"": 6, ""name"": ""New Scene"", ""duration_sec"": 1000.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a575c56862cc7797764/master.m3u8""}, {""part"": 7, ""name"": ""New Scene"", ""duration_sec"": 449.0, ""url"": ""https://cdn.masaischool.com/sal-videos/67865c798645e0134f592718/67865a7d1ca67b92b07eb88c/master.m3u8""}]",89m11s,PASS — Python/AIML Topics or Python-track title,PASS,,matched (7 parts) · content-fit OK · Capstone week: Python fluency check — ML deferred to Baseline full plan,Students · PSE Focus · 3 sessions/week · 15 weeks

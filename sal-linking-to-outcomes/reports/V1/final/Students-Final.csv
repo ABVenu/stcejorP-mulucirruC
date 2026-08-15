@@ -1,0 +1,41 @@
+Week 4 Plan — Session #,Week 4 Plan — Session Title,Week 4 Plan — Content Available,Week 8 Plan — Session #,Week 8 Plan — Session Title,Week 8 Plan — Content Available,Week 12 Plan — Session #,Week 12 Plan — Session Title,Week 12 Plan — Content Available,Week 15 Plan — Session #,Week 15 Plan — Session Title,Week 15 Plan — Content Available,Week 20 Plan — Session #,Week 20 Plan — Session Title,Week 20 Plan — Content Available
+1.1,Python — Introduction to programming + Python basics,Yes,1.1,Python — Introduction to programming + Python basics,Yes,1.1,Python — Introduction to programming + Python basics,Yes,1.1,Python — Introduction to programming + Python basics,Yes,1.1,Python — Introduction to programming + Python basics,Yes
+1.2,Python — Operators and conditional statements,Yes,1.2,Python — Operators and conditional statements,Yes,1.2,Python — Operators and conditional statements,Yes,1.2,Python — Operators and conditional statements,Yes,1.2,Python — Operators and conditional statements,Yes
+2.1,Python — Control flow: conditionals and loops,Yes,2.1,Python — Control flow: conditionals and loops,Yes,2.1,Python — Control flow: conditionals and loops,Yes,2.1,Python — Control flow: conditionals and loops,Yes,2.1,Python — Control flow: conditionals and loops,Yes
+2.2,"Python — break, continue, and nested loops",Yes,2.2,"Python — break, continue, and nested loops",Yes,2.2,"Python — break, continue, and nested loops",Yes,2.2,"Python — break, continue, and nested loops",Yes,2.2,"Python — break, continue, and nested loops",Yes
+3.1,Python — The power of functions,Yes,3.1,Python — The power of functions,Yes,3.1,Python — The power of functions,Yes,3.1,Python — The power of functions,Yes,3.1,Python — The power of functions,Yes
+3.2,Python — Prep / practice consolidation (revision),Yes,3.2,"Python — Data structures (lists, strings, sets, tuples, dicts)",Yes,3.2,Python — Advanced functions,Yes,3.2,Python — Advanced functions,Yes,3.2,Python — Advanced functions,Yes
+4.1,SQL — Introduction to SQL and databases,Yes,4.1,SQL — Introduction to SQL and databases,Yes,4.1,"Python — Data structures (lists, strings, sets, tuples, dicts)",Yes,4.1,"Python — Data structures (lists, strings, sets, tuples, dicts)",Yes,4.1,"Python — Data structures (lists, strings, sets, tuples, dicts)",Yes
+4.2,"SQL — Searching, filtering & power functions",Yes,4.2,"SQL — Searching, filtering & power functions",Yes,4.2,"Python — Classes, objects and constructors (OOP)",Yes,4.2,"Python — Classes, objects and constructors (OOP)",Yes,4.2,"Python — Classes, objects and constructors (OOP)",Yes
+,,,5.1,"SQL — Aggregations: GROUP BY, HAVING, ORDER BY, LIMIT",Yes,5.1,SQL — Introduction to SQL and databases,Yes,5.1,SQL — Introduction to SQL and databases,Yes,5.1,SQL — Introduction to SQL and databases,Yes
+,,,5.2,SQL — Joins: connecting relational tables,Yes,5.2,"SQL — Searching, filtering & power functions",Yes,5.2,"SQL — Searching, filtering & power functions",Yes,5.2,"SQL — Searching, filtering & power functions",Yes
+,,,6.1,SQL — Window functions: ranking,Yes,6.1,"SQL — Aggregations: GROUP BY, HAVING, ORDER BY, LIMIT",Yes,6.1,"SQL — Aggregations: GROUP BY, HAVING, ORDER BY, LIMIT",Yes,6.1,"SQL — Aggregations: GROUP BY, HAVING, ORDER BY, LIMIT",Yes
+,,,6.2,Maths — Arithmetic essentials (foundation before ML path),Yes,6.2,SQL — Joins: connecting relational tables,Yes,6.2,SQL — Joins: connecting relational tables,Yes,6.2,SQL — Joins: connecting relational tables,Yes
+,,,7.1,Excel — Functions in Excel,Yes,7.1,SQL — Subqueries,Yes,7.1,SQL — Subqueries,Yes,7.1,SQL — Subqueries,Yes
+,,,7.2,"Excel — VLOOKUP, XLOOKUP & HLOOKUP",Yes,7.2,SQL — Window functions: ranking,Yes,7.2,SQL — Window functions: ranking,Yes,7.2,SQL — Window functions: ranking,Yes
+,,,8.1,Excel — Pivot tables and charts,Yes,8.1,Excel — Functions in Excel,Yes,8.1,Excel — Functions in Excel,Yes,8.1,Excel — Functions in Excel,Yes
+,,,8.2,Excel — End-to-end dashboard,Yes,8.2,"Excel — VLOOKUP, XLOOKUP & HLOOKUP",Yes,8.2,"Excel — VLOOKUP, XLOOKUP & HLOOKUP",Yes,8.2,"Excel — VLOOKUP, XLOOKUP & HLOOKUP",Yes
+,,,,,,9.1,Excel — Pivot tables and charts,Yes,9.1,Excel — Pivot tables and charts,Yes,9.1,Excel — Pivot tables and charts,Yes
+,,,,,,9.2,Excel — End-to-end dashboard,Yes,9.2,Excel — End-to-end dashboard,Yes,9.2,Excel — End-to-end dashboard,Yes
+,,,,,,10.1,Maths — Arithmetic essentials,Yes,10.1,Maths — Arithmetic essentials,Yes,10.1,Maths — Arithmetic essentials,Yes
+,,,,,,10.2,Maths — Statistics overview / central tendency,Yes,10.2,Maths — Central tendency and dispersion,Yes,10.2,Maths — Central tendency and dispersion,Yes
+,,,,,,11.1,Pandas — Introduction (Series & DataFrames),Yes,11.1,"NumPy — Arrays, operations & applications",Yes,11.1,"NumPy — Arrays, operations & applications",Yes
+,,,,,,11.2,"NumPy — Arrays, operations & applications",Yes,11.2,Pandas — Introduction (Series & DataFrames),Yes,11.2,Pandas — Introduction (Series & DataFrames),Yes
+,,,,,,12.1,ML — Introduction to machine learning,Yes,12.1,"Pandas — Grouping, filtering, and merging",Yes,12.1,"Pandas — Grouping, filtering, and merging",Yes
+,,,,,,12.2,ML — Encoding & linear regression,Yes,12.2,Data Visualization — Matplotlib & Seaborn,Yes,12.2,Data Visualization — Matplotlib & Seaborn,Yes
+,,,,,,,,,13.1,ML — Introduction to machine learning,Yes,13.1,ML — Introduction to machine learning,Yes
+,,,,,,,,,13.2,ML — Encoding & linear regression,Yes,13.2,ML — Encoding & linear regression,Yes
+,,,,,,,,,14.1,ML — Logistic regression,Yes,14.1,ML — Logistic regression,Yes
+,,,,,,,,,14.2,ML — Decision trees,Yes,14.2,ML — Decision trees,Yes
+,,,,,,,,,15.1,ML — Random forest,Yes,15.1,ML — Random forest,Yes
+,,,,,,,,,15.2,ML — K-Means clustering,Yes,15.2,ML — K-Means clustering,Yes
+,,,,,,,,,,,,16.1,ML — KNN & Naive Bayes,Yes
+,,,,,,,,,,,,16.2,AI — Text vectorization,Yes
+,,,,,,,,,,,,17.1,DL — Introduction to Deep Learning for NLP,Yes
+,,,,,,,,,,,,17.2,DL — Word Embeddings,Yes
+,,,,,,,,,,,,18.1,DL — Perceptron & Neural Network Types,Yes
+,,,,,,,,,,,,18.2,DL — Activation Functions & SLP Implementation,Yes
+,,,,,,,,,,,,19.1,DL — Loss Function and MLP (Multi-Layer Perceptron),Yes
+,,,,,,,,,,,,19.2,DL — Neural Networks Foundations: From Neuron to MLP (Project X 17.1),No
+,,,,,,,,,,,,20.1,CV — Building an Image Classifier with CNNs (Project X 18.1),No
+,,,,,,,,,,,,20.2,CV — Transfer Learning & YOLO / Object Detection (Project X 18.2 + 21.2),No

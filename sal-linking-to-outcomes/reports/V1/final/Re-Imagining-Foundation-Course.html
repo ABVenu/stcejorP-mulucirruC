@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Re-Imagining Foundation Course</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #14231c; --ink-soft: #2a3d33; --muted: #5c6f64; --line: #d5e0d8;
+      --paper: #f3f7f4; --card: #ffffff; --forest: #1f6b4a; --forest-deep: #0f3d2c;
+      --mint: #d8f0e4; --amber: #c47a1a; --amber-soft: #fff1db; --sky: #1d4f86;
+      --sky-soft: #e7f2ff; --plum: #5b3d7a; --plum-soft: #f1e9f8; --yes: #1f6b4a;
+      --shadow: 0 18px 50px rgba(20, 35, 28, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--ink); font-family: "Source Sans 3", sans-serif;
+      font-size: 17px;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #e7f5ee 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #fff4e4 0%, transparent 45%),
+        linear-gradient(180deg, #eef5f0 0%, var(--paper) 28%, #eef3f0 100%);
+      line-height: 1.55;
+    }
+    .wrap { width: min(1480px, calc(100% - 1.5rem)); margin: 0 auto; padding: 2.25rem 0 4rem; }
+    .hero {
+      border-radius: 28px; padding: 3rem 2.5rem 2.5rem; color: #f4fbf7;
+      background: linear-gradient(135deg, rgba(15, 61, 44, 0.96), rgba(31, 107, 74, 0.88));
+      box-shadow: var(--shadow);
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;
+      font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #d7ffe9; margin-bottom: 1rem;
+    }
+    .eyebrow::before { content: ""; width: 1.5rem; height: 2px; background: var(--amber); }
+    h1 {
+      font-family: Fraunces, Georgia, serif; font-weight: 700;
+      font-size: clamp(2.7rem, 5.2vw, 4.35rem); line-height: 1.05; margin: 0 0 1rem; max-width: 12ch;
+    }
+    .hero p { max-width: 58ch; margin: 0; font-size: 1.22rem; color: #dceee5; }
+    .meta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+    .chip {
+      border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.08);
+      color: #f3fff8; border-radius: 999px; padding: 0.45rem 0.9rem; font-size: 0.98rem; font-weight: 600;
+    }
+    nav.toc { display: flex; flex-wrap: wrap; gap: 0.65rem; margin: 1.5rem 0 2rem; }
+    nav.toc a {
+      text-decoration: none; color: var(--forest-deep); background: var(--card);
+      border: 1px solid var(--line); border-radius: 999px; padding: 0.45rem 0.9rem;
+      font-size: 1rem; font-weight: 600;
+    }
+    section {
+      background: var(--card); border: 1px solid var(--line); border-radius: 24px;
+      padding: 1.75rem; margin-bottom: 1.25rem; box-shadow: var(--shadow);
+    }
+    section h2 {
+      font-family: Fraunces, Georgia, serif; font-size: clamp(1.75rem, 2.7vw, 2.25rem);
+      margin: 0 0 0.85rem; color: var(--forest-deep);
+    }
+    section h3 {
+      font-family: Fraunces, Georgia, serif; font-size: 1.4rem;
+      margin: 1.5rem 0 0.85rem; color: var(--ink-soft);
+    }
+    p, li { color: var(--ink-soft); }
+    .lead { font-size: 1.18rem; max-width: 75ch; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .card-soft {
+      background: linear-gradient(180deg, #f8fbf9, #f3f8f5); border: 1px solid var(--line);
+      border-radius: 18px; padding: 1.1rem 1.15rem;
+    }
+    .card-soft strong { display: block; color: var(--forest-deep); margin-bottom: 0.35rem; }
+    .steps { display: grid; gap: 0.8rem; margin: 1rem 0 0; padding: 0; list-style: none; counter-reset: step; }
+    .steps li {
+      counter-increment: step; position: relative; padding: 0.95rem 1rem 0.95rem 3.4rem;
+      border-radius: 16px; background: #f7faf8; border: 1px solid var(--line);
+      font-size: 1.08rem;
+    }
+    .steps li::before {
+      content: counter(step); position: absolute; left: 0.9rem; top: 0.95rem;
+      width: 1.7rem; height: 1.7rem; border-radius: 50%; display: grid; place-items: center;
+      background: var(--forest); color: white; font-size: 0.95rem; font-weight: 700;
+    }
+    .compare { display: grid; gap: 0.85rem; align-items: start; }
+    .compare.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .compare.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .plan-card {
+      border: 1px solid var(--line); border-radius: 18px; background: #fff; overflow: hidden; min-width: 0;
+    }
+    .plan-card .plan-head {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 0.5rem; padding: 0.85rem 0.95rem; border-bottom: 1px solid var(--line);
+    }
+    .plan-card .plan-head h4 {
+      margin: 0; font-family: Fraunces, Georgia, serif; font-size: 1.2rem; color: var(--ink);
+    }
+    .plan-card .plan-head .head-text { display: grid; gap: 0.2rem; }
+    .plan-card .plan-head .sub {
+      margin: 0; font-size: 0.92rem; font-weight: 600; color: var(--muted); line-height: 1.35;
+    }
+    .plan-card .plan-head .badges { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .badge {
+      display: inline-flex; border-radius: 999px; padding: 0.3rem 0.65rem;
+      font-size: 0.85rem; font-weight: 700; white-space: nowrap;
+    }
+    .badge-student { background: var(--sky-soft); color: var(--sky); }
+    .badge-wdf { background: var(--plum-soft); color: var(--plum); }
+    .badge-wsf { background: var(--amber-soft); color: #8a5410; }
+    .badge-shared { background: #e8f6ee; color: var(--forest-deep); }
+    .plan-card.student .plan-head { background: #f3f8ff; }
+    .plan-card.wdf .plan-head { background: #f8f3fc; }
+    .plan-card.wsf .plan-head { background: #fff8ee; }
+    .plan-card.shared .plan-head { background: #eef8f2; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td {
+      padding: 0.55rem 0.65rem; text-align: left; border-bottom: 1px solid var(--line);
+      vertical-align: top; font-size: 0.96rem;
+    }
+    th {
+      background: #edf5f0; color: var(--forest-deep); font-size: 0.82rem;
+      text-transform: uppercase; letter-spacing: 0.04em; font-weight: 700;
+    }
+    tr:last-child td { border-bottom: none; }
+    .sn { font-weight: 700; color: var(--forest); white-space: nowrap; width: 3.2rem; }
+    .avail { font-weight: 700; white-space: nowrap; width: 3.2rem; color: var(--yes); }
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .status-card {
+      border-radius: 18px; padding: 1.15rem 1.2rem; border: 1px solid var(--line);
+      background: linear-gradient(180deg, #ffffff, #f6faf7);
+    }
+    .status-card h3 { margin: 0 0 0.55rem; font-size: 1.25rem; }
+    .status-card p { font-size: 1.05rem; }
+    .support-table td:first-child { font-weight: 700; color: var(--forest-deep); width: 8rem; }
+    .note {
+      margin-top: 1rem; padding: 0.9rem 1rem; border-left: 4px solid var(--amber);
+      background: var(--amber-soft); border-radius: 0 12px 12px 0; color: #6a4312; font-size: 1.05rem;
+    }
+    .bucket-label {
+      display: inline-block; margin: 0 0 0.65rem; font-size: 0.8rem; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted);
+    }
+
+    .mega-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; }
+    .mega {
+      width: 100%; border-collapse: collapse; min-width: 1100px;
+    }
+    .mega th, .mega td {
+      padding: 0.55rem 0.6rem; border-bottom: 1px solid var(--line);
+      border-right: 1px solid var(--line); font-size: 0.94rem; vertical-align: top;
+    }
+    .mega th:last-child, .mega td:last-child { border-right: none; }
+    .mega thead th {
+      background: #edf5f0; color: var(--forest-deep); font-size: 0.82rem;
+      text-transform: uppercase; letter-spacing: 0.03em; font-weight: 700;
+    }
+    .mega thead .group {
+      text-align: center; background: #e2f0e8; font-size: 0.92rem; letter-spacing: 0.04em;
+    }
+    .mega thead .g4 { background: #e7f2ff; color: var(--sky); }
+    .mega thead .g8 { background: #fff1db; color: #8a5410; }
+    .mega thead .g12 { background: #f1e9f8; color: var(--plum); }
+    .mega .empty { background: #f7faf8; }
+    .mega tbody tr:hover td { background: #f8fbf9; }
+
+    footer { margin-top: 1.5rem; color: var(--muted); font-size: 1rem; text-align: center; }
+    .support-table td { font-size: 1.05rem; }
+    .support-table td { font-size: 1.05rem; }
+    @media (max-width: 1100px) {
+      .compare.cols-3, .compare.cols-2, .status-grid, .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="eyebrow">Masai · Curriculum Outcomes</div>
+      <h1>Re-Imagining Foundation Course</h1>
+      <p>
+        Using the enrollment-to-course-start window so every learner gets a
+        persona-fit foundation path — planned sessions, mapped to existing SAL
+        recordings, ready for automated scheduling.
+      </p>
+      <div class="meta">
+        <span class="chip">Students</span>
+        <span class="chip">Working · Different Field</span>
+        <span class="chip">Working · Same Field</span>
+      </div>
+    </header>
+
+    <nav class="toc">
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#merits">Merits</a>
+      <a href="#plans-students">Students + WDF</a>
+      <a href="#plans-wsf">WSF</a>
+      <a href="#other-info">Other Info</a>
+      <a href="#support">Support Needed</a>
+    </nav>
+
+    <section id="problem">
+      <h2>Problem Statement</h2>
+      <p class="lead">
+        Learners often have unused time between admission and course start.
+        Foundation content already exists across SAL, but it is not consistently
+        packaged by <strong>persona</strong> and <strong>available duration</strong>.
+        Without a clear track, students either skip foundations or get a one-size
+        path that does not match their background or the weeks they have.
+      </p>
+    </section>
+
+    <section id="solution">
+      <h2>Solution</h2>
+      <p class="lead">
+        Re-imagine the foundation as <strong>duration buckets × persona tracks</strong>,
+        with each session matched to existing SAL videos where content-fit allows.
+        Stakeholder update: each relevant track now includes
+        <strong>AI — Introduction to Gen AI and LLM</strong>.
+      </p>
+      <ol class="steps">
+        <li><strong>Bucket by time available</strong> — 1–4 weeks → 4-week track; 5–8 weeks → 8-week track; 9–12 weeks → 12-week track; and so on.</li>
+        <li><strong>Split by persona</strong> — Students &amp; Working Different Field (WDF) share the beginner track; Working Same Field (WSF) is mid-Python / analytics-led.</li>
+        <li><strong>Match depth to wait time</strong> — a learner with 3 weeks and a learner with 7 weeks need different depth; each is mapped to a clear duration bucket instead of one shared path.</li>
+        <li><strong>Content Release:</strong> Existing SAL recordings will be reused — session planning uses the current inventory wherever a content-fit match is available.</li>
+      </ol>
+    </section>
+
+    <section id="merits">
+      <h2>Merits</h2>
+      <ol class="steps">
+        <li><strong>Individual engagement</strong> — Students can start and stay engaged individually; no need to wait for any foundation batch to begin.</li>
+        <li><strong>Course context by duration</strong> — Longer wait windows get fuller course context; shorter windows still get a solid foundation.</li>
+        <li><strong>Better experience &amp; ratings</strong> — Overall learning and student experience improves, and instructor ratings may also rise in turn.</li>
+        <li><strong>Stronger foundations for outcomes</strong> — Strengthening foundations early may help placements in the future.</li>
+      </ol>
+    </section>
+
+    <section id="plans">
+      <h2>Foundation Plans — 4 / 8 / 12 Weeks in One View</h2>
+      <p class="lead">
+        <strong>Students</strong> and <strong>Working · Different Field (WDF)</strong> share one track —
+        shown once below with <strong>4-week, 8-week, and 12-week</strong> columns side by side.
+        <strong>Working · Same Field (WSF)</strong> is a separate track in the second table.
+      </p>
+
+      <article class="plan-card shared" id="plans-students" style="margin-bottom:1.25rem;">
+        <div class="plan-head">
+          <div class="head-text">
+            <h4>Students + Working · Different Field</h4>
+            <p class="sub">Shared foundation track for both personas · 4 / 8 / 12 week buckets in one table</p>
+          </div>
+          <div class="badges">
+            <span class="badge badge-student">Students</span>
+            <span class="badge badge-wdf">WDF</span>
+            <span class="badge badge-shared">Shared table</span>
+          </div>
+        </div>
+        <div class="mega-wrap">
+          <table class="mega">
+            <thead>
+              <tr>
+                <th class="group g4" colspan="3">4-Week Plan</th>
+                <th class="group g8" colspan="3">8-Week Plan</th>
+                <th class="group g12" colspan="3">12-Week Plan</th>
+              </tr>
+              <tr>
+                <th>#</th><th>Session Title</th><th>Avail</th>
+                <th>#</th><th>Session Title</th><th>Avail</th>
+                <th>#</th><th>Session Title</th><th>Avail</th>
+              </tr>
+            </thead>
+            <tbody>
+<tr><td class="sn">1.1</td><td>Python — Introduction to programming + Python basics</td><td class="avail">Yes</td><td class="sn">1.1</td><td>Python — Introduction to programming + Python basics</td><td class="avail">Yes</td><td class="sn">1.1</td><td>Python — Introduction to programming + Python basics</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">1.2</td><td>Python — Operators and conditional statements</td><td class="avail">Yes</td><td class="sn">1.2</td><td>Python — Operators and conditional statements</td><td class="avail">Yes</td><td class="sn">1.2</td><td>Python — Operators and conditional statements</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">2.1</td><td>Python — Control flow: conditionals and loops</td><td class="avail">Yes</td><td class="sn">2.1</td><td>Python — Control flow: conditionals and loops</td><td class="avail">Yes</td><td class="sn">2.1</td><td>Python — Control flow: conditionals and loops</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">2.2</td><td>Python — break, continue, and nested loops</td><td class="avail">Yes</td><td class="sn">2.2</td><td>Python — break, continue, and nested loops</td><td class="avail">Yes</td><td class="sn">2.2</td><td>Python — break, continue, and nested loops</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">3.1</td><td>Python — Data structures (lists, strings, sets, tuples, dicts)</td><td class="avail">Yes</td><td class="sn">3.1</td><td>Python — The power of functions</td><td class="avail">Yes</td><td class="sn">3.1</td><td>Python — The power of functions</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">3.2</td><td>AI — Introduction to Gen AI and LLM</td><td class="avail">Yes</td><td class="sn">3.2</td><td>Python — Data structures (lists, strings, sets, tuples, dicts)</td><td class="avail">Yes</td><td class="sn">3.2</td><td>Python — Advanced functions</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">4.1</td><td>SQL — Introduction to SQL and databases</td><td class="avail">Yes</td><td class="sn">4.1</td><td>AI — Introduction to Gen AI and LLM</td><td class="avail">Yes</td><td class="sn">4.1</td><td>Python — Data structures (lists, strings, sets, tuples, dicts)</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">4.2</td><td>SQL — Searching, filtering &amp; power functions</td><td class="avail">Yes</td><td class="sn">4.2</td><td>SQL — Introduction to SQL and databases</td><td class="avail">Yes</td><td class="sn">4.2</td><td>Python — Classes, objects and constructors (OOP)</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">5.1</td><td>SQL — Searching, filtering &amp; power functions</td><td class="avail">Yes</td><td class="sn">4.3</td><td>AI — Introduction to Gen AI and LLM</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">5.2</td><td>SQL — Aggregations: GROUP BY, HAVING, ORDER BY, LIMIT</td><td class="avail">Yes</td><td class="sn">5.1</td><td>SQL — Introduction to SQL and databases</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">6.1</td><td>SQL — Joins: connecting relational tables</td><td class="avail">Yes</td><td class="sn">5.2</td><td>SQL — Searching, filtering &amp; power functions</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">6.2</td><td>Maths — Arithmetic essentials (foundation before ML path)</td><td class="avail">Yes</td><td class="sn">6.1</td><td>SQL — Aggregations: GROUP BY, HAVING, ORDER BY, LIMIT</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">7.1</td><td>Excel — Functions in Excel</td><td class="avail">Yes</td><td class="sn">6.2</td><td>SQL — Joins: connecting relational tables</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">7.2</td><td>Excel — VLOOKUP, XLOOKUP &amp; HLOOKUP</td><td class="avail">Yes</td><td class="sn">7.1</td><td>SQL — Subqueries</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">8.1</td><td>Excel — Pivot tables and charts</td><td class="avail">Yes</td><td class="sn">7.2</td><td>SQL — Window functions: ranking</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">8.2</td><td>Excel — End-to-end dashboard</td><td class="avail">Yes</td><td class="sn">8.1</td><td>Excel — Functions in Excel</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">8.2</td><td>Excel — VLOOKUP, XLOOKUP &amp; HLOOKUP</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">9.1</td><td>Excel — Pivot tables and charts</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">9.2</td><td>Excel — End-to-end dashboard</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">10.1</td><td>Maths — Arithmetic essentials</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">10.2</td><td>Maths — Statistics overview / central tendency</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">11.1</td><td>Pandas — Introduction (Series &amp; DataFrames)</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">11.2</td><td>NumPy — Arrays, operations &amp; applications</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">12.1</td><td>ML — Introduction to machine learning</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">12.2</td><td>ML — Encoding &amp; linear regression</td><td class="avail">Yes</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="plan-card wsf" id="plans-wsf">
+        <div class="plan-head">
+          <div class="head-text">
+            <h4>Working · Same Field</h4>
+            <p class="sub">Distinct mid-Python / analytics track · 4 / 8 / 12 week buckets in one table</p>
+          </div>
+          <div class="badges">
+            <span class="badge badge-wsf">WSF</span>
+          </div>
+        </div>
+        <div class="mega-wrap">
+          <table class="mega">
+            <thead>
+              <tr>
+                <th class="group g4" colspan="3">4-Week Plan</th>
+                <th class="group g8" colspan="3">8-Week Plan</th>
+                <th class="group g12" colspan="3">12-Week Plan</th>
+              </tr>
+              <tr>
+                <th>#</th><th>Session Title</th><th>Avail</th>
+                <th>#</th><th>Session Title</th><th>Avail</th>
+                <th>#</th><th>Session Title</th><th>Avail</th>
+              </tr>
+            </thead>
+            <tbody>
+<tr><td class="sn">1.1</td><td>Python mid — The power of functions</td><td class="avail">Yes</td><td class="sn">1.1</td><td>Python mid — The power of functions</td><td class="avail">Yes</td><td class="sn">1.1</td><td>Python mid — The power of functions</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">1.2</td><td>Python mid — Advanced functions</td><td class="avail">Yes</td><td class="sn">1.2</td><td>Python mid — Advanced functions</td><td class="avail">Yes</td><td class="sn">1.2</td><td>Python mid — Advanced functions</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">2.1</td><td>Python mid — Data structures</td><td class="avail">Yes</td><td class="sn">2.1</td><td>Python mid — Data structures</td><td class="avail">Yes</td><td class="sn">2.1</td><td>Python mid — Data structures</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">2.2</td><td>Python mid — OOP: classes, objects, constructors</td><td class="avail">Yes</td><td class="sn">2.2</td><td>Python mid — OOP: classes, objects, constructors</td><td class="avail">Yes</td><td class="sn">2.2</td><td>Python mid — OOP: classes, objects, constructors</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">2.3</td><td>AI — Introduction to Gen AI and LLM</td><td class="avail">Yes</td><td class="sn">2.3</td><td>AI — Introduction to Gen AI and LLM</td><td class="avail">Yes</td><td class="sn">2.3</td><td>AI — Introduction to Gen AI and LLM</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">3.1</td><td>NumPy — Arrays, operations &amp; applications</td><td class="avail">Yes</td><td class="sn">3.1</td><td>NumPy — Arrays, operations &amp; applications</td><td class="avail">Yes</td><td class="sn">3.1</td><td>NumPy — Arrays, operations &amp; applications</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">3.2</td><td>Pandas — Introduction (Series &amp; DataFrames)</td><td class="avail">Yes</td><td class="sn">3.2</td><td>Pandas — Introduction (Series &amp; DataFrames)</td><td class="avail">Yes</td><td class="sn">3.2</td><td>Pandas — Introduction (Series &amp; DataFrames)</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">4.1</td><td>Pandas — Grouping, filtering, and merging</td><td class="avail">Yes</td><td class="sn">4.1</td><td>Pandas — Grouping, filtering, and merging</td><td class="avail">Yes</td><td class="sn">4.1</td><td>Pandas — Grouping, filtering, and merging</td><td class="avail">Yes</td></tr>
+<tr><td class="sn">4.2</td><td>Data Visualization — Matplotlib &amp; Seaborn</td><td class="avail">Yes</td><td class="sn">4.2</td><td>Data Visualization — Matplotlib &amp; Seaborn</td><td class="avail">Yes</td><td class="sn">4.2</td><td>Data Visualization — Matplotlib &amp; Seaborn</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">5.1</td><td>Excel — VLOOKUP, XLOOKUP &amp; HLOOKUP</td><td class="avail">Yes</td><td class="sn">5.1</td><td>Excel — VLOOKUP, XLOOKUP &amp; HLOOKUP</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">5.2</td><td>Excel — Pivot tables and charts</td><td class="avail">Yes</td><td class="sn">5.2</td><td>Excel — Pivot tables and charts</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">6.1</td><td>Excel — End-to-end dashboard</td><td class="avail">Yes</td><td class="sn">6.1</td><td>Excel — End-to-end dashboard</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">6.2</td><td>Maths — Arithmetic essentials</td><td class="avail">Yes</td><td class="sn">6.2</td><td>EDA Case Study 1 — Beginning</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">7.1</td><td>Maths — Central tendency and dispersion</td><td class="avail">Yes</td><td class="sn">7.1</td><td>EDA Case Study 1 — Conclusion</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">7.2</td><td>ML — Introduction to machine learning</td><td class="avail">Yes</td><td class="sn">7.2</td><td>Maths — Arithmetic essentials</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="sn">8.1</td><td>ML — Encoding &amp; linear regression</td><td class="avail">Yes</td><td class="sn">8.1</td><td>Maths — Statistics in data science</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">8.2</td><td>Maths — Central tendency and dispersion</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">9.1</td><td>Maths — Probability distributions</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">9.2</td><td>ML — Introduction to machine learning</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">10.1</td><td>ML — Encoding &amp; linear regression</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">10.2</td><td>ML — Logistic regression</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">11.1</td><td>ML — Decision trees</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">11.2</td><td>ML — Random forest</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">12.1</td><td>ML — K-Means clustering</td><td class="avail">Yes</td></tr>
+<tr><td class="empty" colspan="3"></td><td class="empty" colspan="3"></td><td class="sn">12.2</td><td>ML — KNN &amp; Naive Bayes</td><td class="avail">Yes</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+    </section>
+
+
+    <section id="other-info">
+      <h2>Other Info</h2>
+      <div class="status-grid">
+        <article class="status-card">
+          <h3>Tracks Identified</h3>
+          <p>
+            Durations map to fixed buckets:
+            <strong>1–4 weeks → 4-week track</strong>,
+            <strong>5–8 weeks → 8-week track</strong>,
+            and so on for longer windows.
+          </p>
+        </article>
+        <article class="status-card">
+          <h3>Videos Need to be Recorded</h3>
+          <p>
+            <strong>Currently nil</strong>, as identification and session planning reuse
+            all possible existing videos.
+          </p>
+        </article>
+        <article class="status-card">
+          <h3>Further Human Verification</h3>
+          <p>
+            A human QC is needed to confirm sessions are ready for release,
+            and also take pilot-batch feedback to decide on new recordings.
+          </p>
+        </article>
+        <article class="status-card">
+          <h3>AI Chat Support Integrated</h3>
+          <p>
+            AI chat support is integrated, so no human chat support is needed
+            for foundation queries.
+          </p>
+        </article>
+        <article class="status-card">
+          <h3>Assignments per Session</h3>
+          <p>
+            Assignments will be released for every session, which adds completeness
+            to the foundation agenda.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="support">
+      <h2>Further Support Required</h2>
+      <div class="table-wrap" style="border:1px solid var(--line); border-radius:16px;">
+        <table class="support-table">
+          <thead><tr><th>Team</th><th>Requirement</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Tech</td>
+              <td>After a student is admitted, automatically schedule the decided foundation sessions based on persona and duration.</td>
+            </tr>
+            <tr>
+              <td>Ops</td>
+              <td>Convey and drive foundation utilization as fully as possible by the student.</td>
+            </tr>
+            <tr>
+              <td>Curriculum</td>
+              <td>Track student activity, attendance, assignments, session feedback, and re-recording decisions.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+Week 4 Plan — Session #,Week 4 Plan — Session Title,Week 4 Plan — Content Available,Week 8 Plan — Session #,Week 8 Plan — Session Title,Week 8 Plan — Content Available,Week 12 Plan — Session #,Week 12 Plan — Session Title,Week 12 Plan — Content Available,Week 15 Plan — Session #,Week 15 Plan — Session Title,Week 15 Plan — Content Available,Week 20 Plan — Session #,Week 20 Plan — Session Title,Week 20 Plan — Content Available
+1.1,Python mid — The power of functions,Yes,1.1,Python mid — The power of functions,Yes,1.1,Python mid — The power of functions,Yes,1.1,Python mid — The power of functions,Yes,1.1,Python mid — The power of functions,Yes
+1.2,Python mid — Advanced functions,Yes,1.2,Python mid — Advanced functions,Yes,1.2,Python mid — Advanced functions,Yes,1.2,Python mid — Advanced functions,Yes,1.2,Python mid — Advanced functions,Yes
+2.1,Python mid — Data structures,Yes,2.1,Python mid — Data structures,Yes,2.1,Python mid — Data structures,Yes,2.1,Python mid — Data structures,Yes,2.1,Python mid — Data structures,Yes
+2.2,"Python mid — OOP: classes, objects, constructors",Yes,2.2,"Python mid — OOP: classes, objects, constructors",Yes,2.2,"Python mid — OOP: classes, objects, constructors",Yes,2.2,"Python mid — OOP: classes, objects, constructors",Yes,2.2,"Python mid — OOP: classes, objects, constructors",Yes
+3.1,"NumPy — Arrays, operations & applications",Yes,3.1,"NumPy — Arrays, operations & applications",Yes,3.1,"NumPy — Arrays, operations & applications",Yes,3.1,"Python mid — Regex, exceptions & Python in data science",Yes,3.1,"Python mid — Regex, exceptions & Python in data science",Yes
+3.2,Pandas — Introduction (Series & DataFrames),Yes,3.2,Pandas — Introduction (Series & DataFrames),Yes,3.2,Pandas — Introduction (Series & DataFrames),Yes,3.2,Python mid — Code modularization,Yes,3.2,Python mid — Code modularization,Yes
+4.1,"Pandas — Grouping, filtering, and merging",Yes,4.1,"Pandas — Grouping, filtering, and merging",Yes,4.1,"Pandas — Grouping, filtering, and merging",Yes,4.1,"NumPy — Arrays, operations & applications",Yes,4.1,"NumPy — Arrays, operations & applications",Yes
+4.2,Data Visualization — Matplotlib & Seaborn,Yes,4.2,Data Visualization — Matplotlib & Seaborn,Yes,4.2,Data Visualization — Matplotlib & Seaborn,Yes,4.2,Pandas — Introduction (Series & DataFrames),Yes,4.2,Pandas — Introduction (Series & DataFrames),Yes
+,,,5.1,"Excel — VLOOKUP, XLOOKUP & HLOOKUP",Yes,5.1,"Excel — VLOOKUP, XLOOKUP & HLOOKUP",Yes,5.1,"Pandas — Grouping, filtering, and merging",Yes,5.1,"Pandas — Grouping, filtering, and merging",Yes
+,,,5.2,Excel — Pivot tables and charts,Yes,5.2,Excel — Pivot tables and charts,Yes,5.2,Data Visualization — Matplotlib & Seaborn,Yes,5.2,Data Visualization — Matplotlib & Seaborn,Yes
+,,,6.1,Excel — End-to-end dashboard,Yes,6.1,Excel — End-to-end dashboard,Yes,6.1,"Excel — VLOOKUP, XLOOKUP & HLOOKUP",Yes,6.1,"Excel — VLOOKUP, XLOOKUP & HLOOKUP",Yes
+,,,6.2,Maths — Arithmetic essentials,Yes,6.2,EDA Case Study 1 — Beginning,Yes,6.2,Excel — Pivot tables and charts,Yes,6.2,Excel — Pivot tables and charts,Yes
+,,,7.1,Maths — Central tendency and dispersion,Yes,7.1,EDA Case Study 1 — Conclusion,Yes,7.1,Excel — End-to-end dashboard,Yes,7.1,Excel — End-to-end dashboard,Yes
+,,,7.2,ML — Introduction to machine learning,Yes,7.2,Maths — Arithmetic essentials,Yes,7.2,EDA Case Study 1 — Beginning,Yes,7.2,EDA Case Study 1 — Beginning,Yes
+,,,8.1,ML — Encoding & linear regression,Yes,8.1,Maths — Statistics in data science,Yes,8.1,EDA Case Study 1 — Conclusion,Yes,8.1,EDA Case Study 1 — Conclusion,Yes
+,,,8.2,ML — Logistic regression,Yes,8.2,Maths — Central tendency and dispersion,Yes,8.2,EDA Case Study 2 — Beginning,Yes,8.2,EDA Case Study 2 — Beginning,Yes
+,,,,,,9.1,Maths — Probability distributions,Yes,9.1,EDA Case Study 2 — Conclusion,Yes,9.1,EDA Case Study 2 — Conclusion,Yes
+,,,,,,9.2,ML — Introduction to machine learning,Yes,9.2,Maths — Arithmetic essentials,Yes,9.2,Maths — Arithmetic essentials,Yes
+,,,,,,10.1,ML — Encoding & linear regression,Yes,10.1,Maths — Statistics in data science,Yes,10.1,Maths — Statistics in data science,Yes
+,,,,,,10.2,ML — Logistic regression,Yes,10.2,Maths — Central tendency and dispersion,Yes,10.2,Maths — Central tendency and dispersion,Yes
+,,,,,,11.1,ML — Decision trees,Yes,11.1,Maths — Probability distributions,Yes,11.1,Maths — Probability distributions,Yes
+,,,,,,11.2,ML — Random forest,Yes,11.2,Maths — Hypothesis testing,Yes,11.2,Maths — Hypothesis testing,Yes
+,,,,,,12.1,ML — K-Means clustering,Yes,12.1,Maths — Inferential statistics using Python,Yes,12.1,Maths — Inferential statistics using Python,Yes
+,,,,,,12.2,ML — KNN & Naive Bayes,Yes,12.2,ML — Introduction to machine learning,Yes,12.2,ML — Introduction to machine learning,Yes
+,,,,,,,,,13.1,ML — Encoding & linear regression,Yes,13.1,ML — Encoding & linear regression,Yes
+,,,,,,,,,13.2,ML — Logistic regression,Yes,13.2,ML — Logistic regression,Yes
+,,,,,,,,,14.1,ML — Decision trees,Yes,14.1,ML — Decision trees,Yes
+,,,,,,,,,14.2,ML — Random forest,Yes,14.2,ML — Random forest,Yes
+,,,,,,,,,15.1,ML — K-Means clustering,Yes,15.1,ML — K-Means clustering,Yes
+,,,,,,,,,15.2,ML — KNN & Naive Bayes,Yes,15.2,ML — KNN & Naive Bayes,Yes
+,,,,,,,,,,,,16.1,AI — Text vectorization,Yes
+,,,,,,,,,,,,16.2,DL — Introduction to Deep Learning for NLP,Yes
+,,,,,,,,,,,,17.1,DL — Word Embeddings,Yes
+,,,,,,,,,,,,17.2,DL — Perceptron & Neural Network Types,Yes
+,,,,,,,,,,,,18.1,DL — Activation Functions & SLP Implementation,Yes
+,,,,,,,,,,,,18.2,DL — Loss Function and MLP (Multi-Layer Perceptron),Yes
+,,,,,,,,,,,,19.1,DL — Neural Networks Foundations: From Neuron to MLP (Project X aligned),No
+,,,,,,,,,,,,19.2,DL — Recurrent Neural Networks (RNNs),Yes
+,,,,,,,,,,,,20.1,CV — Building an Image Classifier with CNNs,No
+,,,,,,,,,,,,20.2,CV — Transfer Learning & YOLO / Object Detection,No
