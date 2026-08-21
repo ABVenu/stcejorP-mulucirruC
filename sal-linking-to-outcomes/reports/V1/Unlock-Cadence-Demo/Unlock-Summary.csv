@@ -1,0 +1,7 @@
+Track,Interest sessions/week,Pre-course Sundays,Pre-course unlocked,Last session by course start,Domain reach by course start,Month-1 extra unlocked,Total by end of month 1,Last session by end of month 1,Domain reach by end of month 1,Leftover after month 1,Extra Sundays after month 1 to finish,Full library open on
+Beginner (Students-2xWeek-15Week),1,6,6,3.2  Python — Advanced functions,Python,8,14,7.2  SQL — Window functions: ranking,Python → SQL,16,8,Sun 10 Jan 2027
+Beginner (Students-2xWeek-15Week),2,6,12,6.2  SQL — Joins: connecting relational tables,Python → SQL,8,20,10.2  Maths — Central tendency and dispersion,Python → SQL → Excel → Maths,10,5,Sun 20 Dec 2026
+Beginner (Students-2xWeek-15Week),3,6,18,9.2  Excel — End-to-end dashboard,Python → SQL → Excel,8,26,13.2  ML — Encoding & linear regression,Python → SQL → Excel → Maths → Analytics → ML,4,2,Sun 29 Nov 2026
+Expert (Working-SameField-2xWeek-15Week),1,6,6,3.2  Python mid — Code modularization,Python,8,14,7.2  EDA Case Study 1 — Beginning,Python → Analytics → Excel,16,8,Sun 10 Jan 2027
+Expert (Working-SameField-2xWeek-15Week),2,6,12,6.2  Excel — Pivot tables and charts,Python → Analytics → Excel,8,20,10.2  Maths — Central tendency and dispersion,Python → Analytics → Excel → Maths,10,5,Sun 20 Dec 2026
+Expert (Working-SameField-2xWeek-15Week),3,6,18,9.2  Maths — Arithmetic essentials,Python → Analytics → Excel → Maths,8,26,13.2  ML — Logistic regression,Python → Analytics → Excel → Maths → ML,4,2,Sun 29 Nov 2026

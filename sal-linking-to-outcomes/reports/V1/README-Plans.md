@@ -48,6 +48,17 @@ Mid Python · **Excel from 8w (no Functions — keep VLOOKUP/Pivot/Dashboard)** 
 
 ---
 
+## Adopted for execution (team)
+
+| Role | Plan |
+|------|------|
+| **Beginner** | [`Students-2xWeek-15Week/`](Students-2xWeek-15Week/) |
+| **Expert** | [`Working-SameField-2xWeek-15Week/`](Working-SameField-2xWeek-15Week/) |
+
+Unlock clock (1–3 sessions/week till course start, then 2 per Sunday for 1 month): [`Unlock-Cadence-Demo/`](Unlock-Cadence-Demo/).
+
+---
+
 ## Final presentation CSVs
 
 Side-by-side milestone view (Session Title + Content Available Yes/No):

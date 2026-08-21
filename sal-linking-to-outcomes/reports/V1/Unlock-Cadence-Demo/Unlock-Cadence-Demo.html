@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Re-Imagining Foundation Course</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #14231c; --ink-soft: #2a3d33; --muted: #5c6f64; --line: #d5e0d8;
+      --paper: #f3f7f4; --card: #ffffff; --forest: #1f6b4a; --forest-deep: #0f3d2c;
+      --mint: #d8f0e4; --amber: #c47a1a; --amber-soft: #fff1db; --sky: #1d4f86;
+      --plum: #5b3d7a; --plum-soft: #f1e9f8;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--ink); font-family: "Source Sans 3", sans-serif;
+      font-size: 17px;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #e7f5ee 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #fff4e4 0%, transparent 45%),
+        linear-gradient(180deg, #eef5f0 0%, var(--paper) 28%, #eef3f0 100%);
+      line-height: 1.55;
+    }
+    .wrap { width: min(1480px, calc(100% - 1.5rem)); margin: 0 auto; padding: 2.25rem 0 4rem; }
+    .hero {
+      border-radius: 28px; padding: 3rem 2.5rem 2.5rem; color: #f4fbf7;
+      background: linear-gradient(135deg, rgba(15, 61, 44, 0.96), rgba(31, 107, 74, 0.88));
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;
+      font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #d7ffe9; margin-bottom: 1rem;
+    }
+    .eyebrow::before { content: ""; width: 1.5rem; height: 2px; background: var(--amber); }
+    h1 {
+      font-family: Fraunces, Georgia, serif; font-weight: 700;
+      font-size: clamp(2.2rem, 4.4vw, 3.6rem); line-height: 1.08; margin: 0 0 1rem;
+    }
+    .hero p { max-width: 68ch; margin: 0; font-size: 1.18rem; color: #dceee5; }
+    .meta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+    .chip {
+      border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.08);
+      color: #f3fff8; border-radius: 999px; padding: 0.45rem 0.9rem; font-size: 0.98rem; font-weight: 600;
+    }
+    nav.toc { display: flex; flex-wrap: wrap; gap: 0.65rem; margin: 1.5rem 0 2rem; }
+    nav.toc a {
+      text-decoration: none; color: var(--forest-deep); background: var(--card);
+      border: 1px solid var(--line); border-radius: 999px; padding: 0.45rem 0.9rem;
+      font-size: 1rem; font-weight: 600;
+    }
+    section {
+      background: var(--card); border: 1px solid var(--line); border-radius: 24px;
+      padding: 1.75rem; margin-bottom: 1.25rem;
+    }
+    section h2 {
+      font-family: Fraunces, Georgia, serif; font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+      margin: 0 0 0.85rem; color: var(--forest-deep);
+    }
+    p, li { color: var(--ink-soft); }
+    .h2-note {
+      display: block; margin-top: 0.35rem;
+      font-family: "Source Sans 3", sans-serif; font-weight: 600;
+      font-size: 1rem; color: var(--muted); letter-spacing: 0;
+    }
+    .key {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.55rem 1.25rem; margin: 0.9rem 0 1.15rem; padding: 0;
+      list-style: none;
+    }
+    .key li {
+      display: flex; align-items: flex-start; gap: 0.5rem;
+      font-size: 0.95rem; font-weight: 600; color: var(--ink-soft);
+    }
+    .key i {
+      flex: 0 0 0.75rem; height: 0.75rem; border-radius: 3px; margin-top: 0.28rem;
+    }
+    .key .flow { grid-column: 1 / -1; }
+    @media (max-width: 800px) {
+      .key { grid-template-columns: 1fr; }
+    }
+    .steps { display: grid; gap: 0.8rem; margin: 1rem 0 0; padding: 0; list-style: none; counter-reset: step; }
+    .steps li {
+      counter-increment: step; position: relative; padding: 0.95rem 1rem 0.95rem 3.4rem;
+      border-radius: 16px; background: #f7faf8; border: 1px solid var(--line);
+    }
+    .steps li::before {
+      content: counter(step); position: absolute; left: 0.9rem; top: 0.95rem;
+      width: 1.7rem; height: 1.7rem; border-radius: 50%; display: grid; place-items: center;
+      background: var(--forest); color: white; font-size: 0.95rem; font-weight: 700;
+    }
+    .callout {
+      margin: 1rem 0 0; padding: 0.95rem 1.1rem; border-radius: 14px;
+      background: #fff8ee; border: 1px solid #ecd3a4; color: #6a4312; font-weight: 600;
+    }
+    .legend { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0.75rem 0 1.25rem; font-size: 0.9rem; font-weight: 600; }
+    .legend i { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 2px; margin-right: 0.35rem; }
+
+    .case-block {
+      border: 1px solid var(--line); border-radius: 20px; padding: 1.15rem 1.15rem 1.25rem;
+      margin-bottom: 1.15rem; background: #fbfdfc;
+    }
+    .case-block:last-child { margin-bottom: 0; }
+    .case-head {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem;
+      margin-bottom: 0.85rem;
+    }
+    .pill {
+      display: inline-block; border-radius: 999px; padding: 0.4rem 0.95rem;
+      font-weight: 700; font-size: 0.95rem; background: var(--forest); color: #fff;
+    }
+    .case-meta { font-size: 0.95rem; font-weight: 600; color: var(--muted); }
+    .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; margin-bottom: 0.9rem; }
+    .stat { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 0.7rem 0.85rem; }
+    .stat b { display: block; font-size: 1.15rem; color: var(--forest-deep); line-height: 1.2; }
+    .stat span { font-size: 0.78rem; font-weight: 600; color: var(--muted); }
+
+    .snake-wrap { overflow-x: auto; padding: 0.15rem 0 0.35rem; }
+    .snake { min-width: 960px; }
+    .snake-row {
+      display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 2.6rem; position: relative;
+    }
+    .snake-row.rtl { direction: rtl; }
+    .snake-row.rtl > * { direction: ltr; }
+    .snode {
+      border: 1px solid var(--line); border-radius: 14px; padding: 0.55rem 0.6rem;
+      position: relative; min-height: 8.1rem; background: #fff;
+    }
+    .snode.pre { background: #f3f8ff; border-color: #c9dcea; }
+    .snode.inaugural {
+      background: var(--mint); border-color: #9dcfb3;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; min-height: 5.2rem;
+    }
+    .snode.inaugural strong { margin: 0; font-size: 1.08rem; }
+    .snode.inaugural .sk, .snode.inaugural .pair { display: none; }
+    .snode.week { background: #fff8ee; border-color: #ecd3a4; min-height: auto; }
+    .week-row { display: block; }
+    .week-row .snode.inaugural,
+    .week-row .snode.dots,
+    .week-row .snode.endweek {
+      min-height: 4.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .snode.course { background: #fff8ee; border-color: #ecd3a4; }
+    .snode.dots {
+      background: #f7faf8; border-style: dashed; min-height: auto;
+    }
+    .snode.endweek { background: var(--plum-soft); border-color: #d9cce6; min-height: auto; }
+    .snode.ghost { visibility: hidden; }
+    .snode:not(.ghost):not(.end)::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 32px;
+      height: 32px;
+      transform: translateY(-50%);
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%231f6b4a' d='M4 11h12.17l-5.59-5.59L12 4l8 8-8 8-1.41-1.41L16.17 13H4v-2z'/></svg>") center / contain no-repeat;
+    }
+    .snake-row.ltr .snode:not(.ghost):not(.end)::after { right: -2.3rem; }
+    .snake-row.rtl .snode:not(.ghost):not(.end)::after {
+      left: -2.3rem;
+      transform: translateY(-50%) scaleX(-1);
+    }
+    .sk { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+    .snode strong { display: block; font-size: 0.92rem; color: var(--forest-deep); margin: 0.15rem 0 0.35rem; }
+    .pair {
+      display: flex; gap: 0.35rem; align-items: flex-start;
+      font-size: 0.78rem; font-weight: 600; color: var(--ink-soft);
+      margin-top: 0.28rem; line-height: 1.25;
+    }
+    .day {
+      flex: 0 0 auto; border-radius: 5px; padding: 0.08rem 0.32rem;
+      font-size: 0.68rem; font-weight: 700; color: #163028;
+    }
+    .day-wed { background: #cfe3f7; }
+    .day-sat { background: #c9ead8; }
+    .day-sun { background: #f6deae; }
+    .day-dc { background: #e4d4f2; }
+    .dots-mark { font-size: 1.7rem; letter-spacing: 0.18em; color: var(--forest-deep); font-weight: 700; line-height: 1; }
+    .subflow {
+      display: flex; align-items: stretch; gap: 0; margin-top: 0.4rem;
+    }
+    .sub {
+      flex: 1; min-width: 0; background: #fff; border: 1px solid var(--line);
+      border-radius: 12px; padding: 0.55rem 0.65rem;
+    }
+    .sub.main { background: #fffdf6; border-color: #ecd3a4; }
+    .sub.dc { background: #f6eefc; border-color: #d9cce6; }
+    .sub.unlock { background: #f3f8ff; border-color: #c9dcea; }
+    .sub-k {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 0.28rem;
+    }
+    .sub-t { font-size: 0.86rem; font-weight: 700; color: var(--forest-deep); line-height: 1.3; }
+    .sub-t + .sub-t { margin-top: 0.28rem; font-weight: 600; color: var(--ink-soft); }
+    .sub-d { font-size: 0.72rem; font-weight: 600; color: var(--muted); margin-top: 0.2rem; }
+    .arr {
+      display: flex; align-items: center; justify-content: center;
+      flex: 0 0 2.8rem; color: var(--forest);
+    }
+    .arr svg { display: block; width: 28px; height: 28px; }
+    .week-down {
+      height: 2.5rem;
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-start;
+      padding-left: 1.35rem;
+      color: var(--forest);
+    }
+    .week-down svg, .turn-arrow svg {
+      display: block;
+      width: 28px;
+      height: 100%;
+    }
+    .turn-arrow {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      height: 100%;
+      color: var(--forest);
+    }
+    .pair-flow {
+      display: flex; align-items: center; gap: 0.15rem; margin-top: 0.4rem;
+    }
+    .pair-flow .sn-num {
+      flex: 1; background: #fff; border: 1px solid #c9dcea; border-radius: 10px;
+      padding: 0.4rem 0.45rem; font-weight: 700; color: var(--forest-deep); font-size: 0.95rem;
+    }
+    .pair-flow .sn-num small {
+      display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 0.12rem;
+    }
+    .pair-flow .arr { flex: 0 0 2.2rem; }
+    .snake-turn {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 2.6rem;
+      height: 2.5rem;
+    }
+
+    footer { margin-top: 1.5rem; color: var(--muted); font-size: 0.95rem; text-align: center; }
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="eyebrow">Masai · AIML</div>
+      <h1>Re-Imagining Foundation Course</h1>
+      <p>
+        Course: <strong>AIML</strong>. Paths: <strong>Beginner</strong> and <strong>Expert</strong>.
+        After Virtual Inaugural, 2 videos per week will be released till all the videos of Foundation are open.
+        This controlled release keeps students from getting overwhelmed, and keeps the value of Foundation content.
+      </p>
+    </header>
+
+    <nav class="toc">
+      <a href="#rules">Typical Foundation Plan</a>
+      <a href="#roadmap">Six enrollment cases</a>
+    </nav>
+
+    <section id="rules">
+      <h2>Typical Foundation Plan</h2>
+      <p class="callout">Wednesday, Saturday and Sunday are example days only. They can be changed. Before the course starts, two videos land on two different days. After Virtual Inaugural, two videos release each week until all Foundation videos are open.</p>
+      <ol class="steps">
+        <li><strong>Beginner library</strong> — 30 sessions, never skipped. Expert Path uses the same cadence with Expert-level sessions.</li>
+        <li><strong>Before the course starts</strong> — 2 sessions per week on <strong>separate days</strong>.</li>
+        <li><strong>Virtual Inaugural</strong> — the live course opens.</li>
+        <li><strong>Same week repeats</strong> through the 6-month course, then <strong>End of Course</strong>. Leftover Foundation videos always finish inside those 6 months — they do not extend the course.</li>
+      </ol>
+    </section>
+
+    <section id="roadmap">
+      <h2>Beginner Path <span class="h2-note">(Expert Path follows the same path, with Expert-level sessions)</span></h2>
+      <ul class="key">
+        <li><i style="background:#cfe3f7"></i> Blue cards — weeks before the course starts</li>
+        <li><i style="background:#d8f0e4"></i> Green card — Virtual Inaugural</li>
+        <li><i style="background:#fff1db;border:1px solid #ecd3a4"></i> Amber cards — live weeks after the course starts</li>
+        <li><i style="background:#f1e9f8"></i> Purple card — End of Course</li>
+        <li class="flow">Each live week: Main session 1 → Main session 2 → Doubt solving → leftover SAL unlocks</li>
+      </ul>
+      <div id="cases"></div>
+    </section>
+
+    <footer>Example days (Wed / Sat / Sun) can be changed. After Virtual Inaugural, 2 Foundation videos release each week until the library is open.</footer>
+  </div>
+  <script>
+    const BEGINNER = [
+      ["1.1", "Intro + Python basics"], ["1.2", "Operators & conditionals"],
+      ["2.1", "Control flow"], ["2.2", "Nested loops"],
+      ["3.1", "Functions"], ["3.2", "Advanced functions"],
+      ["4.1", "Data structures"], ["4.2", "OOP"],
+      ["5.1", "SQL intro"], ["5.2", "Search & filter"],
+      ["6.1", "Aggregations"], ["6.2", "Joins"],
+      ["7.1", "Subqueries"], ["7.2", "Window functions"],
+      ["8.1", "Excel functions"], ["8.2", "VLOOKUP"],
+      ["9.1", "Pivot tables"], ["9.2", "Dashboard"],
+      ["10.1", "Arithmetic"], ["10.2", "Central tendency"],
+      ["11.1", "NumPy"], ["11.2", "Pandas intro"],
+      ["12.1", "Pandas grouping"], ["12.2", "Visualization"],
+      ["13.1", "ML intro"], ["13.2", "Linear regression"],
+      ["14.1", "Logistic"], ["14.2", "Decision trees"],
+      ["15.1", "Random forest"], ["15.2", "K-Means"]
+    ];
+    const CASES = [
+      { days: 90, label: "90 days ago" },
+      { days: 60, label: "60 days ago" },
+      { days: 30, label: "30 days ago" },
+      { days: 15, label: "15 days" },
+      { days: 7, label: "7 days" },
+      { days: 3, label: "3 days" }
+    ];
+    function preWeeks(days) {
+      return Math.floor(days / 7) + (days % 7 >= 3 ? 1 : 0);
+    }
+    const ARROW = `<span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M4 11h12.17l-5.59-5.59L12 4l8 8-8 8-1.41-1.41L16.17 13H4v-2z"/></svg></span>`;
+    const DOWN_ICON = `<svg viewBox="0 0 24 56" width="28" height="40" aria-hidden="true"><path fill="currentColor" d="M11 0h2v38H11z"/><path fill="currentColor" d="M12 56L3.5 38h17L12 56z"/></svg>`;
+    const DOWN = `<div class="week-down" aria-hidden="true">${DOWN_ICON}</div>`;
+    function pairPre(a, b) {
+      return `<div class="pair-flow">
+        <div class="sn-num"><small>Wed</small>${a[0]}</div>
+        ${ARROW}
+        <div class="sn-num"><small>Sat</small>${b[0]}</div>
+      </div>`;
+    }
+    function liveWeek(a, b) {
+      const n1 = a ? a[0] : "—";
+      const n2 = b ? b[0] : "—";
+      return `<div class="subflow">
+        <div class="sub main"><div class="sub-k">Main session 1</div><div class="sub-t">Live session</div></div>
+        ${ARROW}
+        <div class="sub main"><div class="sub-k">Main session 2</div><div class="sub-t">Live session</div></div>
+        ${ARROW}
+        <div class="sub dc"><div class="sub-k">Doubt solving</div><div class="sub-t">Doubt clearing</div></div>
+        ${ARROW}
+        <div class="sub unlock"><div class="sub-k">Unlocks this week</div><div class="sub-t">${n1}</div><div class="sub-t">${n2}</div></div>
+      </div>`;
+    }
+    function makeNode(n, isEnd) {
+      const el = document.createElement("div");
+      el.className = "snode " + n.kind + (isEnd ? " end" : "");
+      if (n.kind === "inaugural") {
+        el.innerHTML = `<strong>${n.title}</strong>`;
+      } else if (n.sk) {
+        el.innerHTML = `<div class="sk">${n.sk}</div><strong>${n.title}</strong>${n.html || ""}`;
+      } else {
+        el.innerHTML = `<strong>${n.title}</strong>${n.html || ""}`;
+      }
+      return el;
+    }
+    function addTurnAtColumn(host, colIndex, cols) {
+      const turn = document.createElement("div");
+      turn.className = "snake-turn";
+      for (let c = 0; c < cols; c++) {
+        const cell = document.createElement("div");
+        if (c === colIndex) {
+          cell.className = "turn-arrow";
+          cell.innerHTML = DOWN_ICON;
+        }
+        turn.appendChild(cell);
+      }
+      host.appendChild(turn);
+    }
+    function paintSnake(host, nodes) {
+      const COLS = 5;
+      host.innerHTML = "";
+      let i = 0;
+      let rowIdx = 0;
+      while (i < nodes.length) {
+        if (nodes[i].span) {
+          const row = document.createElement("div");
+          row.className = "week-row";
+          row.appendChild(makeNode(nodes[i], true));
+          host.appendChild(row);
+          i += 1;
+          if (i < nodes.length) host.insertAdjacentHTML("beforeend", DOWN);
+          rowIdx += 1;
+          continue;
+        }
+        const chunk = [];
+        while (chunk.length < COLS && i < nodes.length && !nodes[i].span) {
+          chunk.push(nodes[i]);
+          i += 1;
+        }
+        const rtl = rowIdx % 2 === 1;
+        const row = document.createElement("div");
+        row.className = "snake-row " + (rtl ? "rtl" : "ltr");
+        chunk.forEach((n, idx) => {
+          const isLastInRow = idx === chunk.length - 1;
+          const isLastNode = i >= nodes.length && isLastInRow;
+          row.appendChild(makeNode(n, isLastInRow || isLastNode));
+        });
+        while (row.children.length < COLS) {
+          const g = document.createElement("div");
+          g.className = "snode ghost";
+          row.appendChild(g);
+        }
+        host.appendChild(row);
+        if (i < nodes.length) {
+          const col = rtl ? (COLS - chunk.length) : (chunk.length - 1);
+          addTurnAtColumn(host, col, COLS);
+        }
+        rowIdx += 1;
+      }
+    }
+    const COURSE_WEEKS = 26;
+    function leftoverPair(preCount, weekIndex) {
+      const i = preCount + weekIndex * 2;
+      if (i >= 30) return [null, null];
+      return [BEGINNER[i], BEGINNER[i + 1] || null];
+    }
+    function buildCase(c) {
+      const weeks = preWeeks(c.days);
+      const preCount = weeks * 2;
+      const leftover = 30 - preCount;
+      const leftoverWeeks = leftover / 2;
+      const overflow = Math.max(0, leftoverWeeks - COURSE_WEEKS);
+      const openByWeek = Math.min(leftoverWeeks, COURSE_WEEKS);
+      const lastPre = BEGINNER[preCount - 1];
+
+      const block = document.createElement("article");
+      block.className = "case-block";
+      block.id = "case-" + c.days;
+      block.innerHTML = `
+        <div class="case-head">
+          <span class="pill">${c.label}</span>
+          <span class="case-meta">Last SAL session before Virtual Inaugural: ${lastPre[0]}</span>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>${preCount} / 30</b><span>Open before Virtual Inaugural</span></div>
+          <div class="stat"><b>${leftover} left</b><span>Open by course week ${openByWeek} of ${COURSE_WEEKS}</span></div>
+          <div class="stat"><b>End of Course</b><span>${overflow ? leftoverWeeks - COURSE_WEEKS + " weeks of videos after the course" : "Leftover videos finish inside 6 months"}</span></div>
+        </div>
+        <div class="snake-wrap"><div class="snake"></div></div>`;
+
+      const nodes = [];
+      for (let w = 0; w < weeks; w++) {
+        const a = BEGINNER[w * 2], b = BEGINNER[w * 2 + 1];
+        nodes.push({
+          kind: "pre",
+          sk: "Separate days",
+          title: (c.days === 3 && w === 0) ? "Short 3-day window" : `Week ${w + 1} before start`,
+          html: pairPre(a, b)
+        });
+      }
+      nodes.push({
+        kind: "inaugural",
+        span: true,
+        title: "Virtual Inaugural"
+      });
+      const [a1, b1] = leftoverPair(preCount, 0);
+      const [a2, b2] = leftoverPair(preCount, 1);
+      nodes.push({
+        kind: "week",
+        span: true,
+        sk: "After Virtual Inaugural",
+        title: "Week 1",
+        html: liveWeek(a1, b1)
+      });
+      nodes.push({
+        kind: "week",
+        span: true,
+        sk: "Same pattern",
+        title: "Week 2",
+        html: liveWeek(a2, b2)
+      });
+      nodes.push({
+        kind: "dots",
+        span: true,
+        title: "Same week repeats"
+      });
+      nodes.push({
+        kind: "endweek",
+        span: true,
+        title: "End of Course"
+      });
+      if (overflow > 0) {
+        nodes.push({
+          kind: "dots",
+          span: true,
+          sk: "After the live course",
+          title: `${overflow} more week${overflow === 1 ? "" : "s"} of leftover videos`
+        });
+      }
+
+      paintSnake(block.querySelector(".snake"), nodes);
+      return block;
+    }
+    const root = document.getElementById("cases");
+    CASES.forEach((c) => root.appendChild(buildCase(c)));
+  </script>
+</body>
+</html>
