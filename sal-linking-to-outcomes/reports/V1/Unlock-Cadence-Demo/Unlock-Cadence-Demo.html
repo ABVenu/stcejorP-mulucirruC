@@ -39,7 +39,7 @@
       font-family: Fraunces, Georgia, serif; font-weight: 700;
       font-size: clamp(2.2rem, 4.4vw, 3.6rem); line-height: 1.08; margin: 0 0 1rem;
     }
-    .hero p { max-width: 68ch; margin: 0; font-size: 1.18rem; color: #dceee5; }
+    .hero p { max-width: 72ch; margin: 0; font-size: 1.18rem; color: #dceee5; }
     .meta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
     .chip {
       border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.08);
@@ -244,9 +244,114 @@
       height: 2.5rem;
     }
 
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 0.85rem;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+    }
+    table.data {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 640px;
+    }
+    table.data th, table.data td {
+      padding: 0.72rem 0.95rem;
+      text-align: left;
+      vertical-align: middle;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #e8efe9;
+    }
+    table.data th {
+      background: #0f3d2c;
+      color: #e8f6ee;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    table.data th.num, table.data td.num {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    table.data tbody tr:last-child td { border-bottom: none; }
+    table.data tbody tr:hover td { background: #f7fbf8; }
+    table.data tr.total td {
+      font-weight: 700;
+      background: #edf5f0;
+      color: var(--forest-deep);
+      border-top: 1px solid #cfe0d5;
+    }
+    table.data tr.aiml td { background: #eef6ff; }
+    table.data tr.aiml:hover td { background: #e4f0fc; }
+    table.data td .bar {
+      display: block;
+      height: 6px;
+      border-radius: 99px;
+      background: #e4eee8;
+      margin-top: 0.35rem;
+      overflow: hidden;
+    }
+    table.data td .bar > span {
+      display: block;
+      height: 100%;
+      border-radius: 99px;
+      background: var(--forest);
+    }
+    table.data .domain {
+      font-weight: 700;
+      color: var(--forest-deep);
+    }
+    table.data .tag {
+      display: inline-block;
+      margin-left: 0.4rem;
+      padding: 0.12rem 0.45rem;
+      border-radius: 999px;
+      background: #1d4f86;
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      vertical-align: middle;
+    }
+    .enroll-kpis {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin: 1rem 0 0.25rem;
+    }
+    .enroll-kpis div {
+      background: #f7faf8;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 0.85rem 1rem;
+    }
+    .enroll-kpis b {
+      display: block;
+      font-size: 1.35rem;
+      color: var(--forest-deep);
+      line-height: 1.15;
+    }
+    .enroll-kpis span {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+    .note-line {
+      margin: 0.85rem 0 0;
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+    }
+    section h3 {
+      font-family: Fraunces, Georgia, serif; font-size: 1.25rem;
+      margin: 1.5rem 0 0.2rem; color: var(--forest-deep);
+    }
     footer { margin-top: 1.5rem; color: var(--muted); font-size: 0.95rem; text-align: center; }
     @media (max-width: 900px) {
-      .stats { grid-template-columns: 1fr; }
+      .stats, .enroll-kpis { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -256,7 +361,8 @@
       <div class="eyebrow">Masai · AIML</div>
       <h1>Re-Imagining Foundation Course</h1>
       <p>
-        Course: <strong>AIML</strong>. Paths: <strong>Beginner</strong> and <strong>Expert</strong>.
+        Course: <strong>AIML</strong> — other domains will be planned shortly.
+        Paths: <strong>Beginner</strong> and <strong>Expert</strong>.
         After Virtual Inaugural, 2 videos per week will be released till all the videos of Foundation are open.
         This controlled release keeps students from getting overwhelmed, and keeps the value of Foundation content.
       </p>
@@ -264,6 +370,7 @@
 
     <nav class="toc">
       <a href="#rules">Typical Foundation Plan</a>
+      <a href="#enrollment">When students enroll</a>
       <a href="#roadmap">Six enrollment cases</a>
     </nav>
 
@@ -276,6 +383,113 @@
         <li><strong>Virtual Inaugural</strong> — the live course opens.</li>
         <li><strong>Same week repeats</strong> through the 6-month course, then <strong>End of Course</strong>. Leftover Foundation videos always finish inside those 6 months — they do not extend the course.</li>
       </ol>
+    </section>
+
+    <section id="enrollment">
+      <h2>When students enroll</h2>
+      <p class="lead" style="max-width:78ch">27,570 students across 153 batches. Timing is days between enrollment / payment and that batch’s start date — not a calendar admission month.</p>
+      <div class="enroll-kpis">
+        <div><b>58.1%</b><span>Last 60 days before start</span></div>
+        <div><b>26.4%</b><span>60+ days early</span></div>
+        <div><b>15.5%</b><span>Paid after start</span></div>
+      </div>
+
+      <h3>Overall</h3>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>When they enrolled</th>
+              <th class="num">Students</th>
+              <th>Share</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Last 30 days before start</td>
+              <td class="num">8,069</td>
+              <td>29.3%<span class="bar"><span style="width:29.3%"></span></span></td>
+            </tr>
+            <tr>
+              <td>30–60 days before start</td>
+              <td class="num">7,951</td>
+              <td>28.8%<span class="bar"><span style="width:28.8%"></span></span></td>
+            </tr>
+            <tr>
+              <td>60–90 days before start</td>
+              <td class="num">3,853</td>
+              <td>14.0%<span class="bar"><span style="width:14%"></span></span></td>
+            </tr>
+            <tr>
+              <td>90+ days before start</td>
+              <td class="num">3,431</td>
+              <td>12.4%<span class="bar"><span style="width:12.4%"></span></span></td>
+            </tr>
+            <tr>
+              <td>Paid after the batch already started</td>
+              <td class="num">4,266</td>
+              <td>15.5%<span class="bar"><span style="width:15.5%"></span></span></td>
+            </tr>
+            <tr class="total">
+              <td>All</td>
+              <td class="num">27,570</td>
+              <td>100%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Domain-wise</h3>
+      <p class="note-line">Each domain row’s five windows add to 100%. Every batch sits in one of these five domains.</p>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th class="num">Share of book</th>
+              <th class="num">Students</th>
+              <th class="num">Batches</th>
+              <th class="num">&lt;30 days</th>
+              <th class="num">30–60</th>
+              <th class="num">60–90</th>
+              <th class="num">90+</th>
+              <th class="num">After start</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="aiml">
+              <td><span class="domain">AIML</span><span class="tag">This plan</span></td>
+              <td class="num">62.6%</td><td class="num">17,272</td><td class="num">52</td>
+              <td class="num">26.3%</td><td class="num">28.8%</td><td class="num">14.8%</td><td class="num">11.6%</td><td class="num">18.5%</td>
+            </tr>
+            <tr>
+              <td><span class="domain">Analytics</span></td>
+              <td class="num">14.2%</td><td class="num">3,928</td><td class="num">30</td>
+              <td class="num">26.3%</td><td class="num">29.4%</td><td class="num">15.6%</td><td class="num">22.9%</td><td class="num">5.8%</td>
+            </tr>
+            <tr>
+              <td><span class="domain">Non-tech</span></td>
+              <td class="num">13.6%</td><td class="num">3,752</td><td class="num">38</td>
+              <td class="num">37.6%</td><td class="num">24.1%</td><td class="num">11.6%</td><td class="num">10.3%</td><td class="num">16.3%</td>
+            </tr>
+            <tr>
+              <td><span class="domain">SDAI</span></td>
+              <td class="num">7.5%</td><td class="num">2,068</td><td class="num">24</td>
+              <td class="num">41.9%</td><td class="num">38.2%</td><td class="num">5.2%</td><td class="num">3.5%</td><td class="num">11.2%</td>
+            </tr>
+            <tr>
+              <td><span class="domain">GenAI</span></td>
+              <td class="num">2.0%</td><td class="num">550</td><td class="num">9</td>
+              <td class="num">40.4%</td><td class="num">23.6%</td><td class="num">24.9%</td><td class="num">10.5%</td><td class="num">0.5%</td>
+            </tr>
+            <tr class="total">
+              <td>All</td>
+              <td class="num">100%</td><td class="num">27,570</td><td class="num">153</td>
+              <td class="num">29.3%</td><td class="num">28.8%</td><td class="num">14.0%</td><td class="num">12.4%</td><td class="num">15.5%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section id="roadmap">

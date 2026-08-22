@@ -47,36 +47,79 @@ Sep fills the 30–60 window, Oct the 60–90 window, Nov the 90+ window. That i
 3. **BSAI** or **CYB**, or **SD / SE / AS** → **SDAI**
 4. **PM** or **DM** in a name segment → **Non-tech**
 5. **AAI**, **BA**, or **DA** → **Analytics**
-6. Else → **Other**
+6. Leftover codes are folded into the same five domains (no Other row): **DSAI / GDS / DSR / PRAI / FTAI / AIDA / AIO / AAGI / AIAG** → AIML; **CSE / FT / FTDE / EDGE / FITT / IITMDES** → SDAI; **FA / IMTG** → Non-tech.
 
 IIMSDM is Non-tech (DM is checked before SD). PMAI is Non-tech (PM, not AIML). AAIPX sits in Analytics (AAI). GAIPX sits in GenAI.
 
 ### Share of book, then % of that domain in each window
 
-Each domain row’s five buckets add to 100%.
+Each domain row’s five buckets add to 100%. Every batch sits in one of these five domains.
 
 | Domain | Share of book | Students | Batches | &lt;30 days | 30–60 days | 60–90 days | 90+ days | After start |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| AIML | 44.6% | 12,283 | 34 | 29.1% | 32.0% | 17.8% | 12.9% | 8.2% |
+| AIML | 62.6% | 17,272 | 52 | 26.3% | 28.8% | 14.8% | 11.6% | 18.5% |
 | Analytics | 14.2% | 3,928 | 30 | 26.3% | 29.4% | 15.6% | 22.9% | 5.8% |
-| Non-tech | 13.6% | 3,747 | 36 | 37.7% | 24.1% | 11.6% | 10.4% | 16.3% |
-| SDAI | 6.8% | 1,872 | 18 | 45.5% | 41.1% | 5.7% | 3.2% | 4.6% |
+| Non-tech | 13.6% | 3,752 | 38 | 37.6% | 24.1% | 11.6% | 10.3% | 16.3% |
+| SDAI | 7.5% | 2,068 | 24 | 41.9% | 38.2% | 5.2% | 3.5% | 11.2% |
 | GenAI | 2.0% | 550 | 9 | 40.4% | 23.6% | 24.9% | 10.5% | 0.5% |
-| Other | 18.8% | 5,190 | 26 | 18.8% | 20.5% | 7.2% | 8.5% | 44.9% |
 | **All** | **100%** | **27,570** | **153** | **29.3%** | **28.8%** | **14.0%** | **12.4%** | **15.5%** |
 
 ### Counts
 
 | Domain | Students | &lt;30 days | 30–60 days | 60–90 days | 90+ days | After start |
 |---|---:|---:|---:|---:|---:|---:|
-| AIML | 12,283 | 3,573 | 3,929 | 2,188 | 1,583 | 1,010 |
+| AIML | 17,272 | 4,535 | 4,973 | 2,558 | 2,011 | 3,195 |
 | Analytics | 3,928 | 1,033 | 1,153 | 614 | 901 | 227 |
-| Non-tech | 3,747 | 1,412 | 903 | 434 | 388 | 610 |
-| SDAI | 1,872 | 851 | 770 | 106 | 59 | 86 |
+| Non-tech | 3,752 | 1,412 | 905 | 437 | 388 | 610 |
+| SDAI | 2,068 | 867 | 790 | 107 | 73 | 231 |
 | GenAI | 550 | 222 | 130 | 137 | 58 | 3 |
-| Other | 5,190 | 978 | 1,066 | 374 | 442 | 2,330 |
 | **All** | **27,570** | **8,069** | **7,951** | **3,853** | **3,431** | **4,266** |
 
-SDAI is 86.6% last-60-days. Non-tech has the strongest last-month rush (37.7%). Analytics has the most 90+ early book among named domains (22.9%). Other’s 44.9% after-start is driven by older IITGDS / PRAI batches.
+AIML after-start rises to 18.5% once IITGDS / PRAI are included (those older batches paid after start). SDAI is 80.1% last-60-days. Non-tech still has the strongest last-month rush (37.6%). Analytics has the most 90+ early book (22.9%).
 
-**Other (26 batches, 5,190 students)** is still unmatched: mainly DSAI / IITGDS, IITRPRAI, IITMDCSE, FTAI, plus small AIDA / AIO / AAGI / AIAG / FT / EDGE / FITT codes.
+### What was in Other (26 batches, 5,190 students = 18.8%)
+
+That 18.8% was **26 batches**. They are now assigned as follows.
+
+**→ AIML (18 batches, 4,989 students)**
+
+| Batch | Students | Code |
+|---|---:|---|
+| IITGDS-250120 | 1,225 | GDS |
+| IITREICT-DSAI-2603 | 944 | DSAI |
+| IITRPRAI-2501 | 768 | PRAI |
+| IITREICT-DSAI-2605 | 618 | DSAI |
+| IITGDS-2501 | 423 | GDS |
+| IITMD-DSAI-2512 | 404 | DSAI |
+| IITREICT-DSAI-EN-III-2609 | 270 | DSAI |
+| IITGDS-2505 | 149 | GDS |
+| BITSoM-FTAI-2601 | 95 | FTAI |
+| IIMT-FTAI-2602 | 37 | FTAI |
+| IITMDDSAI-2505 | 24 | DSAI |
+| IITP-AIDA-TA-III-2611 | 14 | AIDA |
+| IITMD-DSR-EN-I-2605 | 7 | DSR |
+| IITRPRAI-2409 | 5 | PRAI |
+| IITP-AIO-EN-I-2610 | 4 | AIO |
+| IITP-AAGI-EN-I-2611 | 1 | AAGI |
+| IITP-AIAG-TA-I-2610 | 1 | AIAG |
+| IITP-AIDA-EN-III-2610 | 0 | AIDA |
+
+**→ SDAI (6 batches, 196 students)**
+
+| Batch | Students | Code |
+|---|---:|---|
+| IITMDCSE-2501 | 152 | CSE |
+| FITT-EN-2604 | 24 | FITT |
+| IITMDES-2503 | 11 | DES |
+| PWC-FT-2604 | 5 | FT |
+| IIMSI-EDGE-2511 | 3 | EDGE |
+| IITB-FTDE-EN-I-2609 | 1 | FTDE |
+
+**→ Non-tech (2 batches, 5 students)**
+
+| Batch | Students | Code |
+|---|---:|---|
+| SPJIMR-FA-EN-I-2609 | 4 | FA |
+| IMTG-M-EN-I-2607 | 1 | IMTG |
+
+**Other remaining: 0 batches, 0 students.**
