@@ -140,6 +140,7 @@ After **60 minutes of recording**, in **any** scene, plan a break:
 - There should **not be any disturbance**.
 - Keep **mobile silent**.
 - Use **annotation** properly: mark on the screen with **arrow marks**, **straight lines**, and **circles** so students focus on the screen.
+- If you are using **Zoom** and an **external screen annotator**, **share the entire screen**. If you share only a window, the annotator marks will **not** be recorded.
 - **Outfit, hairstyle, and background must stay the same** across every part of the video — same colour of shirt / T-shirt, same hairstyle, same background. This should look like one live session. **Finish the recording in one go.** Do not record scene by scene on separate days.
 - **Virtual background must not change scene by scene.** Keep one background for the full session. **Prefer a blurred background** over a changing virtual image.
 - **Hide date and time from the screen.** There should be **no date and time** on your laptop screen. Do not show any resources or references that have a date and time on them.
@@ -194,6 +195,7 @@ Keep scene numbers and routing codes (1, 0, true, false) for your own planning o
 - [ ] No logo or name of any organisation (Masai or IIT) in any slide or notes
 - [ ] Mobile on silent; no disturbance
 - [ ] Annotation tools ready (arrows, lines, circles)
+- [ ] If using Zoom with an external screen annotator, share the **entire screen** (otherwise annotators will not be recorded)
 - [ ] Timers ready (activities, quiz, break)
 
 **Scene `1.1`**
@@ -237,6 +239,8 @@ Watch these as **samples** of how a SAL session is split into a **Main Scene (Co
 
 **Disclaimer:** If the links do not open in Chrome, please use **Safari** or another browser.
 
+**Sample 1 and Sample 2** are older **2025** videos recorded using **OBS**. The timer was kept **manually on a mobile phone** and was **not displayed** on screen.
+
 ### Sample 1 — Programming Fundamentals
 
 | Subtopic | Title | Main Scene (Concept Video) | Subscene (Revision Video) | Doubt Resolution Video |
@@ -273,6 +277,22 @@ Watch these as **samples** of how a SAL session is split into a **Main Scene (Co
 | 1 | <a href="https://github.com/ABVenu/salcurriculum/blob/main/S03/V1/checkPointQuestions/01Scene1.0.md" target="_blank" rel="noopener noreferrer">Scene 1.1 quiz</a> | 36:30 | 40:00 | 210 | <a href="https://github.com/ABVenu/salcurriculum/blob/main/S03/V1/checkPointQuestions/02Scene1.1.md" target="_blank" rel="noopener noreferrer">Scene 1.2 quiz</a> | 02:40 | 05:00 | 140 |
 | 2 | <a href="https://github.com/ABVenu/salcurriculum/blob/main/S03/V1/checkPointQuestions/03Scene2.0.md" target="_blank" rel="noopener noreferrer">Scene 2.1 quiz</a> | 53:30 | 58:00 | 270 | <a href="https://github.com/ABVenu/salcurriculum/blob/main/S03/V1/checkPointQuestions/04Scene2.1.md" target="_blank" rel="noopener noreferrer">Scene 2.2 quiz</a> | 02:15 | 05:01 | 166 |
 | 3 | <a href="https://github.com/ABVenu/salcurriculum/blob/main/S03/V1/checkPointQuestions/05Scene3.0.md" target="_blank" rel="noopener noreferrer">Scene 3.1 quiz</a> | 23:30 | 26:00 | 150 | <a href="https://github.com/ABVenu/salcurriculum/blob/main/S03/V1/checkPointQuestions/06Scene3.1.md" target="_blank" rel="noopener noreferrer">Scene 3.2 quiz</a> | 01:25 | 05:00 | 215 |
+
+### Sample 3 — S01 (newer, 2026, Zoom)
+
+These are newer **2026** videos recorded using **Zoom**. You can see a **dedicated timer on the screen**.
+
+| Scene | Type | Link |
+|-------|------|------|
+| Scene 1.1 | Main Scene (Concept Video) | <a href="https://cdn.masaischool.com/coding-platform/dev/lms/tickets/1962ea16-8cc9-4603-ba5a-54de951ecd9e/ihy2xIzk3NaxX3Sz.mp4" target="_blank" rel="noopener noreferrer">Scene 1.1</a> |
+| Scene 1.2 | Subscene (Revision Video) | <a href="https://cdn.masaischool.com/coding-platform/dev/lms/tickets/425ade89-ec10-4e43-bea3-9565d4120239/CgRuly1UoUF2bzUl.mp4" target="_blank" rel="noopener noreferrer">Scene 1.2</a> |
+| Scene 2.1 | Main Scene (Concept Video) | <a href="https://cdn.masaischool.com/coding-platform/dev/lms/tickets/08f2ac58-3f66-479a-b49e-5fe6be379efe/XiToxrteKdDbztEr.mp4" target="_blank" rel="noopener noreferrer">Scene 2.1</a> |
+| Scene 2.2 | Subscene (Revision Video) | <a href="https://cdn.masaischool.com/coding-platform/dev/lms/tickets/f38c4f6f-138a-42cb-b31f-2a64858f88c6/yU1nLcIik1BUtbzq.mp4" target="_blank" rel="noopener noreferrer">Scene 2.2</a> |
+| Scene 3.1 | Main Scene (Concept Video) | <a href="https://cdn.masaischool.com/coding-platform/dev/lms/tickets/84ce6841-9f13-49a9-8e88-da8aff252d52/ZlluZHbpGZnpIroM.mp4" target="_blank" rel="noopener noreferrer">Scene 3.1</a> |
+| Scene 3.2 | Subscene (Revision Video) | <a href="https://cdn.masaischool.com/coding-platform/dev/lms/tickets/326cd32c-8bec-4be8-a24b-656ed0ae42e0/ttPfTIcIM0YzdQSG.mp4" target="_blank" rel="noopener noreferrer">Scene 3.2</a> |
+| Scene 4.1 | Main Scene (Concept Video) | NA |
+| Scene 4.2 | Subscene (Revision Video) | NA |
+| Scene Doubt Resolution | Doubt Resolution Video | <a href="https://cdn.masaischool.com/coding-platform/dev/lms/tickets/98471ed7-4bd4-4abf-8b5e-6a3a6d35f2ad/rsDlsPDasyPs2iRu.mp4" target="_blank" rel="noopener noreferrer">Doubt Resolution</a> |
 
 ### Sample — bad video (do not record like this)
 
