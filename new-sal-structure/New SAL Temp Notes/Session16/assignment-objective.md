@@ -1,0 +1,202 @@
+# Assignment Objective
+
+## Q1 (MCQ, Easy)
+
+What is a workbook?
+
+**Options:**
+1. One grid of rows and columns, opened from a sheet tab
+2. The Excel file that holds one or more worksheets
+3. The band of commands across the top of the window
+4. The small box that shows the active cell address
+
+**Correct:** 2
+
+**Answer Explanation:**
+The correct option is 2. A workbook is the Excel file. It holds one or more worksheets, and it is what you save, close, and open again.
+
+**Why other options are wrong:**
+- Option 1: One grid inside the file is a worksheet, not the workbook. The sheet tab switches which grid you are looking at.
+- Option 3: The band of commands across the top is the ribbon. Hiding it does not delete the file.
+- Option 4: The small box that shows the active address is the name box. It sits to the left of the formula bar.
+
+## Q2 (MCQ, Easy)
+
+Which address names the cell where column C crosses row 7?
+
+**Options:**
+1. 7C
+2. C-7
+3. 7-C
+4. C7
+
+**Correct:** 4
+
+**Answer Explanation:**
+The correct option is 4. A cell address is the column letter, then the row number. Column C and row 7 is C7. The name box shows C7 when that cell is active.
+
+**Why other options are wrong:**
+- Option 1: 7C puts the row number first. That is not a cell address.
+- Option 2: C-7 adds a hyphen. The address is the letter and the number written together.
+- Option 3: 7-C reverses the order and adds a hyphen. The letter comes first.
+
+## Q3 (MCQ, Easy)
+
+What does the formula bar show for the active cell?
+
+**Options:**
+1. The contents stored in that cell
+2. The workbook file name
+3. The zoom percentage
+4. How many sheet tabs the file has
+
+**Correct:** 1
+
+**Answer Explanation:**
+The correct option is 1. The formula bar is the long box to the right of the name box. It shows the contents stored in the active cell, including text that the grid clips.
+
+**Why other options are wrong:**
+- Option 2: The workbook file name appears in the title bar, above the ribbon.
+- Option 3: Zoom is the slider at the bottom-right, or a choice on the View tab. It is not what the formula bar displays.
+- Option 4: Sheet tabs sit along the bottom. The formula bar does not count them.
+
+## Q4 (MCQ, Easy)
+
+How many cells are in the range A1:B3?
+
+**Options:**
+1. 3
+2. 5
+3. 6
+4. 2
+
+**Correct:** 3
+
+**Answer Explanation:**
+The correct option is 3. A1:B3 is a rectangle. Columns A and B are 2 columns. Rows 1, 2, and 3 are 3 rows. 2 × 3 = 6 cells: A1, B1, A2, B2, A3, and B3.
+
+**Why other options are wrong:**
+- Option 1: 3 is the number of rows, not the number of cells.
+- Option 2: 5 is not the product of 2 columns and 3 rows.
+- Option 4: 2 is the number of columns, not the number of cells.
+
+## Q5 (MCQ, Moderate)
+
+Anita is stored in A2. You insert a new row above the current row 2. Which cell holds Anita after the insert?
+
+**Options:**
+1. A1
+2. A3
+3. B2
+4. A2, because the insert copies Anita and also leaves her in A2
+
+**Correct:** 2
+
+**Answer Explanation:**
+The correct option is 2. Inserting a row above the current row 2 shifts the old row 2 downward. Anita moves to A3, and A2 is blank. The value moved. It was not copied.
+
+**Why other options are wrong:**
+- Option 1: A1 is above the insert. A value already in A1 stays in A1. Anita was in A2, so she moves down, not up.
+- Option 3: A row insert does not move Anita into column B. Her column stays A.
+- Option 4: Insert shifts the existing row. It does not copy Anita into a second cell and leave the original filled.
+
+## Q6 (MCQ, Moderate)
+
+A city name in C2 looks cut off. Column C is narrow, and D2 already holds a value. Which statement is true?
+
+**Options:**
+1. Excel shortens the stored city name to the visible characters
+2. The address of that cell changes because the column is narrow
+3. The city name is deleted until the column is widened
+4. The formula bar still shows the full stored city name
+
+**Correct:** 4
+
+**Answer Explanation:**
+The correct option is 4. Column width changes how much text you can see. It does not change the stored characters or the address. When the cell to the right is filled, the long text looks clipped, and the formula bar still shows the full city name.
+
+**Why other options are wrong:**
+- Option 1: A narrow column does not rewrite the stored text. Widen the column, or double-click the column boundary, to see it.
+- Option 2: The address stays C2. Width is about reading, not about renaming the cell.
+- Option 3: The value is still stored. Delete would clear it. A narrow column does not.
+
+## Q7 (MSQ, Moderate)
+
+Which statements are true?
+
+**Options:**
+1. The name box shows the address of the active cell
+2. Typing an address in the name box and pressing Enter deletes that cell
+3. Pressing Esc during an edit cancels the edit and keeps the old value
+4. Pressing Delete on one selected cell removes that whole row
+
+**Correct:** 1, 3
+
+**Answer Explanation:**
+The correct options are 1 and 3. The name box shows the active address, such as A1. Esc throws away an unfinished edit, as the red cross beside the formula bar does. Enter, or the green tick, stores the edit.
+
+**Why other options are wrong:**
+- Option 2: Typing an address in the name box and pressing Enter jumps to that cell. It does not delete it.
+- Option 4: Delete clears the contents of the selected cell. The row and the column stay. Removing the whole row is a separate Delete command on the row number.
+
+## Q8 (MSQ, Moderate)
+
+Which statements are true?
+
+**Options:**
+1. The ribbon is the band of commands grouped under tabs such as Home and View
+2. Hiding the ribbon deletes the values stored on the sheet
+3. Clicking a row number selects that entire row
+4. Zoom changes how large the grid looks and does not change cell addresses
+
+**Correct:** 1, 3, 4
+
+**Answer Explanation:**
+The correct options are 1, 3, and 4. The ribbon holds commands under tabs. Home is used for entering and inserting. View is used for zoom and Freeze Top Row. Clicking the row number selects that row. Zoom is screen magnification. Values and addresses stay the same.
+
+**Why other options are wrong:**
+- Option 2: Hiding the ribbon only hides the buttons. The stored values remain.
+
+## Q9 (MSQ, Hard)
+
+A sheet holds this grid.
+
+|  | A | B |
+| --- | --- | --- |
+| 1 | Name | City |
+| 2 | Anita | Pune |
+
+First, insert a new row above the current row 2. Then insert a new column at column A. Which statements are true after both inserts?
+
+**Options:**
+1. Anita is in B3
+2. Pune is in C3
+3. Name is still in A1
+4. Anita stays in A3 and is also copied to B3
+
+**Correct:** 1, 2
+
+**Answer Explanation:**
+The correct options are 1 and 2. The row insert moves old row 2 down, so Anita is in A3 and Pune is in B3, while row 2 is blank. The column insert then puts a blank column to the left of column A, so every existing column shifts right. Anita moves from A3 to B3. Pune moves from B3 to C3. Name moves from A1 to B1.
+
+**Why other options are wrong:**
+- Option 3: Name does not stay in A1. The new column at A shifts Name from A1 to B1.
+- Option 4: Insert moves cells. It does not copy Anita into a second cell. After both inserts she is only in B3.
+
+## Q10 (MSQ, Hard)
+
+Which statements are true?
+
+**Options:**
+1. The range A1:C4 contains 12 cells
+2. Ctrl+Home returns to the beginning of the sheet and does not clear A1
+3. Text stored in A2 on one sheet automatically appears in A2 on a new sheet in the same workbook
+4. Freeze Top Row keeps row 1 visible while you scroll and does not hide the rows below
+
+**Correct:** 1, 2, 4
+
+**Answer Explanation:**
+The correct options are 1, 2, and 4. A1:C4 has columns A, B, and C, and rows 1 through 4, so 3 × 4 = 12 cells. Ctrl+Home is navigation, usually to A1, and it does not clear that cell. Freeze Top Row holds row 1 on screen while lower rows scroll. It does not hide those rows, and it does not lock row 1 against editing.
+
+**Why other options are wrong:**
+- Option 3: Sheets in one workbook do not share cells. A new sheet's A2 is empty until you type there. The first sheet's A2 is unchanged.

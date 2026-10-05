@@ -1,0 +1,289 @@
+questionType,contentType,contentBody,intAnswer,prepTime(in_seconds),floatAnswer.max,floatAnswer.min,fitbAnswer,mcscAnswer,subjectiveAnswer,option.1,option.2,option.3,option.4,mcmcAnswer,tagRelationships,difficultyLevel,answerExplanationType,answerExplanation
+mcsc,markdown,"What do these two prints display?
+
+```python
+slip = (78, ""Pass"")
+print(slip[0])
+print(len(slip))
+```",,,,,,1,,`78` and `2`,`Pass` and `2`,`78` and `1`,`78` and `Pass`,,6ab51d3768eb6b4b8e8065e6,0,markdown,"**Answer Explanation:**
+Index `0` of the tuple is `78`. `len` counts the items in the pack, and this pack has two items, so the second print is `2`.
+
+**Why other options are wrong:**
+- Option 2: `Pass` is index `1`, not index `0`.
+- Option 3: The tuple has two items. A length of `1` would need a one-item tuple such as `(78,)`.
+- Option 4: The second print is `len(slip)`, not `slip[1]`."
+mcsc,markdown,"What do these two prints display?
+
+```python
+only_marks = (78,)
+not_a_tuple = (78)
+print(len(only_marks))
+print(not_a_tuple)
+```",,,,,,2,,`78` and `78`,`1` and `78`,`2` and `78`,"`1` and `(78,)`",,6ab51d3768eb6b4b8e8065e6,0,markdown,"**Answer Explanation:**
+The trailing comma in `(78,)` makes a one-item tuple, so its length is `1`. Parentheses around `78` with no comma do not make a tuple. `not_a_tuple` is the number `78`.
+
+**Why other options are wrong:**
+- Option 1: `len(only_marks)` counts items. It does not print the number stored inside the tuple.
+- Option 3: The one-item tuple has length `1`, not `2`.
+- Option 4: `not_a_tuple` prints as `78`. It is not the tuple `(78,)`."
+mcsc,markdown,"What does this print display?
+
+```python
+rolls = {""CS01"", ""EC02"", ""CS01""}
+print(len(rolls))
+```",,,,,,3,,`3`,`1`,`2`,`0`,,6ab51d3768eb6b4b8e8065e6,0,markdown,"**Answer Explanation:**
+A set keeps each value once. `""CS01""` is written twice and stored once. Together with `""EC02""`, the set has two items, so `len` is `2`.
+
+**Why other options are wrong:**
+- Option 1: The written duplicate does not create a second `""CS01""`.
+- Option 2: `""EC02""` is a different value, so it stays in the set.
+- Option 4: The set is not empty. Two unique values were stored."
+mcsc,markdown,"What do these two prints display?
+
+```python
+upi = {""payer"": ""Ananya"", ""amount"": 250}
+print(upi.get(""note"", ""No note""))
+print(upi.get(""amount"", 0))
+```",,,,,,4,,`None` and `0`,`No note` and `0`,`Ananya` and `250`,`No note` and `250`,,6ab51d3768eb6b4b8e8065e6,0,markdown,"**Answer Explanation:**
+`""note""` is missing, so `get` returns the fallback `""No note""`. `""amount""` is present, so `get` returns `250` and does not use the fallback `0`.
+
+**Why other options are wrong:**
+- Option 1: The first call passes a fallback, so a missing key returns `""No note""`, not `None`. The second key exists, so it does not return `0`.
+- Option 2: The fallback `0` is used only when `""amount""` is missing. That key is present.
+- Option 3: The first call looks up `""note""`, not `""payer""`."
+mcsc,markdown,"What do these two prints display?
+
+```python
+token_and_bill = 14, 40
+token, bill = token_and_bill
+print(token)
+print(bill)
+```",,,,,,2,,`40` and `14`,`14` and `40`,"`(14, 40)` and `(14, 40)`",`14` and `None`,,6ab51d3768eb6b4b8e8065e6,0.5,markdown,"**Answer Explanation:**
+The comma packs `14` and `40` into one tuple. Unpacking copies those items into names in the same order, so `token` is `14` and `bill` is `40`.
+
+**Why other options are wrong:**
+- Option 1: Unpacking follows the stored order. It does not swap the two values.
+- Option 3: Each name receives one item from the tuple, not the whole tuple.
+- Option 4: Both items are unpacked. `bill` receives `40`."
+mcsc,markdown,"What do these three prints display, in order?
+
+```python
+canteen = {""Riya"", ""Arjun"", ""Meera""}
+library = {""Meera"", ""Kabir""}
+print(len(canteen & library))
+print(len(canteen | library))
+print(len(canteen - library))
+```",,,,,,1,,"`1`, `4`, and `2`","`1`, `5`, and `2`","`2`, `4`, and `2`","`1`, `4`, and `3`",,6ab51d3768eb6b4b8e8065e6,0.5,markdown,"**Answer Explanation:**
+`&` keeps names in both sets. Only `Meera` is shared, so the length is `1`. `|` keeps each unique name from either set: `Riya`, `Arjun`, `Meera`, and `Kabir`, so the length is `4`. `-` keeps canteen names that are not in library: `Riya` and `Arjun`, so the length is `2`.
+
+**Why other options are wrong:**
+- Option 2: The union does not keep a second `Meera`. Its length is `4`, not `5`.
+- Option 3: The intersection has one name, not two.
+- Option 4: The difference drops `Meera` because `Meera` is also in `library`. Its length is `2`, not `3`."
+mcmc,markdown,Select every correct statement.,,,,,,,,"Assigning `slip[0] = 80` when `slip = (78, ""Pass"")` raises `TypeError`.",`(78)` is a one-item tuple of length `1`.,"`set()` creates an empty set, and `{}` creates an empty dictionary.",Calling `add` again with a value that is already in the set does not increase `len`.,"1, 3, 4",6ab51d3768eb6b4b8e8065e6,0.5,markdown,"**Answer Explanation:**
+A tuple cannot have an item replaced, so `slip[0] = 80` raises `TypeError`. Empty curly braces are a dictionary. An empty set is written `set()`. `add` inserts a value only when that value is not already present, so a duplicate leaves the length unchanged.
+
+**Why other options are wrong:**
+- Option 2: `(78)` is the number `78` grouped in parentheses. A one-item tuple needs the trailing comma, as in `(78,)`."
+mcmc,markdown,"Select every correct statement about this code.
+
+```python
+marks = {""Maths"": 78, ""Science"": 86}
+extra = {""Science"": 90, ""English"": 91}
+marks.update(extra)
+```",,,,,,,,"After `update`, `marks[""Science""]` is `90`.","After `update`, `marks[""Maths""]` is removed.","After `update`, `len(marks)` is `3`.","`marks.get(""English"")` raises `KeyError`.","1, 3",6ab51d3768eb6b4b8e8065e6,0.5,markdown,"**Answer Explanation:**
+`update` writes pairs from `extra` into `marks`. The shared key `""Science""` takes the new value `90`. `""English""` is new, so it is added. `""Maths""` is not in `extra`, so it stays `78`. The keys are `Maths`, `Science`, and `English`, and the length is `3`.
+
+**Why other options are wrong:**
+- Option 2: A missing key in `extra` does not delete that key from `marks`. `""Maths""` remains `78`.
+- Option 4: After the update, `""English""` is present. `get` returns `91`. `get` also does not raise `KeyError` for a missing key."
+mcmc,markdown,"Select every correct statement.
+
+```python
+def token_bill(plates):
+    amount = plates * 40
+    return plates, amount
+
+got_plates, got_amount = token_bill(3)
+paid = set()
+paid.add(""CS01"")
+paid.add(""CS01"")
+```",,,,,,,,`got_plates` is `3` and `got_amount` is `120`.,"`return plates, amount` packs one tuple for the caller.",`len(paid)` is `2` because `add` ran twice.,`paid[0]` raises `TypeError` because a set has no index.,"1, 2, 4",6ab51d3768eb6b4b8e8065e6,1,markdown,"**Answer Explanation:**
+`token_bill(3)` computes `3 * 40`, which is `120`, and `return plates, amount` packs `(3, 120)`. Unpacking stores `3` in `got_plates` and `120` in `got_amount`. The second `add(""CS01"")` does not create a second copy. A set has no index, so `paid[0]` raises `TypeError`.
+
+**Why other options are wrong:**
+- Option 3: Both calls add the same value. The set length is `1`, not `2`."
+mcmc,markdown,"Select every correct statement.
+
+```python
+fees = {""Tuition"": 40000, ""Mess"": 2500}
+total = 0
+for head, amount in fees.items():
+    total = total + amount
+```",,,,,,,,The loop gives `head` a key and leaves `amount` unset.,"After the loop, `total` is `42500`.",`list(fees.keys())` contains `Tuition` and `Mess`.,"`fees[""Hostel""]` returns `None` when that key is missing.","2, 3",6ab51d3768eb6b4b8e8065e6,1,markdown,"**Answer Explanation:**
+`items` yields each pair, and the `for` line unpacks that pair into `head` and `amount`. The amounts are `40000` and `2500`, so `total` becomes `42500`. `keys` yields the labels `Tuition` and `Mess`.
+
+**Why other options are wrong:**
+- Option 1: `fees.items()` supplies both the key and the value on every pass. `amount` is set to `40000` and then to `2500`.
+- Option 4: Square brackets on a missing key raise `KeyError`. A fallback of `None` comes from `get` when no second argument is passed, not from `fees[""Hostel""]`."
+subjective,markdown,"Write one Python program that completes Question 1 through Question 9 in order.
+
+Question 1. Set `slip` to `(78, ""Pass"")`. Print `slip[0]`, `slip[1]`, and `len(slip)` on separate lines.
+
+Question 2. Set `only_marks` to `(78,)` and `plain` to `(78)`. Print `len(only_marks)`, then print `plain`.
+
+Question 3. Pack `14, 40` into `token_and_bill`. Unpack it into `token` and `bill` in that order. Print `token`, then print `bill`.
+
+Question 4. Define `token_bill(plates)` so that it returns `plates` and `plates * 40` as one tuple. Unpack `token_bill(3)` into `got_plates` and `got_amount`. Print both names.
+
+Question 5. Start `seen` with `set()`. Add `""UPI-14""`, then `""UPI-15""`, then `""UPI-14""` again. Print `len(seen)` and print whether `""UPI-14""` is in `seen`. Remove `""UPI-15""`. Print `len(seen)` and print whether `""UPI-15""` is in `seen`.
+
+Question 6. Set `hostel` to `{""Riya"", ""Arjun"", ""Meera""}` and `team` to `{""Arjun"", ""Kabir""}`. Print `len(hostel & team)`, then whether `""Arjun""` is in that intersection. Print `len(hostel | team)`. Print `len(hostel - team)`, then whether `""Kabir""` is in that difference.
+
+Question 7. Set `marks` to `{""Maths"": 78, ""Science"": 86}`. Print `marks[""Maths""]`. Add `""English""` with value `91`. Change `""Maths""` to `80`. Print `marks[""English""]`, `marks[""Maths""]`, and `len(marks)`.
+
+Question 8. Set `upi` to `{""payer"": ""Ananya"", ""amount"": 250}`. Print `upi.get(""payer"")`, `upi.get(""note"")`, `upi.get(""note"", ""No note"")`, and `upi.get(""amount"", 0)`, each on its own line.
+
+Question 9. Set `scores` to `{""Maths"": 78, ""Science"": 86}` and `extra` to `{""Science"": 90, ""English"": 91}`. Call `scores.update(extra)`. Print `scores[""Science""]`, `scores[""English""]`, and `scores[""Maths""]`. Loop over `scores.items()`, add every score, and print the total. Print `len(scores)`.
+
+### Sample Output
+
+```text
+78
+Pass
+2
+1
+78
+14
+40
+3
+120
+2
+True
+1
+False
+1
+True
+4
+2
+False
+78
+91
+80
+3
+Ananya
+None
+No note
+250
+90
+91
+78
+259
+3
+```
+
+Membership checks print `True` or `False`. Do not rely on the printed order of a set.
+
+### Constraints
+
+- Use one `.py` file.
+- Do not call `input()`.
+- Use a tuple for Question 1 through Question 4, a set for Question 5 and Question 6, and a dictionary for Question 7 through Question 9.
+- Do not index a set.
+- Build the total in Question 9 with the loop. Do not replace that loop with a hard-coded `259`.
+
+### Submission Instruction
+
+- Code all the points mentioned in VS Code in a single `.py` file.
+- Run the code and verify it is working.
+- Then submit the code in the code editor/answer box in the LMS.",,,,,,,,,,,,,6ab51d3768eb6b4b8e8065e6,0.5,markdown,"Question 1 reads the tuple by index. Index `0` is `78`, index `1` is `Pass`, and the length is `2`.
+
+Question 2 uses the trailing comma to make a tuple of length `1`. `(78)` is the plain number `78`.
+
+Question 3 packs two values with a comma and unpacks them in the same order.
+
+Question 4 returns `(3, 120)` because `3 * 40` is `120`. Unpacking fills the two names.
+
+Question 5 stores two payment references. The repeated `""UPI-14""` does not change the length, so the first length is `2` and membership is `True`. After `remove(""UPI-15"")`, the length is `1` and that reference is no longer present.
+
+Question 6: the intersection contains `Arjun` only, so its length is `1`. The union has four names, so its length is `4`. The difference contains `Riya` and `Meera`, so its length is `2`, and `Kabir` is not in it.
+
+Question 7 looks up `78`, adds `English`, replaces `Maths` with `80`, and ends with three pairs.
+
+Question 8 returns the stored payer, `None` for a missing note, the fallback `""No note""`, and the stored amount `250` instead of the fallback `0`.
+
+Question 9 replaces `Science` with `90`, adds `English`, and leaves `Maths` at `78`. The loop adds `78 + 90 + 91`, which is `259`. Three keys remain.
+
+```python
+slip = (78, ""Pass"")
+print(slip[0])
+print(slip[1])
+print(len(slip))
+
+only_marks = (78,)
+plain = (78)
+print(len(only_marks))
+print(plain)
+
+token_and_bill = 14, 40
+token, bill = token_and_bill
+print(token)
+print(bill)
+
+def token_bill(plates):
+    amount = plates * 40
+    return plates, amount
+
+got_plates, got_amount = token_bill(3)
+print(got_plates)
+print(got_amount)
+
+seen = set()
+seen.add(""UPI-14"")
+seen.add(""UPI-15"")
+seen.add(""UPI-14"")
+print(len(seen))
+print(""UPI-14"" in seen)
+seen.remove(""UPI-15"")
+print(len(seen))
+print(""UPI-15"" in seen)
+
+hostel = {""Riya"", ""Arjun"", ""Meera""}
+team = {""Arjun"", ""Kabir""}
+both = hostel & team
+either = hostel | team
+only_hostel = hostel - team
+print(len(both))
+print(""Arjun"" in both)
+print(len(either))
+print(len(only_hostel))
+print(""Kabir"" in only_hostel)
+
+marks = {""Maths"": 78, ""Science"": 86}
+print(marks[""Maths""])
+marks[""English""] = 91
+marks[""Maths""] = 80
+print(marks[""English""])
+print(marks[""Maths""])
+print(len(marks))
+
+upi = {""payer"": ""Ananya"", ""amount"": 250}
+print(upi.get(""payer""))
+print(upi.get(""note""))
+print(upi.get(""note"", ""No note""))
+print(upi.get(""amount"", 0))
+
+scores = {""Maths"": 78, ""Science"": 86}
+extra = {""Science"": 90, ""English"": 91}
+scores.update(extra)
+print(scores[""Science""])
+print(scores[""English""])
+print(scores[""Maths""])
+total = 0
+for subject, score in scores.items():
+    total = total + score
+print(total)
+print(len(scores))
+```
+
+One alternative for Question 3 is to read the packed values by index, `token_and_bill[0]` and `token_and_bill[1]`, instead of unpacking. The required program unpacks into `token` and `bill`."

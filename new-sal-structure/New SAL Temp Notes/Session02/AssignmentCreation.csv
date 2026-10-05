@@ -1,0 +1,165 @@
+questionType,contentType,contentBody,intAnswer,prepTime(in_seconds),floatAnswer.max,floatAnswer.min,fitbAnswer,mcscAnswer,subjectiveAnswer,option.1,option.2,option.3,option.4,mcmcAnswer,tagRelationships,difficultyLevel,answerExplanationType,answerExplanation
+mcsc,markdown,What is the result of `10 / 2`?,,,,,,4,,5,2,10,5.0,,6ab51cf913fd6563e7aad995,0,markdown,"In Python 3, `/` divides and keeps a float, even when the division comes out even. `10 / 2` is `5.0`, not the int `5`.
+
+**Why other options are wrong:**
+- Option 1: 5 would be a whole number. `/` does not drop the decimal form.
+- Option 2: 2 is not the quotient of 10 divided by 2.
+- Option 3: 10 is the first number, not the result of the division."
+mcsc,markdown,What is the result of `20 // 6`?,,,,,,1,,3,3.3333333333333335,2,6,,6ab51cf913fd6563e7aad995,0,markdown,"`//` divides and keeps only the whole-number part. 6 fits into 20 three full times, so `20 // 6` is `3`.
+
+**Why other options are wrong:**
+- Option 2: That decimal result belongs to `/`. `20 / 6` keeps a float. `//` drops the fraction.
+- Option 3: 2 is the remainder from `20 % 6`, not the full-group count from `//`.
+- Option 4: 6 is the second number in the expression, not how many full times it fits into 20."
+mcsc,markdown,"What does this code display?
+
+```python
+marks = 78
+pass_mark = 40
+print(marks >= pass_mark)
+print(marks == 100)
+```",,,,,,3,,78 and then 100,False and then True,True and then False,True and then True,,6ab51cf913fd6563e7aad995,0,markdown,"A comparison produces a bool, not the number itself. 78 is at least 40, so the first print is True. 78 and 100 are not the same, so `==` is False.
+
+**Why other options are wrong:**
+- Option 1: The prints show the yes-or-no results, not the stored marks.
+- Option 2: The two bools are reversed. The pass check is True and the exact-100 check is False.
+- Option 4: The second comparison is False because 78 is not equal to 100."
+mcsc,markdown,"What does this code display?
+
+```python
+fee_paid = True
+form_submitted = False
+print(fee_paid and form_submitted)
+print(not form_submitted)
+```",,,,,,2,,True and then False,False and then True,True and then True,False and then False,,6ab51cf913fd6563e7aad995,0,markdown,"`and` is True only when both parts are True. True and False is False. `not` flips False to True, so the second print is True.
+
+**Why other options are wrong:**
+- Option 1: The prints are in the opposite order. `and` fails first, and `not False` is True.
+- Option 3: The first result is not True, because `form_submitted` is False.
+- Option 4: The second result is not False. `not False` is True."
+mcsc,markdown,"What does this code display?
+
+```python
+bill = 10 + 2 * 5
+print(bill)
+```",,,,,,4,,60,17,12,20,,6ab51cf913fd6563e7aad995,0.5,markdown,"Without brackets, multiplication runs before addition. `2 * 5` is 10, then `10 + 10` is 20. The screen shows 20.
+
+**Why other options are wrong:**
+- Option 1: 60 is `(10 + 2) * 5`. This line has no brackets, so the addition does not run first.
+- Option 2: 17 would require adding 10, 2, and 5. The `*` is multiplication, not another addition.
+- Option 3: 12 is not a step in this expression. The product 10 is added to 10."
+mcsc,markdown,"What does this code display?
+
+```python
+marks = 63
+if marks >= 75:
+    print(""Distinction"")
+elif marks >= 40:
+    print(""Pass"")
+else:
+    print(""Fail"")
+```",,,,,,1,,Pass,Distinction,Fail,Distinction and then Pass,,6ab51cf913fd6563e7aad995,0.5,markdown,"The `if` check `63 >= 75` is False, so Python tries the `elif`. `63 >= 40` is True, so that block prints Pass and the chain stops. `else` does not run.
+
+**Why other options are wrong:**
+- Option 2: Distinction needs marks of at least 75. 63 does not take that path.
+- Option 3: Fail runs only when every earlier condition is false. The pass check is true.
+- Option 4: One chain prints one path. A true `elif` does not also print the `if` message."
+mcmc,markdown,Which statements are true?,,,,,,,,`20 % 6` is 2,`2 ** 3` is 6,`20 // 6` is 3,`10 / 2` is the int 5,"1, 3",6ab51cf913fd6563e7aad995,0.5,markdown,"`%` is the leftover after full groups: 20 minus 18 is 2. `//` counts those full groups, so `20 // 6` is 3.
+
+**Why other options are wrong:**
+- Option 2: `**` is power. `2 ** 3` is 2 × 2 × 2, which is 8, not 6.
+- Option 4: `/` keeps a float. `10 / 2` is 5.0, not the int 5."
+mcmc,markdown,Which statements are true?,,,,,,,,`10 + 2 * 5` equals 60,`*` runs before `+` when a line has no brackets,`(10 + 2) * 5` equals 20,Brackets run before multiplication and addition,"2, 4",6ab51cf913fd6563e7aad995,0.5,markdown,"Multiplication is earlier in the precedence order than addition, so `10 + 2 * 5` multiplies first. Brackets are earlier than both, so a bracketed sum is calculated before it is multiplied.
+
+**Why other options are wrong:**
+- Option 1: Without brackets the result is 20, because `2 * 5` runs first.
+- Option 3: The brackets add 10 and 2 first, then multiply by 5, so the result is 60."
+mcmc,markdown,"Which statements are true about this code?
+
+```python
+marks = 80
+if marks >= 40:
+    print(""Pass"")
+elif marks >= 75:
+    print(""Distinction"")
+else:
+    print(""Fail"")
+```",,,,,,,,The screen shows Pass,The elif block does not run,The screen shows Distinction,A later elif is checked only when every earlier condition in the chain was false,"1, 2, 4",6ab51cf913fd6563e7aad995,1,markdown,"`80 >= 40` is True, so the `if` block prints Pass and the chain stops. The `elif` is not checked. An `elif` runs only after earlier conditions in that chain were false, which is why a pass check placed first catches 80 before a distinction check.
+
+**Why other options are wrong:**
+- Option 3: Distinction is on the `elif`, and that block is skipped because the `if` condition was already true."
+mcmc,markdown,"Which statements are true about this code?
+
+```python
+score = 4
+score *= 3
+if score >= 10:
+    print(""High"")
+else:
+    print(""Low"")
+print(""Done"")
+```",,,,,,,,"After `score *= 3`, score stores 12",The else block runs,The screen shows High and then Done,The screen shows Low,"1, 3",6ab51cf913fd6563e7aad995,1,markdown,"`*=` multiplies the stored number and stores the result back. 4 × 3 is 12. `12 >= 10` is True, so the `if` block prints High. `Done` is not indented under `if` or `else`, so it prints as well.
+
+**Why other options are wrong:**
+- Option 2: The `if` condition is true, so the `else` block is skipped.
+- Option 4: Low is the `else` message. That path does not run for 12."
+subjective,markdown,"Read a canteen order, update the bill, and print one result word.
+
+1. Read the tea count with input(""Type tea count: ""), convert it with int(), and store it in tea_count.
+2. Read the samosa count with input(""Type samosa count: ""), convert it with int(), and store it in samosa_count.
+3. Store bill as tea_count * 15 + samosa_count * 20. One tea costs 15 and one samosa costs 20.
+4. Read the parcel charge with input(""Type parcel charge: ""), convert it with int(), and add it with bill += that charge.
+5. Print bill.
+6. Read marks with input(""Type marks: ""), convert them with int(), and store them in marks.
+7. If marks >= 75, print Distinction.
+8. Otherwise, if marks >= 40, print Pass. Use elif.
+9. Otherwise print Fail. Use else.
+10. Print only one of those three words.
+
+Sample input:
+
+```
+2
+1
+20
+63
+```
+
+Expected output:
+
+```
+70
+Pass
+```
+
+The expected output above is what print() shows. The input() prompts appear while the program waits and are not part of that output.
+
+Constraints:
+
+- Use one .py file.
+- Use one if, one elif, and one else.
+- Do not use a loop or a function.
+- The four prompts must match the text above exactly.
+
+### Submission Instruction
+- Code all the points in VS Code in a single .py file
+- Run the code and verify it works
+- Submit the code in the code editor / answer box in the LMS",,,,,,,,,,,,,6ab51cf913fd6563e7aad995,0.5,markdown,"tea_count is 2 and samosa_count is 1. Multiplication runs before addition, so bill starts as 2 * 15 + 1 * 20, which is 50. bill += 20 stores 70, and that value is printed. marks is 63. 63 >= 75 is false, and 63 >= 40 is true, so the elif path prints Pass. The else path does not run.
+
+```python
+tea_count = int(input(""Type tea count: ""))
+samosa_count = int(input(""Type samosa count: ""))
+bill = tea_count * 15 + samosa_count * 20
+parcel = int(input(""Type parcel charge: ""))
+bill += parcel
+print(bill)
+marks = int(input(""Type marks: ""))
+if marks >= 75:
+    print(""Distinction"")
+elif marks >= 40:
+    print(""Pass"")
+else:
+    print(""Fail"")
+```
+
+Alternative approach: The bill can be written with brackets as (tea_count * 15) + (samosa_count * 20) + parcel, then printed once, without +=. The result is the same 70. The result chain can also store the word in a name and print that name once after the chain. The comparisons and the order of the paths stay the same."

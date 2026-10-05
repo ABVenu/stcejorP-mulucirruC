@@ -1,0 +1,336 @@
+questionType,contentType,contentBody,intAnswer,prepTime(in_seconds),floatAnswer.max,floatAnswer.min,fitbAnswer,mcscAnswer,subjectiveAnswer,option.1,option.2,option.3,option.4,mcmcAnswer,tagRelationships,difficultyLevel,answerExplanationType,answerExplanation
+mcsc,markdown,"`exam_marks` has these 8 rows.
+
+| student_name | subject | marks |
+|--------------|---------|-------|
+| Anita Shah | Maths | 92 |
+| Rahul Iyer | Maths | 92 |
+| Meera Nair | Maths | 85 |
+| Kabir Khan | Maths | 78 |
+| Kabir Khan | Science | 95 |
+| Anita Shah | Science | 88 |
+| Meera Nair | Science | 88 |
+| Rahul Iyer | Science | 70 |
+
+How many rows does this query return?
+
+```sql
+SELECT
+    student_name,
+    subject,
+    marks,
+    ROW_NUMBER() OVER (PARTITION BY subject ORDER BY marks DESC) AS row_num
+FROM exam_marks;
+```",,,,,,2,,"2, because there are two subjects",8,"4, because there are four students","1, because a rank is one summary value",,6ab51d7c5289de104ef5403c,0,markdown,"`PARTITION BY` restarts the numbering inside each subject. It does not collapse rows. Eight source rows stay eight output rows, each with a `row_num`.
+
+**Why other options are wrong:**
+- Option 1: Two rows would be a `GROUP BY subject` summary. This query does not group.
+- Option 3: Four students each have two subject rows, so the result height is 8, not 4.
+- Option 4: The window writes a number on every detail row. It does not return one summary row."
+mcsc,markdown,"Use these 8 rows. There is no `PARTITION BY`. `student_name ASC` breaks ties.
+
+| student_name | subject | marks |
+|--------------|---------|-------|
+| Anita Shah | Maths | 92 |
+| Rahul Iyer | Maths | 92 |
+| Meera Nair | Maths | 85 |
+| Kabir Khan | Maths | 78 |
+| Kabir Khan | Science | 95 |
+| Anita Shah | Science | 88 |
+| Meera Nair | Science | 88 |
+| Rahul Iyer | Science | 70 |
+
+Who receives `row_num` 1?
+
+```sql
+SELECT
+    student_name,
+    subject,
+    marks,
+    ROW_NUMBER() OVER (
+        ORDER BY marks DESC, student_name ASC
+    ) AS row_num
+FROM exam_marks;
+```",,,,,,4,,Anita Shah in Maths,Rahul Iyer in Maths,Anita Shah in Science,Kabir Khan in Science,,6ab51d7c5289de104ef5403c,0,markdown,"One window covers all 8 rows. Descending marks start at 95, which is Kabir Khan in Science. That row is `row_num` 1. The two 92s come next, Anita then Rahul.
+
+**Why other options are wrong:**
+- Option 1: Anita's 92 is second, after 95.
+- Option 2: Rahul's 92 is third, after Kabir's 95 and Anita's 92.
+- Option 3: Anita's Science mark is 88, which is after both 92s."
+mcsc,markdown,"Maths rows, with `student_name ASC` inside the window: Anita Shah 92, Rahul Iyer 92, Meera Nair 85, Kabir Khan 78.
+
+Who receives `row_num` 1 in Maths?
+
+```sql
+SELECT
+    student_name,
+    ROW_NUMBER() OVER (
+        PARTITION BY subject
+        ORDER BY marks DESC, student_name ASC
+    ) AS row_num
+FROM exam_marks;
+```",,,,,,1,,Anita Shah,Rahul Iyer,Meera Nair,Kabir Khan,,6ab51d7c5289de104ef5403c,0,markdown,"`PARTITION BY subject` restarts at 1 for Maths. Marks descending puts both 92s first. `student_name ASC` puts Anita before Rahul, so Anita is 1 and Rahul is 2.
+
+**Why other options are wrong:**
+- Option 2: Rahul is also on 92, but A comes before R, so he is 2.
+- Option 3: 85 is third in this window order.
+- Option 4: 78 is fourth in Maths. Kabir's 95 is in Science, which is a different partition."
+mcsc,markdown,"Maths marks in window order `marks DESC` only: 92, 92, 85, 78. Equal marks are peers. Names are not inside `OVER`.
+
+What is Meera Nair's `RANK` on Maths 85?
+
+```sql
+SELECT
+    student_name,
+    marks,
+    RANK() OVER (
+        PARTITION BY subject
+        ORDER BY marks DESC
+    ) AS rank_with_gap
+FROM exam_marks;
+```",,,,,,3,,2,4,3,1,,6ab51d7c5289de104ef5403c,0,markdown,"The two 92s share rank 1. The next rank skips. Meera has two rows strictly ahead, so her `RANK` is 3.
+
+**Why other options are wrong:**
+- Option 1: 2 would be the dense rank, or the rank if the second 92 had consumed a unique place. `RANK` skips after the tie.
+- Option 2: 4 is Kabir's rank on 78, because three rows are strictly ahead of him.
+- Option 4: Rank 1 belongs to the two 92s."
+mcsc,markdown,"Same Maths order, `marks DESC` only: 92, 92, 85, 78.
+
+What is `DENSE_RANK` for Meera Nair on 85?
+
+```sql
+SELECT
+    DENSE_RANK() OVER (
+        PARTITION BY subject
+        ORDER BY marks DESC
+    ) AS dense_rank
+FROM exam_marks;
+```",,,,,,2,,3,2,4,1,,6ab51d7c5289de104ef5403c,0.5,markdown,"The two 92s share dense rank 1. `DENSE_RANK` does not skip, so the next distinct mark, 85, is dense rank 2.
+
+**Why other options are wrong:**
+- Option 1: 3 is the `RANK` of 85, which skips a place after the two-way tie.
+- Option 3: 4 is not used for 85 by either function in this window.
+- Option 4: Dense rank 1 is the shared place of the two 92s."
+mcsc,markdown,"Science marks in window order `marks DESC` only: 95, 88, 88, 70. Kabir has 95. Anita and Meera have 88. Rahul has 70.
+
+What are Rahul Iyer's `RANK` and `DENSE_RANK` in Science?
+
+```sql
+SELECT
+    RANK() OVER (PARTITION BY subject ORDER BY marks DESC) AS rank_with_gap,
+    DENSE_RANK() OVER (PARTITION BY subject ORDER BY marks DESC) AS dense_rank
+FROM exam_marks;
+```",,,,,,4,,`RANK` 3 and `DENSE_RANK` 3,`RANK` 4 and `DENSE_RANK` 4,`RANK` 2 and `DENSE_RANK` 3,`RANK` 4 and `DENSE_RANK` 3,,6ab51d7c5289de104ef5403c,0.5,markdown,"95 is rank 1 and dense rank 1. The two 88s share rank 2 and dense rank 2. Three Science rows are strictly ahead of 70, so `RANK` is 4. Distinct ranks ahead are 1 and 2, so `DENSE_RANK` is 3.
+
+**Why other options are wrong:**
+- Option 1: Rank 3 is skipped because two students share rank 2. Dense rank 3 is only half of the pair.
+- Option 2: Dense rank does not skip, so 70 is 3, not 4.
+- Option 3: Rank 2 belongs to the two 88s, not to 70."
+mcmc,markdown,"Maths window is `PARTITION BY subject ORDER BY marks DESC` only. Marks: Anita 92, Rahul 92, Meera 85, Kabir 78.
+
+Which statements are true?",,,,,,,,Both 92s have `RANK` 1.,Both 92s have `DENSE_RANK` 1.,Both 92s have the same `ROW_NUMBER`.,Kabir on 78 has `RANK` 4 and `DENSE_RANK` 3.,"1, 2, 4",6ab51d7c5289de104ef5403c,0.5,markdown,"Equal marks are peers when the window sorts by marks only. `RANK` and `DENSE_RANK` both give the 92s a 1. Meera is rank 3 and dense rank 2. Kabir has three rows ahead, so rank 4, and two distinct ranks ahead, so dense rank 3.
+
+**Why other options are wrong:**
+- Option 3: `ROW_NUMBER` is unique. The two 92s get 1 and 2 in an unspecified direction unless a tie-break is inside `OVER`."
+mcmc,markdown,"Inside each subject the window is `ORDER BY marks DESC, student_name ASC`. Maths names in that order are Anita Shah 92, Rahul Iyer 92, Meera Nair 85, Kabir Khan 78. Science names are Kabir Khan 95, Anita Shah 88, Meera Nair 88, Rahul Iyer 70.
+
+Which statements are true?",,,,,,,,"Anita's Maths row is 1 for `ROW_NUMBER`, `RANK`, and `DENSE_RANK`.","Rahul's Maths row is 2 for `ROW_NUMBER`, `RANK`, and `DENSE_RANK`.",The two Maths 92s still share `RANK` 1.,"In Science, all three functions write 1, 2, 3, 4 for Kabir, Anita, Meera, Rahul.","1, 2, 4",6ab51d7c5289de104ef5403c,0.5,markdown,"The name is inside `OVER`, so Anita and Rahul are not peers. All three functions then agree on 1, 2, 3, 4 in Maths. The same strict order in Science is Kabir, Anita, Meera, Rahul.
+
+**Why other options are wrong:**
+- Option 3: A tie exists only when every window `ORDER BY` column is equal. The names differ, so rank 1 is Anita alone and rank 2 is Rahul."
+mcmc,markdown,"One partition has marks 10, 10, 10, 7, ordered by `marks DESC` only.
+
+```sql
+SELECT
+    ROW_NUMBER() OVER (ORDER BY marks DESC) AS row_num,
+    RANK() OVER (ORDER BY marks DESC) AS rank_with_gap,
+    DENSE_RANK() OVER (ORDER BY marks DESC) AS dense_rank
+FROM toy_marks;
+```
+
+Which statements about the row with marks 7 are true?",,,,,,,,`RANK` is 4.,`DENSE_RANK` is 2.,`ROW_NUMBER` is 4.,`RANK` is 2.,"1, 2, 3",6ab51d7c5289de104ef5403c,1,markdown,"Three 10s share rank 1, so the next `RANK` skips to 4. `DENSE_RANK` does not skip, so the 7 is 2. `ROW_NUMBER` still writes 1, 2, 3, 4, and the last row is 4.
+
+**Why other options are wrong:**
+- Option 4: Rank 2 is skipped. Three peers occupy rank 1, so the next rank is 4."
+mcmc,markdown,"`exam_marks` has 8 rows and 2 subjects. `RANK() OVER ()` has no `ORDER BY`, so every row is a peer.
+
+Which statements are true?",,,,,,,,A final `ORDER BY` changes the printed sequence and does not assign the rank.,`RANK() OVER ()` gives every row rank 1.,`GROUP BY subject` on `exam_marks` returns 8 rows.,"`ROW_NUMBER` never repeats inside a partition, even when marks are equal.","1, 2, 4",6ab51d7c5289de104ef5403c,1,markdown,"The window `ORDER BY` assigns the rank. The final `ORDER BY` only sorts the printout. With no window order, every row is a peer, so `RANK` is 1 on each row. `ROW_NUMBER` still gives each row in a partition a different integer.
+
+**Why other options are wrong:**
+- Option 3: `GROUP BY subject` collapses the 8 detail rows into 2 summary rows. A window does not do that."
+subjective,markdown,"## Task
+
+Use MySQL 8-style window syntax. `OVER`, `PARTITION BY`, `ORDER BY` inside `OVER`, `ROW_NUMBER`, `RANK`, and `DENSE_RANK` are supported there.
+
+Create this table and insert these rows once.
+
+```sql
+CREATE TABLE exam_marks (
+    student_name VARCHAR(50) NOT NULL,
+    subject VARCHAR(50) NOT NULL,
+    marks INTEGER NOT NULL
+);
+
+INSERT INTO exam_marks (student_name, subject, marks)
+VALUES
+    ('Anita Shah', 'Maths', 92),
+    ('Rahul Iyer', 'Maths', 92),
+    ('Meera Nair', 'Maths', 85),
+    ('Kabir Khan', 'Maths', 78),
+    ('Kabir Khan', 'Science', 95),
+    ('Anita Shah', 'Science', 88),
+    ('Meera Nair', 'Science', 88),
+    ('Rahul Iyer', 'Science', 70);
+```
+
+Also create this second table for Question 8.
+
+```sql
+CREATE TABLE toy_marks (
+    marks INTEGER NOT NULL
+);
+
+INSERT INTO toy_marks (marks)
+VALUES (10), (10), (10), (7);
+```
+
+Write one query for each point. Keep every source row in the result.
+
+Question 1. From `exam_marks`, add `ROW_NUMBER` over all rows, ordered by `marks DESC`, then `student_name ASC`. Also sort the printed result the same way. Return `student_name`, `subject`, `marks`, and `row_num`.
+
+Question 2. Add `ROW_NUMBER` partitioned by `subject`, ordered by `marks DESC`, then `student_name ASC`. Sort the printout by `subject`, `marks DESC`, `student_name ASC`.
+
+Question 3. Add `RANK` and `DENSE_RANK`, partitioned by `subject`, ordered by `marks DESC` only. Sort the printout by `subject`, `marks DESC`, `student_name`.
+
+Question 4. Add `ROW_NUMBER`, `RANK`, and `DENSE_RANK` with the same window: `PARTITION BY subject ORDER BY marks DESC, student_name ASC`.
+
+Question 5. Add one overall `RANK` with `ORDER BY marks DESC` and no `PARTITION BY`. Return `student_name`, `subject`, `marks`, and `rank_with_gap`.
+
+Question 6. Add `DENSE_RANK` with that same overall window: `ORDER BY marks DESC` and no partition.
+
+Question 7. Show `subject`, `student_name`, `marks`, and `ROW_NUMBER` with `PARTITION BY subject ORDER BY marks DESC`. Do not put `student_name` inside `OVER`.
+
+Question 8. From `toy_marks`, show `marks`, `ROW_NUMBER`, `RANK`, and `DENSE_RANK`, each with `ORDER BY marks DESC` only.
+
+### Submission Instruction
+
+- Code all the points in VS Code in a single .sql file
+- Run the code and verify it works
+- Submit the code in the code editor / answer box in the LMS",,,,,,,,,,,,,6ab51d7c5289de104ef5403c,0.5,markdown,"Question 1 numbers all 8 rows: Kabir Science 95 is 1, Anita Maths 92 is 2, Rahul Maths 92 is 3, Anita Science 88 is 4, Meera Science 88 is 5, Meera Maths 85 is 6, Kabir Maths 78 is 7, Rahul Science 70 is 8.
+
+```sql
+SELECT
+    student_name,
+    subject,
+    marks,
+    ROW_NUMBER() OVER (
+        ORDER BY marks DESC, student_name ASC
+    ) AS row_num
+FROM exam_marks
+ORDER BY marks DESC, student_name ASC;
+```
+
+Question 2 restarts in each subject. Maths is Anita 1, Rahul 2, Meera 3, Kabir 4. Science is Kabir 1, Anita 2, Meera 3, Rahul 4. The result still has 8 rows.
+
+```sql
+SELECT
+    student_name,
+    subject,
+    marks,
+    ROW_NUMBER() OVER (
+        PARTITION BY subject
+        ORDER BY marks DESC, student_name ASC
+    ) AS row_num
+FROM exam_marks
+ORDER BY subject, marks DESC, student_name ASC;
+```
+
+Question 3 treats equal marks as ties. Maths `RANK` is 1, 1, 3, 4 and `DENSE_RANK` is 1, 1, 2, 3. Science `RANK` is 1, 2, 2, 4 and `DENSE_RANK` is 1, 2, 2, 3. Which tied name prints first does not change those shared ranks.
+
+```sql
+SELECT
+    student_name,
+    subject,
+    marks,
+    RANK() OVER (
+        PARTITION BY subject
+        ORDER BY marks DESC
+    ) AS rank_with_gap,
+    DENSE_RANK() OVER (
+        PARTITION BY subject
+        ORDER BY marks DESC
+    ) AS dense_rank
+FROM exam_marks
+ORDER BY subject, marks DESC, student_name;
+```
+
+Question 4 puts the name inside `OVER`, so the tie disappears. Inside each subject all three functions write 1, 2, 3, 4 in the order Anita then Rahul for Maths, and Kabir, Anita, Meera, Rahul for Science.
+
+```sql
+SELECT
+    student_name,
+    subject,
+    marks,
+    ROW_NUMBER() OVER (
+        PARTITION BY subject
+        ORDER BY marks DESC, student_name ASC
+    ) AS row_num,
+    RANK() OVER (
+        PARTITION BY subject
+        ORDER BY marks DESC, student_name ASC
+    ) AS rank_with_gap,
+    DENSE_RANK() OVER (
+        PARTITION BY subject
+        ORDER BY marks DESC, student_name ASC
+    ) AS dense_rank
+FROM exam_marks;
+```
+
+Question 5 uses one window for all subjects. Descending marks are 95, 92, 92, 88, 88, 85, 78, 70. `RANK` is 1, 2, 2, 4, 4, 6, 7, 8.
+
+```sql
+SELECT
+    student_name,
+    subject,
+    marks,
+    RANK() OVER (ORDER BY marks DESC) AS rank_with_gap
+FROM exam_marks;
+```
+
+Question 6 on that same overall order gives `DENSE_RANK` 1, 2, 2, 3, 3, 4, 5, 6.
+
+```sql
+SELECT
+    student_name,
+    subject,
+    marks,
+    DENSE_RANK() OVER (ORDER BY marks DESC) AS dense_rank
+FROM exam_marks;
+```
+
+Question 7 still returns 8 rows. `ROW_NUMBER` inside each tie is not fixed, because the name is not inside `OVER`. The 85 is 3 in Maths, and the 70 is 4 in Science.
+
+```sql
+SELECT
+    subject,
+    student_name,
+    marks,
+    ROW_NUMBER() OVER (
+        PARTITION BY subject
+        ORDER BY marks DESC
+    ) AS row_num
+FROM exam_marks;
+```
+
+Question 8: the three 10s get `ROW_NUMBER` 1, 2, and 3 in an unspecified order, `RANK` 1, and `DENSE_RANK` 1. The 7 gets `ROW_NUMBER` 4, `RANK` 4, and `DENSE_RANK` 2.
+
+```sql
+SELECT
+    marks,
+    ROW_NUMBER() OVER (ORDER BY marks DESC) AS row_num,
+    RANK() OVER (ORDER BY marks DESC) AS rank_with_gap,
+    DENSE_RANK() OVER (ORDER BY marks DESC) AS dense_rank
+FROM toy_marks;
+```
+
+An alternative for Question 3 is one named window reused by both functions, where the tool allows it: `WINDOW w AS (PARTITION BY subject ORDER BY marks DESC)`, then `RANK() OVER w` and `DENSE_RANK() OVER w`. The ranks stay the same. Writing the `OVER` clause in full, as above, is the form to submit if the tool has no named window."

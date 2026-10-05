@@ -1,0 +1,156 @@
+questionType,contentType,contentBody,intAnswer,prepTime(in_seconds),floatAnswer.max,floatAnswer.min,fitbAnswer,mcscAnswer,subjectiveAnswer,option.1,option.2,option.3,option.4,mcmcAnswer,tagRelationships,difficultyLevel,answerExplanationType,answerExplanation
+mcsc,markdown,"What does this code display?
+
+```python
+# title
+print(""Fee counter"")
+print(""Window 3"")
+```",,,,,,3,,Fee counter Window 3 on one line,Only Window 3,"Fee counter on one line, then Window 3 on the next line","A SyntaxError, because a comment cannot sit above print",,6ab51ceeaeff50fa53851c77,0,markdown,"Each print() displays its value and then the next print starts on a new line. A line that starts with # is a comment, so the interpreter skips it and still runs both print calls. The screen shows Fee counter and then Window 3.
+
+**Why other options are wrong:**
+- Option 1: print() does not place both values on the same line. Each call starts a new line.
+- Option 2: A comment is ignored. It does not cancel the print that follows it.
+- Option 4: A comment above a complete print line is valid. The quotes and brackets on both print lines are closed."
+mcsc,markdown,"What does this code display?
+
+```python
+roll_number = 42
+roll_number = 17
+print(roll_number)
+```",,,,,,1,,17,42,42 and then 17,"A NameError, because the same name is stored twice",,6ab51ceeaeff50fa53851c77,0,markdown,"The = sign stores a value under a name. The second assignment replaces 42 with 17. print runs after that replacement, so the screen shows 17.
+
+**Why other options are wrong:**
+- Option 2: 42 was stored first, but the later assignment replaces it before print runs.
+- Option 3: There is only one print, and it runs after the name already stores 17.
+- Option 4: Storing a new value in an existing name is allowed. It does not raise NameError."
+mcsc,markdown,Which value is a bool?,,,,,,4,,"""True""","""False""",1,False,,6ab51ceeaeff50fa53851c77,0,markdown,"A bool is True or False written with a capital letter and no quotes. False matches that form.
+
+**Why other options are wrong:**
+- Option 1: Quotes make this a str, even though the characters spell True.
+- Option 2: Quotes make this a str. A bool does not use quotes.
+- Option 3: 1 is a whole number, so its type is int."
+mcsc,markdown,A person types 18 and presses Enter. What is the type of the value that input() returns?,,,,,,1,,str,int,float,bool,,6ab51ceeaeff50fa53851c77,0,markdown,"input() reads one typed line and gives it back as text. Digits typed at the prompt are still a str until a conversion such as int() builds a number.
+
+**Why other options are wrong:**
+- Option 2: The characters look like a whole number, but input() does not build an int.
+- Option 3: input() does not build a float. A decimal conversion needs float() after the read.
+- Option 4: 18 is not True or False. input() does not return a bool."
+mcsc,markdown,"What does this code display?
+
+```python
+marks_text = ""78""
+marks = int(marks_text)
+print(marks)
+print(type(marks))
+```",,,,,,3,,78 and then <class 'str'>,"""78"" and then <class 'int'>",78 and then <class 'int'>,"A TypeError, because int() cannot be used on text",,6ab51ceeaeff50fa53851c77,0.5,markdown,"int(""78"") builds the whole number 78 from whole-number text. type() reports that kind and does not change the stored value, so the two lines show 78 and then <class 'int'>.
+
+**Why other options are wrong:**
+- Option 1: After int(), marks is not text. type(marks) reports int, not str.
+- Option 2: print(marks) shows the number 78 without quotes. The quotes were only on the original text.
+- Option 4: int() can build a whole number from text such as ""78"". That call does not raise TypeError."
+mcsc,markdown,"What happens when this code runs?
+
+```python
+age = 18
+print(""Age: "" + age)
+```",,,,,,4,,It displays Age: 18,It raises NameError because age was never stored,It raises SyntaxError because a quote is missing,It raises TypeError because a str is joined with an int,,6ab51ceeaeff50fa53851c77,0.5,markdown,"Both sides of + must be text when the job is to join them. ""Age: "" is a str and age is an int, so the line raises TypeError. str(age) would build the text ""18"" and make the join valid.
+
+**Why other options are wrong:**
+- Option 1: The line does not display a message. The types do not fit the join.
+- Option 2: age = 18 stores the name before it is used, so this is not a NameError.
+- Option 3: The quotes and brackets are closed. The line is a valid form that fails because of types."
+mcmc,markdown,Which of the following are valid variable names?,,,,,,,,student_name,2roll,roll number,_city,"1, 4",6ab51ceeaeff50fa53851c77,0.5,markdown,"A variable name starts with a letter or an underscore, then uses letters, digits, or underscores. student_name starts with a letter. _city starts with an underscore. Neither name contains a space.
+
+**Why other options are wrong:**
+- Option 2: 2roll starts with a digit. A name must start with a letter or an underscore.
+- Option 3: roll number contains a space. A name cannot contain a space."
+mcmc,markdown,Which statements are true?,,,,,,,,1250.50 is an int,"""Pune"" and 'Pune' are both str values",True without quotes is a bool,type() changes the stored value into a new type,"2, 3",6ab51ceeaeff50fa53851c77,0.5,markdown,"A str is text inside single or double quotes, so both spellings of Pune are str values. True with a capital letter and no quotes is a bool.
+
+**Why other options are wrong:**
+- Option 1: 1250.50 is written with a decimal point, so it is a float, not an int.
+- Option 4: type() only reports the kind of value. It does not convert that value."
+mcmc,markdown,"The person types Meera at the prompt. Which statements are true?
+
+```python
+visitor = input(""Type your name: "")
+code = ""007""
+count = int(""12"")
+fee = float(""10.5"")
+```",,,,,,,,"visitor stores the text Meera, and its type is str","code stores text, and its type is str",count stores the int 12,fee stores the int 10,"1, 2, 3",6ab51ceeaeff50fa53851c77,1,markdown,"input() returns text, so Meera is a str. Digits inside quotes, including a leading zero, stay text, so code is a str. int(""12"") builds the whole number 12.
+
+**Why other options are wrong:**
+- Option 4: float(""10.5"") builds a float. It does not drop the decimal and store an int."
+mcmc,markdown,Which statements are true?,,,,,,,,"print(""Pune"" raises SyntaxError","print(Station) raises NameError when the only stored name is station = ""NDLS""","""Age: "" + 18 raises TypeError",A comment that starts with # is displayed when the file runs,"1, 2, 3",6ab51ceeaeff50fa53851c77,1,markdown,"A missing closing quote means the line is not a form Python accepts, so it is a SyntaxError. Station and station are different names, so the unseen spelling raises NameError. Joining text with an int raises TypeError.
+
+**Why other options are wrong:**
+- Option 4: The interpreter ignores a comment. The note is not displayed."
+subjective,markdown,"Read a slip, convert the numbers, and print each value with its type.
+
+1. Add a comment as the first line: Store a help-desk slip.
+2. Read a name with input(""Type your name: "") and store it in visitor_name.
+3. Read marks as text with input(""Type your marks: "") and store that text in marks_text.
+4. Convert marks_text with int() and store the whole number in marks.
+5. Read a fee as text with input(""Type the fee: "") and store that text in fee_text.
+6. Convert fee_text with float() and store the decimal number in fee.
+7. Store has_id with the bool True. Do not read this value with input().
+8. Print visitor_name, marks, fee, and has_id, in that order, each with its own print().
+9. Print type(visitor_name), type(marks), type(fee), and type(has_id), in that order, each with its own print().
+10. Print the text ""Marks: "" joined with str(marks). Use one print(). Do not join a str with an int.
+
+Sample input:
+
+```
+Meera
+81
+99.5
+```
+
+Expected output:
+
+```
+Meera
+81
+99.5
+True
+<class 'str'>
+<class 'int'>
+<class 'float'>
+<class 'bool'>
+Marks: 81
+```
+
+The expected output above is what print() shows. The input() prompts appear while the program waits and are not part of that output.
+
+Constraints:
+
+- Use one .py file.
+- Use print, comments, variables, input, int, float, str, and type only.
+- Do not use if, loops, or functions.
+- The three prompts must match the text above exactly.
+- has_id is stored in the file. It is not typed by the person.
+
+### Submission Instruction
+- Code all the points in VS Code in a single .py file
+- Run the code and verify it works
+- Submit the code in the code editor / answer box in the LMS",,,,,,,,,,,,,6ab51ceeaeff50fa53851c77,0.5,markdown,"The comment is skipped. input() stores each typed line as text. int() builds 81 from ""81"", and float() builds 99.5 from ""99.5"". has_id stores the bool True. The four value prints show the name, the whole number, the decimal number, and True. The four type() prints report str, int, float, and bool. str(marks) builds the text ""81"", so it can be joined with ""Marks: "" without a TypeError.
+
+```python
+# Store a help-desk slip.
+visitor_name = input(""Type your name: "")
+marks_text = input(""Type your marks: "")
+marks = int(marks_text)
+fee_text = input(""Type the fee: "")
+fee = float(fee_text)
+has_id = True
+print(visitor_name)
+print(marks)
+print(fee)
+print(has_id)
+print(type(visitor_name))
+print(type(marks))
+print(type(fee))
+print(type(has_id))
+print(""Marks: "" + str(marks))
+```
+
+Alternative approach: The conversions can sit directly on the input calls: marks = int(input(""Type your marks: "")) and fee = float(input(""Type the fee: "")). The printed lines stay the same. A second style for the last line is print(""Marks:"", marks), which prints a space between the two values without using +."

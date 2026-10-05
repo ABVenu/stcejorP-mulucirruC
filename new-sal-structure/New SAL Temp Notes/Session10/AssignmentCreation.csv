@@ -1,0 +1,317 @@
+questionType,contentType,contentBody,intAnswer,prepTime(in_seconds),floatAnswer.max,floatAnswer.min,fitbAnswer,mcscAnswer,subjectiveAnswer,option.1,option.2,option.3,option.4,mcmcAnswer,tagRelationships,difficultyLevel,answerExplanationType,answerExplanation
+mcsc,markdown,"`orders` has these stored rows, and `order_id` is the primary key.
+
+| order_id | customer_name | item_name | city | quantity | amount | order_date |
+|---|---|---|---|---|---|---|
+| 1 | Asha Patil | Notebook | Pune | 2 | 120.50 | 2024-03-12 |
+| 2 | Ankit Rao | Pen Set | Pune | 1 | 80.00 | 2024-06-01 |
+| 3 | Meera Shah | Notebook | Nashik | 3 | 180.00 | 2023-11-20 |
+| 4 | Ravi Kumar | Folder | Jaipur | 1 | 45.75 | 2024-01-09 |
+
+Which statement about `order_id` is correct?",,,,,,1,,"`order_id` identifies exactly one row, and a second row cannot reuse the same value.",`customer_name` is the primary key because names are stored as text.,`item_name` is the primary key because `Notebook` is stored on two rows.,"The leftmost column is always the primary key, whatever name it has.",,6ab51d46aeff50fa53851ce8,0,markdown,"**Answer Explanation:**
+A primary key identifies exactly one row. Here that column is `order_id`, and the stored values `1`, `2`, `3`, and `4` are all different. The engine rejects a second row that tries to use one of those values again.
+
+**Why other options are wrong:**
+- Option 2: Two customers can share a name, and one customer can place another order later. `customer_name` is not the chosen identity.
+- Option 3: `Notebook` already appears on two rows. A primary key cannot repeat. That repeated value is why `item_name` is not the primary key.
+- Option 4: The primary key is the column chosen as the unique identity. Position alone does not make a column the primary key."
+mcsc,markdown,"These rows are stored in `orders`: order 1 Asha Patil, Notebook, Pune, quantity 2, amount 120.50, date 2024-03-12; order 2 Ankit Rao, Pen Set, Pune, quantity 1, amount 80.00, date 2024-06-01; order 3 Meera Shah, Notebook, Nashik, quantity 3, amount 180.00, date 2023-11-20; order 4 Ravi Kumar, Folder, Jaipur, quantity 1, amount 45.75, date 2024-01-09.
+
+What does this query return?
+
+```sql
+SELECT *
+FROM orders;
+```",,,,,,4,,"7 rows, one for each column","1 row, only the first insert","0 rows, because `*` removes the stored orders","4 rows, one for each stored order",,6ab51d46aeff50fa53851ce8,0,markdown,"**Answer Explanation:**
+`SELECT *` asks for every column. `FROM orders` reads the `orders` table. Nothing in the query drops a row, and four rows were stored, so four rows come back. The star does not delete data.
+
+**Why other options are wrong:**
+- Option 1: Seven is the number of columns in each row, not the number of rows.
+- Option 2: Each insert added one row. The query reads all stored rows, not only order 1.
+- Option 3: `SELECT` reads. It does not remove the four stored orders."
+mcsc,markdown,"These rows are stored in `orders`: order 1 Asha Patil, Notebook, Pune, quantity 2, amount 120.50, date 2024-03-12; order 2 Ankit Rao, Pen Set, Pune, quantity 1, amount 80.00, date 2024-06-01; order 3 Meera Shah, Notebook, Nashik, quantity 3, amount 180.00, date 2023-11-20; order 4 Ravi Kumar, Folder, Jaipur, quantity 1, amount 45.75, date 2024-01-09.
+
+What does this query return?
+
+```sql
+SELECT
+    customer_name,
+    amount
+FROM orders;
+```",,,,,,2,,2 rows and 7 columns,4 rows and 2 columns,2 rows and 2 columns,4 rows and 7 columns,,6ab51d46aeff50fa53851ce8,0,markdown,"**Answer Explanation:**
+The `SELECT` list names two columns, `customer_name` and `amount`, so the result has two columns. All four stored rows are read, because this query does not drop any row. The other columns stay in the table and are simply not shown.
+
+**Why other options are wrong:**
+- Option 1: Naming two columns does not reduce the result to two rows, and it does not show all seven columns.
+- Option 3: There are two columns, but there are still four stored rows.
+- Option 4: Four rows come back, but only the two named columns are shown."
+mcsc,markdown,"What does this statement do the first time it runs successfully?
+
+```sql
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    customer_name VARCHAR(40),
+    item_name VARCHAR(40),
+    city VARCHAR(30),
+    quantity INT,
+    amount DECIMAL(8, 2),
+    order_date DATE
+);
+```",,,,,,3,,"It inserts Asha, Ankit, Meera, and Ravi immediately.",It returns every customer name as a result grid.,It builds an empty table with those columns.,It removes an existing table named `orders`.,,6ab51d46aeff50fa53851ce8,0,markdown,"**Answer Explanation:**
+`CREATE TABLE orders` builds a new empty table and lists each column with a type. `order_id INT PRIMARY KEY` makes the order number the identity of a row. After this statement, the register exists and still has no rows. Rows appear only when `INSERT` runs.
+
+**Why other options are wrong:**
+- Option 1: `CREATE TABLE` does not store the four bills. `INSERT` does that.
+- Option 2: This statement changes storage. It is not a `SELECT` that returns customer names.
+- Option 4: Creating the table does not delete it. Running `CREATE TABLE` again after `orders` already exists causes an error because the name is taken."
+mcsc,markdown,"These rows are already stored in `orders`, and `order_id` is the primary key: 1 Asha Patil, 2 Ankit Rao, 3 Meera Shah, 4 Ravi Kumar. A further `INSERT` uses `order_id` 1 again. What does the engine do?",,,,,,1,,It rejects the new row because `order_id` is the primary key.,It keeps two rows that both have `order_id` 1.,It changes the new order number to 5 by itself.,It replaces the stored row for Asha Patil and keeps one row with `order_id` 1.,,6ab51d46aeff50fa53851ce8,0.5,markdown,"**Answer Explanation:**
+`order_id` is declared `INT PRIMARY KEY`. The value `1` is already stored for Asha Patil's order. A second row with that same identity is rejected. The original row stays as it was inserted.
+
+**Why other options are wrong:**
+- Option 2: A primary key cannot repeat, so two rows with `order_id` 1 are not stored.
+- Option 3: The engine does not invent a new order number. The statement must use a value that is not already stored, such as `5`.
+- Option 4: This insert is not an update of Asha's row. The duplicate key is rejected, and her stored row remains."
+mcsc,markdown,"These rows are stored in `orders`: order 1 Notebook in Pune, order 2 Pen Set in Pune, order 3 Notebook in Nashik, order 4 Folder in Jaipur. Which statement about this result is correct?
+
+```sql
+SELECT
+    item_name,
+    city
+FROM orders;
+```",,,,,,4,,"The result has two rows, because the repeated `Notebook` values are collapsed into one row.",The result keeps only the rows whose city is Pune.,The result has four rows sorted by city name.,"The result has four rows and two columns. `Notebook` appears on two rows, and `Pune` appears on two rows.",,6ab51d46aeff50fa53851ce8,0.5,markdown,"**Answer Explanation:**
+The query asks for `item_name` and `city` from every stored row. Four orders were stored, so four rows come back, with those two columns. Asha and Meera both bought a notebook, so `Notebook` appears twice. Asha and Ankit are both stored with city `Pune`, so `Pune` appears twice. The query shows rows. It does not collapse them.
+
+**Why other options are wrong:**
+- Option 1: Repeated item names stay on their own rows. Two notebook orders do not become one line.
+- Option 2: The query has no condition that keeps Pune and drops Nashik or Jaipur. All four rows are read.
+- Option 3: This query does not sort the rows. It only chooses columns."
+mcmc,markdown,Select every correct statement.,,,,,,,,"`INSERT` adds a row. Text and dates are written in quotes, and numbers are not.",`SELECT` reads columns from stored rows. It does not insert a new order.,Leaving a column out of the `SELECT` list deletes that column from the table.,`FROM orders` names the table to read. `FROM order` does not name this table.,"1, 2, 4",6ab51d46aeff50fa53851ce8,0.5,markdown,"**Answer Explanation:**
+An `INSERT` such as order 1 stores `'Asha Patil'`, `'Notebook'`, `'Pune'`, and `'2024-03-12'` in quotes, while `1`, `2`, and `120.50` are written without quotes. `SELECT` plus `FROM` asks for columns and returns rows. It does not add a bill. The table name in this work is `orders`, so `FROM orders` is the clause that names it.
+
+**Why other options are wrong:**
+- Option 3: A shorter `SELECT` list only hides columns in that result. The stored table still has those columns."
+mcmc,markdown,"`orders` stores four rows. `Notebook` is the item on order 1 and order 3. Meera Shah's row is order 3. `amount` is `DECIMAL(8, 2)`, and one stored amount is `120.50`. Select every correct statement.",,,,,,,,"A column is one kind of fact, such as `city` or `amount`.","A row is one complete order, such as Meera Shah's notebook order.",`item_name` can be the primary key here because `Notebook` is stored on two rows.,`120.50` must be written in quotes because a money amount is text.,"1, 2",6ab51d46aeff50fa53851ce8,0.5,markdown,"**Answer Explanation:**
+Each heading, such as `city` or `amount`, is a column: one kind of fact on every row. Meera Shah's line is one row, one complete order, and her primary key value is `3`. The same column headings apply to all four orders.
+
+**Why other options are wrong:**
+- Option 3: `Notebook` is already on two rows. A repeated value cannot be the primary key. `order_id` does not repeat.
+- Option 4: `amount` is `DECIMAL(8, 2)`. Money is written as a number, without quotes. Quotes are for text and dates."
+mcmc,markdown,Select every correct statement about the column types used for `orders`.,,,,,,,,"`amount DECIMAL(8, 2)` stores money with two digits after the decimal point, such as `120.50` and `45.75`.","`order_date` uses `VARCHAR`, and the quotes around a date are optional.","`quantity INT` stores a whole number, such as `2` or `3`.",`customer_name VARCHAR(40)` means the name is a whole number with a maximum of 40 digits.,"1, 3",6ab51d46aeff50fa53851ce8,1,markdown,"**Answer Explanation:**
+`DECIMAL(8, 2)` is the money type used for rupees and paise, so `120.50` and `45.75` keep two digits after the decimal point. `quantity` is `INT`, a whole number. Asha's quantity is `2`, and Meera's quantity is `3`.
+
+**Why other options are wrong:**
+- Option 2: `order_date` uses `DATE`, not `VARCHAR`. A date literal is written in quotes, in year-month-day form, such as `'2024-03-12'`.
+- Option 4: `VARCHAR(40)` is short text with a maximum length of 40 characters. It is not a whole-number type. `INT` is the whole-number type."
+mcmc,markdown,"These rows are stored in `orders`: order 1 Asha Patil, order 2 Ankit Rao, order 3 Meera Shah with date 2023-11-20, order 4 Ravi Kumar. Select every correct statement about this query.
+
+```sql
+SELECT
+    order_id
+FROM orders;
+```",,,,,,,,"The result shows one `order_id` from each stored row: `1`, `2`, `3`, and `4`.","The result is the single number `4`, because this query counts the rows.",Meera Shah's row is included. Her `order_id` is `3`.,"This query reads stored values. It does not insert a new order, and it does not remove a column from the table.","1, 3, 4",6ab51d46aeff50fa53851ce8,1,markdown,"**Answer Explanation:**
+The query asks for the `order_id` column of every stored row. The four stored identities are `1`, `2`, `3`, and `4`. Meera Shah's row is the row with `order_id` 3. Her date, `2023-11-20`, stays stored even though this query does not show it. `SELECT` only reads. The table still has all seven columns after the query runs.
+
+**Why other options are wrong:**
+- Option 2: The query shows the order numbers. It does not collapse them into one count of `4`."
+subjective,markdown,"Write one SQL file that completes Question 1 through Question 8. Use MySQL-style SQL. Put a `--` comment above each `SELECT`.
+
+The `CREATE TABLE` and `INSERT` statements below are the whole setup. Copy them unchanged, then write the follow-up queries under them.
+
+Question 1. Include this `CREATE TABLE` statement.
+
+```sql
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    customer_name VARCHAR(40),
+    item_name VARCHAR(40),
+    city VARCHAR(30),
+    quantity INT,
+    amount DECIMAL(8, 2),
+    order_date DATE
+);
+```
+
+Question 2. Include these four `INSERT` statements.
+
+```sql
+INSERT INTO orders (
+    order_id, customer_name, item_name, city, quantity, amount, order_date
+) VALUES (
+    1, 'Asha Patil', 'Notebook', 'Pune', 2, 120.50, '2024-03-12'
+);
+
+INSERT INTO orders (
+    order_id, customer_name, item_name, city, quantity, amount, order_date
+) VALUES (
+    2, 'Ankit Rao', 'Pen Set', 'Pune', 1, 80.00, '2024-06-01'
+);
+
+INSERT INTO orders (
+    order_id, customer_name, item_name, city, quantity, amount, order_date
+) VALUES (
+    3, 'Meera Shah', 'Notebook', 'Nashik', 3, 180.00, '2023-11-20'
+);
+
+INSERT INTO orders (
+    order_id, customer_name, item_name, city, quantity, amount, order_date
+) VALUES (
+    4, 'Ravi Kumar', 'Folder', 'Jaipur', 1, 45.75, '2024-01-09'
+);
+```
+
+Question 3. Write a query that shows `order_id`, `customer_name`, `item_name`, `city`, `quantity`, `amount`, and `order_date` for every stored order. Name the columns. Do not use `*` for this question.
+
+Question 4. Write a query that shows `customer_name` and `amount` for every stored order.
+
+Question 5. Write a query that shows `city` and `quantity` for every stored order.
+
+Question 6. Write a query that shows `item_name` and `city` for every stored order.
+
+Question 7. Write a query that shows `order_id` for every stored order.
+
+Question 8. Write a query that uses `SELECT *` to show every column of every stored order.
+
+### Sample Output
+
+Question 3 and Question 8 each return 4 rows and 7 columns:
+
+| order_id | customer_name | item_name | city | quantity | amount | order_date |
+|---|---|---|---|---|---|---|
+| 1 | Asha Patil | Notebook | Pune | 2 | 120.50 | 2024-03-12 |
+| 2 | Ankit Rao | Pen Set | Pune | 1 | 80.00 | 2024-06-01 |
+| 3 | Meera Shah | Notebook | Nashik | 3 | 180.00 | 2023-11-20 |
+| 4 | Ravi Kumar | Folder | Jaipur | 1 | 45.75 | 2024-01-09 |
+
+Question 4 returns 4 rows and 2 columns:
+
+| customer_name | amount |
+|---|---|
+| Asha Patil | 120.50 |
+| Ankit Rao | 80.00 |
+| Meera Shah | 180.00 |
+| Ravi Kumar | 45.75 |
+
+Question 5 returns 4 rows and 2 columns:
+
+| city | quantity |
+|---|---|
+| Pune | 2 |
+| Pune | 1 |
+| Nashik | 3 |
+| Jaipur | 1 |
+
+Question 6 returns 4 rows and 2 columns:
+
+| item_name | city |
+|---|---|
+| Notebook | Pune |
+| Pen Set | Pune |
+| Notebook | Nashik |
+| Folder | Jaipur |
+
+Question 7 returns 4 rows and 1 column: `1`, `2`, `3`, and `4`.
+
+### Constraints
+
+- Use one `.sql` file.
+- Run Question 1 once. Running `CREATE TABLE orders` again on an existing table causes an error.
+- Do not use `WHERE`, `GROUP BY`, `JOIN`, `ORDER BY`, `LIMIT`, or functions.
+- Do not collapse the two `Notebook` rows into one row.
+- Do not quote numeric amounts. Do quote text and dates.
+- Show every stored row in each query. Choosing fewer columns does not delete the hidden columns.
+
+### Submission Instruction
+
+- Code all the points mentioned in VS Code in a single `.sql` file.
+- Run the code and verify it is working.
+- Then submit the SQL in the code editor/answer box in the LMS.",,,,,,,,,,,,,6ab51d46aeff50fa53851ce8,0.5,markdown,"Question 1 builds an empty `orders` table. `order_id` is an `INT` primary key. Names and city are `VARCHAR`. `quantity` is `INT`. `amount` is `DECIMAL(8, 2)`. `order_date` is `DATE`.
+
+Question 2 adds one row per statement. After all four inserts, the table holds Asha, Ankit, Meera, and Ravi. A repeated `order_id` of `1` would be rejected.
+
+Question 3 names all seven columns, so the result shows every stored fact for four rows.
+
+Question 4 keeps `customer_name` and `amount` only. All four customers still appear.
+
+Question 5 keeps `city` and `quantity`. Pune appears twice because two stored rows have that city.
+
+Question 6 keeps `item_name` and `city`. Notebook appears twice because two stored rows sold a notebook.
+
+Question 7 shows the four primary key values and does not count them into one number.
+
+Question 8 uses `*` as another way to ask for every current column. The four rows match Question 3.
+
+```sql
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    customer_name VARCHAR(40),
+    item_name VARCHAR(40),
+    city VARCHAR(30),
+    quantity INT,
+    amount DECIMAL(8, 2),
+    order_date DATE
+);
+
+INSERT INTO orders (
+    order_id, customer_name, item_name, city, quantity, amount, order_date
+) VALUES (
+    1, 'Asha Patil', 'Notebook', 'Pune', 2, 120.50, '2024-03-12'
+);
+
+INSERT INTO orders (
+    order_id, customer_name, item_name, city, quantity, amount, order_date
+) VALUES (
+    2, 'Ankit Rao', 'Pen Set', 'Pune', 1, 80.00, '2024-06-01'
+);
+
+INSERT INTO orders (
+    order_id, customer_name, item_name, city, quantity, amount, order_date
+) VALUES (
+    3, 'Meera Shah', 'Notebook', 'Nashik', 3, 180.00, '2023-11-20'
+);
+
+INSERT INTO orders (
+    order_id, customer_name, item_name, city, quantity, amount, order_date
+) VALUES (
+    4, 'Ravi Kumar', 'Folder', 'Jaipur', 1, 45.75, '2024-01-09'
+);
+
+-- Show every named column of every stored order
+SELECT
+    order_id,
+    customer_name,
+    item_name,
+    city,
+    quantity,
+    amount,
+    order_date
+FROM orders;
+
+-- Show the customer and the amount for every stored order
+SELECT
+    customer_name,
+    amount
+FROM orders;
+
+-- Show the city and the quantity for every stored order
+SELECT
+    city,
+    quantity
+FROM orders;
+
+-- Show the item and the city for every stored order
+SELECT
+    item_name,
+    city
+FROM orders;
+
+-- Show the order number of every stored order
+SELECT
+    order_id
+FROM orders;
+
+-- Show every column with the star
+SELECT *
+FROM orders;
+```
+
+One alternative for Question 3 is `SELECT * FROM orders`, which also returns every current column. The required file still names the seven columns in Question 3, and Question 8 is the separate star query."

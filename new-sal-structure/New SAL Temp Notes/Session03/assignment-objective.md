@@ -1,0 +1,250 @@
+# Assignment Objective
+
+## Q1 (MCQ, Easy)
+
+What does this code display?
+
+```python
+print("Payee: Sharma Kirana")
+print("Amount: 240")
+print("Paid")
+```
+
+**Options:**
+1. Payee: Sharma Kirana, then Amount: 240, then Paid, on three lines
+2. Paid, then Amount: 240, then Payee: Sharma Kirana
+3. All three messages on one line
+4. Only Payee: Sharma Kirana
+
+**Correct:** 1
+
+**Answer Explanation:**
+Sequence runs each line once, from top to bottom. Each print starts a new line, so the three messages appear in the same order as the file.
+
+**Why other options are wrong:**
+- Option 2: The interpreter does not start at the last line. It starts at the first print.
+- Option 3: Each print() starts a new line. The three messages are not joined onto one line.
+- Option 4: Nothing stops the file after the first print. The second and third lines run as well.
+
+## Q2 (MCQ, Easy)
+
+What does this code display?
+
+```python
+token = 1
+while token <= 3:
+    print(token)
+    token += 1
+print("Queue closed")
+```
+
+**Options:**
+1. 1, 2, 3, 4, and then Queue closed
+2. Queue closed only
+3. 1, then 2, then 3, then Queue closed
+4. 1 forever
+
+**Correct:** 3
+
+**Answer Explanation:**
+token starts at 1. The block prints 1, 2, and 3, and token += 1 moves the value to 4. Then 4 <= 3 is false, so the loop stops and the line below it prints Queue closed.
+
+**Why other options are wrong:**
+- Option 1: 4 fails the condition, so 4 is not printed. The update happens after the print.
+- Option 2: The condition is true for 1, 2, and 3, so those three prints run before Queue closed.
+- Option 4: The loop can end because token changes inside the block. It does not stay 1.
+
+## Q3 (MCQ, Easy)
+
+Which values does `range(1, 4)` give to a for loop?
+
+**Options:**
+1. 1, 2, 3, 4
+2. 1, 2, 3
+3. 0, 1, 2, 3
+4. 4 only
+
+**Correct:** 2
+
+**Answer Explanation:**
+`range(start, stop)` starts at start and stops before stop. `range(1, 4)` gives 1, 2, and 3. The stop value 4 is not included.
+
+**Why other options are wrong:**
+- Option 1: 4 is the stop value, so it is not produced.
+- Option 3: A start of 1 does not begin at 0. `range(4)` is the form that starts at 0.
+- Option 4: The stop value is the first number that is left out, not the only value produced.
+
+## Q4 (MCQ, Easy)
+
+What does this code display?
+
+```python
+for roll in range(1, 3):
+    print("Roll")
+    print(roll)
+```
+
+**Options:**
+1. Roll, then 1, then 2
+2. Roll once, then 1, then 2
+3. 1, then 2
+4. Roll, then 1, then Roll, then 2
+
+**Correct:** 4
+
+**Answer Explanation:**
+The block runs completely for one value before the next value starts. For 1, both prints run. For 2, both prints run again. The screen is Roll, 1, Roll, 2.
+
+**Why other options are wrong:**
+- Option 1: The label is inside the loop, so it prints again when roll stores 2.
+- Option 2: The label is not outside the loop. It runs on every pass.
+- Option 3: The block also prints the word Roll on each pass, not only the number.
+
+## Q5 (MCQ, Moderate)
+
+What does this code display?
+
+```python
+for token in range(1, 5):
+    if token == 3:
+        print("Reserved")
+    else:
+        print(token)
+```
+
+**Options:**
+1. 1, 2, and 4
+2. Reserved only
+3. 1, 2, Reserved, and 4
+4. 1, 2, 3, and 4
+
+**Correct:** 3
+
+**Answer Explanation:**
+`range(1, 5)` visits 1, 2, 3, and 4. The if prints Reserved when token is 3. Every other pass takes else and prints the number. The loop still visits 4.
+
+**Why other options are wrong:**
+- Option 1: Token 3 is still visited. That pass prints Reserved instead of skipping the pass.
+- Option 2: Only the matching pass prints Reserved. The other passes print their numbers.
+- Option 4: The number 3 is not printed. That pass prints Reserved.
+
+## Q6 (MCQ, Moderate)
+
+What does this code display?
+
+```python
+copies = 3
+while copies > 0:
+    print(copies)
+    copies -= 1
+print("Parcel ready")
+```
+
+**Options:**
+1. 3, 2, 1, 0, and then Parcel ready
+2. 3 forever
+3. 3, then 2, then 1, then Parcel ready
+4. Parcel ready only
+
+**Correct:** 3
+
+**Answer Explanation:**
+The block prints the current copies, then subtracts 1. It prints 3, 2, and 1. After 1 is printed, copies becomes 0, the condition 0 > 0 is false, and Parcel ready prints below the loop.
+
+**Why other options are wrong:**
+- Option 1: 0 fails `copies > 0`, so 0 is not printed.
+- Option 2: copies -= 1 changes the checked value, so the loop reaches a false condition.
+- Option 4: The condition is true at the start, so the block runs before the line below the loop.
+
+## Q7 (MSQ, Moderate)
+
+Which statements are true?
+
+**Options:**
+1. `range(3)` gives 0, 1, and 2
+2. `range(3)` gives 1, 2, and 3
+3. The stop value is included
+4. `range(2, 9, 2)` gives 2, 4, 6, and 8
+
+**Correct:** 1, 4
+
+**Answer Explanation:**
+One number inside range() is the stop, and the start is 0, so range(3) stops before 3. A step of 2 from 2 stops before 9, so the values are 2, 4, 6, and 8.
+
+**Why other options are wrong:**
+- Option 2: range(3) does not start at 1, and it does not include the stop value 3.
+- Option 3: The stop value is the first integer that is not produced.
+
+## Q8 (MSQ, Moderate)
+
+Which statements are true?
+
+**Options:**
+1. A while loop ends even when the checked value never changes
+2. A line inside the while block must move the checked value toward the stop if the loop is to end
+3. After the while condition becomes false, the next line below the loop runs
+4. Every while loop must use range()
+
+**Correct:** 2, 3
+
+**Answer Explanation:**
+The condition is checked again after each pass. Something inside the block has to change the tested value toward false. When the condition is false, the interpreter continues with the first line below the loop.
+
+**Why other options are wrong:**
+- Option 1: If the tested value never changes, a true condition stays true and the loop does not end.
+- Option 4: while uses a condition you update. range() is the tool used with for when the integers are known.
+
+## Q9 (MSQ, Hard)
+
+Which statements are true about this code?
+
+```python
+student = 1
+while student <= 4:
+    if student == 2:
+        print("No slip")
+    else:
+        print(student)
+    student += 1
+```
+
+**Options:**
+1. The first line displayed is 1
+2. The loop stops when student is 2
+3. The second line displayed is No slip
+4. The full screen is 1, No slip, 3, 4
+
+**Correct:** 1, 3, 4
+
+**Answer Explanation:**
+Pass 1 prints 1 because the if is false. Pass 2 matches and prints No slip. student += 1 sits under the while, not under else, so the counter still moves to 3 and then 4. Those passes print 3 and 4. The loop stops only when student becomes 5.
+
+**Why other options are wrong:**
+- Option 2: Student 2 is visited and then the counter moves on. The stop happens after student becomes 5.
+
+## Q10 (MSQ, Hard)
+
+Which statements are true about this code?
+
+```python
+for token in range(2, 8, 2):
+    if token == 4:
+        print("Staff")
+    else:
+        print(token)
+```
+
+**Options:**
+1. The values visited are 2, 4, and 6
+2. The screen is 2, Staff, 6
+3. The value 8 is printed
+4. The loop also visits 1, 3, 5, and 7
+
+**Correct:** 1, 2
+
+**Answer Explanation:**
+The start is 2, the stop is 8, and the step is 2, so the loop visits 2, 4, and 6. Token 4 takes the if path and prints Staff. The other two passes print the number.
+
+**Why other options are wrong:**
+- Option 3: 8 is the stop value, so it is not visited and not printed.
+- Option 4: The step of 2 skips the odd numbers. Those values are never stored in token.

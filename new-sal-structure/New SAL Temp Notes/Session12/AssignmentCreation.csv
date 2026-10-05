@@ -1,0 +1,305 @@
+questionType,contentType,contentBody,intAnswer,prepTime(in_seconds),floatAnswer.max,floatAnswer.min,fitbAnswer,mcscAnswer,subjectiveAnswer,option.1,option.2,option.3,option.4,mcmcAnswer,tagRelationships,difficultyLevel,answerExplanationType,answerExplanation
+mcsc,markdown,"`orders` has 8 rows. Order 8 has `city` NULL. Every `amount` is filled.
+
+| order_id | city | amount |
+|----------|------|--------|
+| 1 | Pune | 120.50 |
+| 2 | Pune | 80.00 |
+| 3 | Nashik | 180.00 |
+| 4 | Jaipur | 45.75 |
+| 5 | Jaipur | 200.00 |
+| 6 | Nashik | 95.00 |
+| 7 | Pune | 60.00 |
+| 8 | NULL | 150.25 |
+
+What does this query return?
+
+```sql
+SELECT COUNT(*) AS row_count, COUNT(city) AS cities_filled
+FROM orders;
+```",,,,,,3,,`row_count` 7 and `cities_filled` 7,`row_count` 8 and `cities_filled` 8,`row_count` 8 and `cities_filled` 7,`row_count` 7 and `cities_filled` 8,,6ab51d5468eb6b4b8e80666b,0,markdown,"`COUNT(*)` counts every row, so it is 8. `COUNT(city)` skips NULL, so order 8 is not counted and `cities_filled` is 7.
+
+**Why other options are wrong:**
+- Option 1: The missing city does not remove the row. `COUNT(*)` is still 8.
+- Option 2: `COUNT(city)` does not count the NULL city.
+- Option 4: Both numbers are swapped. The row count is the larger one here."
+mcsc,markdown,"The eight `amount` values are 120.50, 80.00, 180.00, 45.75, 200.00, 95.00, 60.00, and 150.25.
+
+What does this query return for `total_amount`, `smallest_amount`, and `largest_amount`?
+
+```sql
+SELECT
+    SUM(amount) AS total_amount,
+    MIN(amount) AS smallest_amount,
+    MAX(amount) AS largest_amount
+FROM orders;
+```",,,,,,1,,"931.50, 45.75, and 200.00","931.50, 60.00, and 200.00","781.25, 45.75, and 200.00","931.50, 45.75, and 180.00",,6ab51d5468eb6b4b8e80666b,0,markdown,"120.50 + 80.00 + 180.00 + 45.75 + 200.00 + 95.00 + 60.00 + 150.25 = 931.50. The smallest amount is 45.75. The largest amount is 200.00.
+
+**Why other options are wrong:**
+- Option 2: 60.00 is not the smallest. Order 4 is 45.75.
+- Option 3: 781.25 drops the missing-city bill of 150.25. `SUM(amount)` still adds that bill because `amount` is not NULL.
+- Option 4: 180.00 is not the largest. Order 5 is 200.00."
+mcsc,markdown,"Use these amounts: 120.50, 80.00, 180.00, 45.75, 200.00, 95.00, 60.00, 150.25.
+
+`WHERE` drops rows before the aggregate runs. What does this query return?
+
+```sql
+SELECT COUNT(*) AS order_count, SUM(amount) AS total_amount
+FROM orders
+WHERE amount >= 100;
+```",,,,,,2,,8 and 931.50,4 and 650.75,5 and 745.75,3 and 500.50,,6ab51d5468eb6b4b8e80666b,0,markdown,"Amounts of at least 100 are 120.50, 180.00, 200.00, and 150.25. That is 4 rows. 120.50 + 180.00 + 200.00 + 150.25 = 650.75.
+
+**Why other options are wrong:**
+- Option 1: That is the unfiltered table. `WHERE` removes the four bills under 100.
+- Option 3: 95.00 fails `>= 100`, so it is not a fifth row. 650.75 + 95.00 would be 745.75, which is the wrong set.
+- Option 4: 500.50 is 120.50 + 180.00 + 200.00 and leaves out 150.25, which does pass."
+mcsc,markdown,"City piles from `orders`:
+
+| city | order_ids | amounts |
+|------|-----------|---------|
+| Pune | 1, 2, 7 | 120.50, 80.00, 60.00 |
+| Nashik | 3, 6 | 180.00, 95.00 |
+| Jaipur | 4, 5 | 45.75, 200.00 |
+| NULL | 8 | 150.25 |
+
+This query returns one row per city. Which values are the Pune row?
+
+```sql
+SELECT city, COUNT(*) AS order_count, SUM(amount) AS total_amount
+FROM orders
+GROUP BY city;
+```",,,,,,4,,`order_count` 2 and `total_amount` 275.00,`order_count` 4 and `total_amount` 260.50,`order_count` 3 and `total_amount` 200.50,`order_count` 3 and `total_amount` 260.50,,6ab51d5468eb6b4b8e80666b,0,markdown,"Pune has three rows. 120.50 + 80.00 + 60.00 = 260.50. `GROUP BY city` does not drop the 60.00 row.
+
+**Why other options are wrong:**
+- Option 1: 2 and 275.00 is Nashik: 180.00 + 95.00.
+- Option 2: Pune has three orders, not four.
+- Option 3: 200.50 is 120.50 + 80.00 only. It drops the 60.00 Pune row."
+mcsc,markdown,"Start from all eight orders. Amounts under 80 are 45.75 (Jaipur) and 60.00 (Pune). The other bills stay.
+
+Which cities does this query return?
+
+```sql
+SELECT city, COUNT(*) AS order_count, SUM(amount) AS total_amount
+FROM orders
+WHERE amount >= 80
+GROUP BY city
+HAVING COUNT(*) >= 2;
+```",,,,,,1,,Pune and Nashik,"Pune, Nashik, and Jaipur",Nashik only,"Pune, Nashik, Jaipur, and the missing city",,6ab51d5468eb6b4b8e80666b,0.5,markdown,"`WHERE` removes 45.75 and 60.00 before grouping. Pune still has 120.50 and 80.00, so the count is 2 and the sum is 200.50. Nashik still has 180.00 and 95.00, so the count is 2 and the sum is 275.00. Jaipur has only 200.00 left, and the missing city has only 150.25, so both fail `HAVING COUNT(*) >= 2`.
+
+**Why other options are wrong:**
+- Option 2: Jaipur has only one bill left after `WHERE`, so `HAVING` drops that group.
+- Option 3: Pune still has two bills, 120.50 and 80.00.
+- Option 4: The one-bill groups fail `HAVING`."
+mcsc,markdown,"Amounts in descending order are 200.00, 180.00, 150.25, 120.50, 95.00, 80.00, 60.00, 45.75. Their `order_id` values are 5, 3, 8, 1, 6, 2, 7, 4.
+
+Which `order_id` values does this query return, largest amount first?
+
+```sql
+SELECT order_id, amount
+FROM orders
+ORDER BY amount DESC
+LIMIT 3;
+```",,,,,,3,,"5, 3, and 1","8, 3, and 5","5, 3, and 8","5, 3, and 6",,6ab51d5468eb6b4b8e80666b,0.5,markdown,"`ORDER BY amount DESC` starts at 200.00 (order 5), then 180.00 (order 3), then 150.25 (order 8). `LIMIT 3` stops there.
+
+**Why other options are wrong:**
+- Option 1: Order 1 is 120.50, which is fourth, not third.
+- Option 2: Those are the same three ids, but the descending order is 5, then 3, then 8.
+- Option 4: Order 6 is 95.00, which is outside the first three."
+mcmc,markdown,"City sums are Pune 260.50 from 3 bills, Nashik 275.00 from 2 bills, Jaipur 245.75 from 2 bills, and the missing city 150.25 from 1 bill. The eight amounts add to 931.50.
+
+```sql
+SELECT AVG(amount) FROM orders;
+
+SELECT city, SUM(amount) AS total_amount
+FROM orders
+GROUP BY city
+HAVING SUM(amount) > 260;
+```
+
+Which statements are true?",,,,,,,,`AVG(amount)` on all eight rows is 116.4375.,`AVG(amount)` for the Pune group is 260.50 / 3.,`HAVING SUM(amount) > 260` keeps only Nashik.,`GROUP BY city` sorts the city names from A to Z.,"1, 2, 3",6ab51d5468eb6b4b8e80666b,0.5,markdown,"931.50 / 8 = 116.4375. Pune's average uses only Pune's three amounts. `SUM > 260` keeps 275.00 and drops 260.50, 245.75, and 150.25.
+
+**Why other options are wrong:**
+- Option 4: `GROUP BY` builds the piles. It does not sort them. `ORDER BY` sorts the finished result."
+mcmc,markdown,"City totals are Nashik 275.00, Pune 260.50, Jaipur 245.75, and the missing city 150.25.
+
+Which statements about this query are true?
+
+```sql
+SELECT city, SUM(amount) AS total_amount
+FROM orders
+GROUP BY city
+ORDER BY total_amount DESC
+LIMIT 2;
+```",,,,,,,,The first result row is Nashik with 275.00.,The second result row is Pune with 260.50.,Jaipur with 245.75 is included.,`LIMIT 2` without `ORDER BY` still promises the two largest totals.,"1, 2",6ab51d5468eb6b4b8e80666b,0.5,markdown,"Descending totals are Nashik, then Pune, then Jaipur, then the missing city. `LIMIT 2` keeps the first two of that arranged result.
+
+**Why other options are wrong:**
+- Option 3: Jaipur is third after `ORDER BY total_amount DESC`, so `LIMIT 2` hides it.
+- Option 4: Without `ORDER BY`, `LIMIT` still returns two rows, but it does not promise which two."
+mcmc,markdown,"Amounts: Pune 120.50, 80.00, 60.00; Nashik 180.00, 95.00; Jaipur 45.75, 200.00; missing city 150.25.
+
+Which statements about this query are true?
+
+```sql
+SELECT city, SUM(amount) AS total_amount
+FROM orders
+WHERE amount > 50
+GROUP BY city
+HAVING SUM(amount) >= 200
+ORDER BY total_amount DESC;
+```",,,,,,,,`WHERE` removes only the 45.75 row before grouping.,Jaipur remains with `total_amount` 200.00.,The missing-city group remains.,The first row is Nashik with 275.00.,"1, 2, 4",6ab51d5468eb6b4b8e80666b,1,markdown,"`amount > 50` removes only 45.75. Pune remains 120.50 + 80.00 + 60.00 = 260.50. Nashik remains 275.00. Jaipur remains 200.00, which passes `>= 200`. The missing city is 150.25 and fails `HAVING`. Descending order starts at Nashik 275.00.
+
+**Why other options are wrong:**
+- Option 3: 150.25 is below 200, so that group is dropped by `HAVING`."
+mcmc,markdown,"Item piles:
+
+| item_name | amounts | quantities |
+|-----------|---------|------------|
+| Notebook | 120.50, 180.00, 60.00 | 2, 3, 1 |
+| Pen Set | 80.00, 95.00 | 1, 2 |
+| Folder | 45.75, 150.25 | 1, 2 |
+| Marker | 200.00 | 4 |
+
+Customer names in A-to-Z order start at Ankit Rao and end at Ravi Kumar.
+
+```sql
+SELECT item_name, SUM(amount), SUM(quantity)
+FROM orders
+GROUP BY item_name;
+
+SELECT MIN(customer_name) FROM orders;
+```
+
+Which statements are true?",,,,,,,,`GROUP BY item_name` gives Notebook `SUM(amount)` 360.50 and `SUM(quantity)` 6.,`GROUP BY item_name` gives Pen Set `SUM(amount)` 175.00.,`MIN(customer_name)` on all rows is Asha Patil.,`GROUP BY item_name` gives Folder `SUM(amount)` 196.00.,"1, 2, 4",6ab51d5468eb6b4b8e80666b,1,markdown,"Notebook is 120.50 + 180.00 + 60.00 = 360.50, and 2 + 3 + 1 = 6. Pen Set is 80.00 + 95.00 = 175.00. Folder is 45.75 + 150.25 = 196.00.
+
+**Why other options are wrong:**
+- Option 3: Text order is A-to-Z. Ankit Rao comes before Asha Patil, so `MIN(customer_name)` is Ankit Rao."
+subjective,markdown,"## Task
+
+Use MySQL-style SQL. `WHERE` filters rows before `GROUP BY`. `HAVING` filters groups after the aggregates exist.
+
+Create this table and insert these rows once. `city` for order 8 is NULL.
+
+```sql
+CREATE TABLE orders (
+    order_id INTEGER PRIMARY KEY,
+    customer_name VARCHAR(50) NOT NULL,
+    item_name VARCHAR(50) NOT NULL,
+    city VARCHAR(50),
+    quantity INTEGER NOT NULL,
+    amount DECIMAL(8, 2) NOT NULL,
+    order_date DATE NOT NULL
+);
+
+INSERT INTO orders (order_id, customer_name, item_name, city, quantity, amount, order_date)
+VALUES
+    (1, 'Asha Patil', 'Notebook', 'Pune', 2, 120.50, '2024-03-12'),
+    (2, 'Ankit Rao', 'Pen Set', 'Pune', 1, 80.00, '2024-06-01'),
+    (3, 'Meera Shah', 'Notebook', 'Nashik', 3, 180.00, '2023-11-20'),
+    (4, 'Ravi Kumar', 'Folder', 'Jaipur', 1, 45.75, '2024-01-09'),
+    (5, 'Asha Patil', 'Marker', 'Jaipur', 4, 200.00, '2025-02-14'),
+    (6, 'Neha Iyer', 'Pen Set', 'Nashik', 2, 95.00, '2024-08-30'),
+    (7, 'Kabir Sen', 'Notebook', 'Pune', 1, 60.00, '2024-12-05'),
+    (8, 'Farah Khan', 'Folder', NULL, 2, 150.25, '2023-07-18');
+```
+
+Write one query for each point.
+
+Question 1. From the whole table, return `COUNT(*)`, `SUM(amount)`, `MIN(amount)`, and `MAX(quantity)`.
+
+Question 2. Return `COUNT(*)` and `SUM(amount)` for rows whose `city` is Nashik.
+
+Question 3. Return one row per `item_name` with `COUNT(*)`, `SUM(quantity)`, and `AVG(amount)`.
+
+Question 4. Return `city` and `SUM(amount)` for cities whose total amount is greater than 250.
+
+Question 5. Keep rows with `quantity >= 2`, then return `city` and `SUM(amount)` grouped by `city`.
+
+Question 6. Return `order_id` and `customer_name` for every row, sorted by `customer_name` ascending, then `order_id` ascending.
+
+Question 7. Keep rows with `amount >= 100`, group by `city`, sort by `SUM(amount)` descending, and return only the first city row, with `COUNT(*)` and `SUM(amount)`.
+
+Question 8. Group by `item_name`, keep groups whose `COUNT(*)` equals 1, and sort the result by `item_name` ascending. Show `item_name` and `COUNT(*)`.
+
+### Submission Instruction
+
+- Code all the points in VS Code in a single .sql file
+- Run the code and verify it works
+- Submit the code in the code editor / answer box in the LMS",,,,,,,,,,,,,6ab51d5468eb6b4b8e80666b,0.5,markdown,"Question 1 collapses all eight rows. The count is 8, the sum is 931.50, the smallest amount is 45.75, and the largest quantity is 4.
+
+```sql
+SELECT
+    COUNT(*) AS order_count,
+    SUM(amount) AS total_amount,
+    MIN(amount) AS smallest_amount,
+    MAX(quantity) AS largest_quantity
+FROM orders;
+```
+
+Question 2 uses `WHERE` before the aggregate. Nashik is 180.00 + 95.00 = 275.00 across 2 rows.
+
+```sql
+SELECT COUNT(*) AS order_count, SUM(amount) AS total_amount
+FROM orders
+WHERE city = 'Nashik';
+```
+
+Question 3: Notebook is count 3, quantity 6, average 360.50 / 3. Pen Set is count 2, quantity 3, average 87.50. Folder is count 2, quantity 3, average 98.00. Marker is count 1, quantity 4, average 200.00.
+
+```sql
+SELECT
+    item_name,
+    COUNT(*) AS order_count,
+    SUM(quantity) AS pieces_sold,
+    AVG(amount) AS average_amount
+FROM orders
+GROUP BY item_name;
+```
+
+Question 4 keeps Nashik 275.00 and Pune 260.50. Jaipur is 245.75 and the missing city is 150.25.
+
+```sql
+SELECT city, SUM(amount) AS total_amount
+FROM orders
+GROUP BY city
+HAVING SUM(amount) > 250;
+```
+
+Question 5 drops quantity 1 (orders 2, 4, and 7). Remaining sums: Pune 120.50, Nashik 180.00 + 95.00 = 275.00, Jaipur 200.00, missing city 150.25.
+
+```sql
+SELECT city, SUM(amount) AS total_amount
+FROM orders
+WHERE quantity >= 2
+GROUP BY city;
+```
+
+Question 6 order is Ankit Rao (2), Asha Patil (1), Asha Patil (5), Farah Khan (8), Kabir Sen (7), Meera Shah (3), Neha Iyer (6), Ravi Kumar (4).
+
+```sql
+SELECT order_id, customer_name
+FROM orders
+ORDER BY customer_name ASC, order_id ASC;
+```
+
+Question 7 keeps 120.50, 180.00, 200.00, and 150.25, each in its own city. Descending totals put Jaipur 200.00 first. `LIMIT 1` returns that one row, with count 1.
+
+```sql
+SELECT city, COUNT(*) AS order_count, SUM(amount) AS total_amount
+FROM orders
+WHERE amount >= 100
+GROUP BY city
+ORDER BY SUM(amount) DESC
+LIMIT 1;
+```
+
+Question 8 keeps only Marker, because Notebook has 3 rows, and Pen Set and Folder have 2 each.
+
+```sql
+SELECT item_name, COUNT(*) AS order_count
+FROM orders
+GROUP BY item_name
+HAVING COUNT(*) = 1
+ORDER BY item_name ASC;
+```
+
+An alternative for Question 4 is to compute the city sums in a first pass on paper, then write `HAVING SUM(amount) >= 260.50` if the cutoff should include Pune's exact total and still exclude Jaipur. The query above uses `> 250`, which already keeps Pune and Nashik only."

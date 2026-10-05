@@ -1,0 +1,157 @@
+questionType,contentType,contentBody,intAnswer,prepTime(in_seconds),floatAnswer.max,floatAnswer.min,fitbAnswer,mcscAnswer,subjectiveAnswer,option.1,option.2,option.3,option.4,mcmcAnswer,tagRelationships,difficultyLevel,answerExplanationType,answerExplanation
+mcsc,markdown,"B2:B5 holds 72, 45, 38, and 91. A cell contains this text, with no equals sign:
+
+SUM(B2:B5)
+
+What does that cell show?",,,,,,1,,The text SUM(B2:B5),246,61.5,#DIV/0!,,6ab51d8d5289de104ef54059,0,markdown,"The correct option is 1. A formula must start with =. Without it, Excel stores the characters as text and does not add the marks. The cell shows SUM(B2:B5), not 246.
+
+**Why other options are wrong:**
+- Option 2: 246 is 72 + 45 + 38 + 91, which is what =SUM(B2:B5) returns. The missing equals sign blocks that calculation.
+- Option 3: 61.5 is the average, 246 / 4. This cell is not an AVERAGE formula, and it does not calculate.
+- Option 4: #DIV/0! is what AVERAGE shows when a range contains no numbers. This cell is stored text."
+mcsc,markdown,"What does =SUM(B2:B5) return?
+
+|  | B |
+| --- | --- |
+| 2 | 72 |
+| 3 | 45 |
+| 4 | 38 |
+| 5 | 91 |",,,,,,3,,4,61.5,246,91,,6ab51d8d5289de104ef54059,0,markdown,"The correct option is 3. SUM adds the numbers in B2:B5. 72 + 45 + 38 + 91 = 246. The cell displays 246, and the formula bar still shows =SUM(B2:B5).
+
+**Why other options are wrong:**
+- Option 1: 4 is how many numbers are in the range. That is what COUNT returns, not SUM.
+- Option 2: 61.5 is 246 / 4, the average. SUM does not divide.
+- Option 4: 91 is the largest mark. That is what MAX returns, not SUM."
+mcsc,markdown,What does COUNT count in a range?,,,,,,4,,Blank cells,Cells that contain text only,Only the largest number,Cells that contain a number,,6ab51d8d5289de104ef54059,0,markdown,"The correct option is 4. COUNT returns how many cells in the arguments contain a numeric value. Words and blank cells are not counted. A typed 0 is a number, so COUNT includes it.
+
+**Why other options are wrong:**
+- Option 1: Blank cells are skipped by COUNT. They are not what it counts.
+- Option 2: Text such as Absent or a name is ignored by COUNT. COUNTA is the function that counts non-empty cells, including text.
+- Option 3: The largest number is the job of MAX. COUNT returns how many numeric cells it found, not the biggest value."
+mcsc,markdown,Which reference stays on the same cell when the formula is filled down?,,,,,,2,,B2,$E$1,E2,B3,,6ab51d8d5289de104ef54059,0,markdown,"The correct option is 2. $E$1 locks both the column and the row. Filled down, it still means E1. A relative reference such as B2 shifts to B3 on the next row.
+
+**Why other options are wrong:**
+- Option 1: B2 has no dollar signs, so it is relative. On the next row it becomes B3.
+- Option 3: E2 has no dollar signs, so the row number changes when the formula is filled down.
+- Option 4: B3 is also a relative reference. It shifts with the row it is copied to."
+mcsc,markdown,"What does =AVERAGE(A1:A3) return?
+
+|  | A |
+| --- | --- |
+| 1 | 72 |
+| 2 |  |
+| 3 | 48 |",,,,,,1,,60,40,120,#DIV/0!,,6ab51d8d5289de104ef54059,0.5,markdown,"The correct option is 1. AVERAGE ignores blank cells. It uses 72 and 48 only, so (72 + 48) / 2 = 60. A blank is not treated as zero.
+
+**Why other options are wrong:**
+- Option 2: 40 would be the average if A2 held the number 0, because (72 + 0 + 48) / 3 = 40. This A2 is empty, so 0 is not included.
+- Option 3: 120 is the sum of 72 and 48. AVERAGE divides that sum by how many numbers it found.
+- Option 4: #DIV/0! appears when the range contains no numbers. This range contains two numbers."
+mcsc,markdown,"E1 holds 40. B4 holds 38. What does =IF(B4>=$E$1,""Pass"",""Fail"") return?",,,,,,3,,Pass,40,Fail,38,,6ab51d8d5289de104ef54059,0.5,markdown,"The correct option is 3. The test is whether 38 is greater than or equal to 40. It is not, so IF returns the false result, Fail. The quotes make Pass and Fail text, and the quotes do not appear in the cell.
+
+**Why other options are wrong:**
+- Option 1: Pass is returned when the test is true. 38 is below 40, so the test is false. A mark of exactly 40 would pass, because the test uses >=.
+- Option 2: 40 is the pass mark stored in E1. IF does not return the pass mark. It returns one of the two labels.
+- Option 4: 38 is the mark being tested. The formula returns Fail, not the mark itself."
+mcmc,markdown,"Which statements are true?
+
+|  | A |
+| --- | --- |
+| 1 | 72 |
+| 2 | Absent |
+| 3 |  |
+| 4 | 15 |",,,,,,,,=COUNT(A1:A4) returns 2,=COUNTA(A1:A4) returns 4,=SUM(A1:A4) returns 87,=COUNTA(A1:A4) returns 3,"1, 3, 4",6ab51d8d5289de104ef54059,0.5,markdown,"The correct options are 1, 3, and 4. COUNT counts numbers only, so 72 and 15 give 2. SUM adds those numbers and skips the word Absent and the blank cell, so 72 + 15 = 87. COUNTA counts cells that are not empty: 72, Absent, and 15, which is 3. The empty cell is skipped by both COUNT and COUNTA.
+
+**Why other options are wrong:**
+- Option 2: COUNTA does not return 4. A3 is empty, so it is not counted. The non-empty count is 3."
+mcmc,markdown,"E1 holds 40. C2 contains =IF(B2>=$E$1,""Pass"",""Fail""), and the formula is filled down through C4.
+
+|  | B |
+| --- | --- |
+| 2 | 72 |
+| 3 | 45 |
+| 4 | 38 |
+
+Which statements are true?",,,,,,,,The formula in C4 still uses B2,C2 displays Pass,C4 displays Fail,$E$1 stays $E$1 in the filled formulas,"2, 3, 4",6ab51d8d5289de104ef54059,0.5,markdown,"The correct options are 2, 3, and 4. B2 is relative, so the fill writes B3 in C3 and B4 in C4. 72 is greater than or equal to 40, so C2 displays Pass. 38 is not, so C4 displays Fail. $E$1 is absolute, so every filled formula still reads E1.
+
+**Why other options are wrong:**
+- Option 1: C4 does not keep B2. B2 has no dollar signs, so it shifts to B4 when the formula reaches row 4."
+mcmc,markdown,"B6 contains =SUM(B2:B6). Which statements are true?
+
+|  | B |
+| --- | --- |
+| 2 | 72 |
+| 3 | 0 |
+| 4 | 48 |
+| 5 |  |
+| 6 | =SUM(B2:B6) |",,,,,,,,=AVERAGE(B2:B4) returns 40,=MIN(B2:B4) returns 0,=MAX(B2:B5) returns 0,The formula in B6 is a circular reference,"1, 2, 4",6ab51d8d5289de104ef54059,1,markdown,"The correct options are 1, 2, and 4. AVERAGE includes a typed 0. (72 + 0 + 48) / 3 = 40. MIN returns the smallest number, which is 0. The formula in B6 adds B2:B6, and B6 is the formula cell itself, so the formula depends on itself. That is a circular reference.
+
+**Why other options are wrong:**
+- Option 3: MAX ignores the blank in B5. The numbers are 72, 0, and 48, so MAX returns 72, not 0. A blank is not treated as the maximum."
+mcmc,markdown,"E1 holds 0.10. C2 contains =B2*(1+$E$1), and the formula is filled down through C4. A2:A4 holds the words Pen, File, and Stapler. Which statements are true?
+
+|  | A | B | E |
+| --- | --- | --- | --- |
+| 1 | Item | Amount | 0.10 |
+| 2 | Pen | 20 |  |
+| 3 | File | 80 |  |
+| 4 | Stapler | 150 |  |",,,,,,,,"A cell whose first character is a space, then =SUM(B2:B4), returns 250",C2 displays 22,=COUNT(A2:A4) returns 0,The filled formula in C4 uses B4 and still uses $E$1,"2, 3, 4",6ab51d8d5289de104ef54059,1,markdown,"The correct options are 2, 3, and 4. 20 × (1 + 0.10) = 22, so C2 displays 22. B2 is relative, so C4 uses B4. $E$1 is absolute, so it does not become E4. COUNT counts numbers, and Pen, File, and Stapler are text, so =COUNT(A2:A4) returns 0.
+
+**Why other options are wrong:**
+- Option 1: A space before = means the first character is a space, so Excel stores text and does not calculate. The cell does not return 250. The sum 20 + 80 + 150 = 250 only when the formula actually starts with =."
+subjective,markdown,"Use this grid. E1 holds the pass mark 40. B5 is empty on purpose.
+
+|  | A | B | C | E |
+| --- | --- | --- | --- | --- |
+| 1 | Student | Marks | Result | 40 |
+| 2 | Lata | 40 |  |  |
+| 3 | Om | 39 |  |  |
+| 4 | Priya | 80 |  |  |
+| 5 | Dev |  |  |  |
+
+Question 1. Write one formula for B6 that adds the marks in B2:B5.
+Question 2. What number does that formula return?
+Question 3. Write one formula for B7 that returns the average of the numbers in B2:B5.
+Question 4. What number does that average formula return?
+Question 5. Write one formula that counts how many cells in B2:B5 contain a number.
+Question 6. What number does that count formula return?
+Question 7. Write one formula that counts how many cells in A2:A5 are not empty, and state the number it returns.
+Question 8. Write one IF formula for C2 that returns Pass when B2 is greater than or equal to E1, and Fail otherwise. Lock E1 so a fill down keeps that cell.
+Question 9. That IF formula is filled down to C5. State what C5 displays, and state which mark cell the formula in C5 uses.
+Question 10. Write one formula for the highest mark in B2:B5, and state the number it returns.
+
+### Submission Instruction
+
+- Type the answer in the answer box",,,,,,,,,,,,,6ab51d8d5289de104ef54059,0.5,markdown,"### Ideal answers
+
+Question 1. =SUM(B2:B5)
+Question 2. 159
+Question 3. =AVERAGE(B2:B5)
+Question 4. 53
+Question 5. =COUNT(B2:B5)
+Question 6. 3
+Question 7. =COUNTA(A2:A5), which returns 4
+Question 8. =IF(B2>=$E$1,""Pass"",""Fail"")
+Question 9. C5 displays Fail. The formula in C5 uses B5.
+Question 10. =MAX(B2:B5), which returns 80
+
+### Walkthrough
+
+The marks that are numbers are 40, 39, and 80. Dev's B5 is blank.
+
+40 + 39 + 80 = 159, so SUM returns 159. The blank adds nothing.
+
+AVERAGE ignores the blank and divides by 3, not by 4. 159 / 3 = 53.
+
+COUNT counts numeric cells, so it returns 3. COUNTA on A2:A5 counts Lata, Om, Priya, and Dev, so it returns 4. Names are text, which COUNT would not count.
+
+The IF test uses >=, so Lata's 40 passes. Om's 39 fails. An empty B5 fails the test, so C5 displays Fail. B2 is relative, so the filled formula on row 5 reads B5. $E$1 stays locked on the pass mark.
+
+MAX ignores the blank and returns 80. MIN on the same range would return 39, because 0 was not typed.
+
+Place the total outside B2:B5. A SUM in B6 that includes B6 itself would be a circular reference.
+
+### Alternative
+
+=B2+B3+B4+B5 also returns 159, because addition treats the blank B5 as 0. =SUM(B2,B3,B4,B5) returns 159 as well.
+
+=IF(B2<$E$1,""Fail"",""Pass"") is another valid formula for C2. It swaps the two results and the comparison, and it still returns Pass for Lata and Fail for an empty B5."

@@ -1,0 +1,196 @@
+questionType,contentType,contentBody,intAnswer,prepTime(in_seconds),floatAnswer.max,floatAnswer.min,fitbAnswer,mcscAnswer,subjectiveAnswer,option.1,option.2,option.3,option.4,mcmcAnswer,tagRelationships,difficultyLevel,answerExplanationType,answerExplanation
+mcsc,markdown,"This is the whole file. What does it display?
+
+```python
+def show_welcome():
+    print(""Welcome to the canteen counter"")
+```",,,,,,3,,Welcome to the canteen counter,A NameError,Nothing,"Welcome to the canteen counter, twice",,6ab51d175289de104ef53fa0,0,markdown,"def stores the function. It does not run the body. There is no call with parentheses, so the print never runs and the screen stays empty.
+
+**Why other options are wrong:**
+- Option 1: The print is inside the function. It runs only when show_welcome() is called.
+- Option 2: The name is created by def. Nothing uses a missing name, so there is no NameError.
+- Option 4: A call would be needed for each print. This file has no call."
+mcsc,markdown,"Which name is the parameter?
+
+```python
+def announce_token(token):
+    print(token)
+
+announce_token(14)
+```",,,,,,1,,token,14,announce_token,print,,6ab51d175289de104ef53fa0,0,markdown,"A parameter is a name listed in the parentheses of def. token is that blank. The call fills it with the argument 14.
+
+**Why other options are wrong:**
+- Option 2: 14 is the argument, the value supplied at the call. It is not the parameter name.
+- Option 3: announce_token is the function name, the label used to call the job.
+- Option 4: print is the instruction inside the body. It is not a parameter."
+mcsc,markdown,"What does this code display?
+
+```python
+def doubled_marks(marks):
+    doubled = marks * 2
+
+print(doubled_marks(36))
+```",,,,,,4,,72,36,doubled,None,,6ab51d175289de104ef53fa0,0,markdown,"The body calculates 72 and then ends with no return. A function that sends nothing back hands None to the caller. print shows that None. The multiplication did run. The result was not sent back.
+
+**Why other options are wrong:**
+- Option 1: 72 exists only in doubled inside the call. Without return, the caller does not receive 72.
+- Option 2: 36 is the argument. The printed result of the call is not the argument.
+- Option 3: doubled is a name inside the function. The call does not print that name."
+mcsc,markdown,"What does this code display?
+
+```python
+def upi_note(payer, amount, receiver):
+    text = payer + "" paid Rs "" + str(amount) + "" to "" + receiver
+    return text
+
+print(upi_note(""Ananya"", 250, ""Canteen""))
+```",,,,,,2,,Canteen paid Rs 250 to Ananya,Ananya paid Rs 250 to Canteen,Ananya 250 Canteen,"A TypeError, because amount is a number",,6ab51d175289de104ef53fa0,0,markdown,"Arguments fill parameters from left to right. Ananya lands in payer, 250 in amount, and Canteen in receiver. str(amount) builds text so the pieces can be joined. The returned sentence is Ananya paid Rs 250 to Canteen.
+
+**Why other options are wrong:**
+- Option 1: That sentence would need the people in the opposite argument order.
+- Option 3: The returned text includes the words paid Rs and to. It is not only the three arguments.
+- Option 4: str(amount) makes the number text before it is joined, so this call does not raise TypeError."
+mcsc,markdown,"What does this code display?
+
+```python
+def canteen_bill(plates, price=40):
+    total = plates * price
+    return total
+
+print(canteen_bill(2))
+print(canteen_bill(2, 55))
+```",,,,,,1,,80 and then 110,55 and then 110,80 and then 80,"A SyntaxError, because price has a default",,6ab51d175289de104ef53fa0,0.5,markdown,"plates has no default, so 2 is required. price=40 is used when the call omits that argument, so the first call returns 2 * 40, which is 80. The second call passes 55, so it returns 110. The default stays 40 for a later call that omits it.
+
+**Why other options are wrong:**
+- Option 2: The first call does not receive 55. The omitted price becomes 40.
+- Option 3: The second call passes 55, so the default is not used for that call.
+- Option 4: A default is valid when it comes after parameters that have no default. This definition follows that order."
+mcsc,markdown,"What does this code display?
+
+```python
+def result_status(marks):
+    if marks >= 40:
+        status = ""Pass""
+    else:
+        status = ""Retry""
+    return status
+
+print(result_status(40))
+print(result_status(39))
+```",,,,,,4,,Retry and then Pass,Pass and then Pass,Retry and then Retry,Pass and then Retry,,6ab51d175289de104ef53fa0,0.5,markdown,"Each call starts fresh. 40 >= 40 is true, so the first call returns Pass. 39 fails that test, so the second call returns Retry. The shared return sends the chosen word back, and the function itself does not print.
+
+**Why other options are wrong:**
+- Option 1: The boundary 40 takes the if path because >= includes 40. The order is Pass, then Retry.
+- Option 2: 39 is below 40, so the second call takes else and returns Retry.
+- Option 3: 40 meets the line, so the first call does not return Retry."
+mcmc,markdown,Which statements are true?,,,,,,,,A parameter is a name in the parentheses of def,An argument is the value supplied at the call,Writing the function name without parentheses runs the body,A call placed above its def raises NameError,"1, 2, 4",6ab51d175289de104ef53fa0,0.5,markdown,"Parameters are the blanks written in def. Arguments are the values in the call. Python reads from top to bottom, so a call before its def uses a name that does not exist yet and raises NameError.
+
+**Why other options are wrong:**
+- Option 3: The name without parentheses only points at the function. Parentheses are required to run the body."
+mcmc,markdown,Which statements are true?,,,,,,,,A default parameter may be placed before a required parameter,"If a call omits an argument that has a default, Python uses the default",return only shows a value and does not hand it to the caller,"After return, no further line inside that call runs","2, 4",6ab51d175289de104ef53fa0,0.5,markdown,"A default is the value used when that argument is missing. return sends a value back to the caller and ends that call, so a line placed after return in the same call does not run.
+
+**Why other options are wrong:**
+- Option 1: Defaults must come after parameters that have no default. Putting a default first is a syntax error.
+- Option 3: print shows a value. return hands the value back so the caller can store it."
+mcmc,markdown,"Which statements are true about this code?
+
+```python
+def fee_status(marks, passing=40):
+    if marks >= passing:
+        return ""Clear""
+    else:
+        return ""Held""
+
+print(fee_status(38))
+print(fee_status(40))
+print(fee_status(35, 30))
+```",,,,,,,,fee_status(38) returns Held,fee_status(40) returns Clear,"fee_status(35, 30) returns Held","fee_status(35, 30) uses 30 as the passing line","1, 2, 4",6ab51d175289de104ef53fa0,1,markdown,"The first call omits the second argument, so passing is 40 and 38 fails the test, returning Held. 40 >= 40 is true, so the second call returns Clear. The third call passes 30, so the test is 35 >= 30, which is true.
+
+**Why other options are wrong:**
+- Option 3: 35 meets the passing line 30, so that call returns Clear, not Held."
+mcmc,markdown,"Which statements are true about this code?
+
+```python
+def average_of_two(first, second):
+    total = first + second
+    average = total / 2
+    return average
+
+maths = 78
+science = 86
+print(average_of_two(maths, science))
+```",,,,,,,,The call passes 78 and 86 into first and second,The printed result is the int 82,The printed result is 82.0,"The function prints the average, so the outer print receives None","1, 3",6ab51d175289de104ef53fa0,1,markdown,"The values of maths and science are passed in order into first and second. 78 + 86 is 164, and 164 / 2 uses `/`, which produces the float 82.0. return sends that float back, and the outer print shows it.
+
+**Why other options are wrong:**
+- Option 2: `/` keeps a float. The screen shows 82.0, not the int 82.
+- Option 4: The function returns the average and does not print it. The outer print shows the returned float, not None."
+subjective,markdown,"Define three functions, then call them with values read from input.
+
+1. Define plate_cost(plates, rate). Return plates * rate. Do not print inside this function.
+2. Define fee_note(marks, passing=40). Return ""Pass"" when marks >= passing. Otherwise return ""Retry"".
+3. Define upi_line(payer, amount, receiver). Return payer + "" paid Rs "" + str(amount) + "" to "" + receiver.
+4. Read plates with input(""Type plates: "") and convert with int().
+5. Read rate with input(""Type rate: "") and convert with int().
+6. Call plate_cost(plates, rate), store the returned number in bill, and print bill.
+7. Read marks with input(""Type marks: "") and convert with int().
+8. Print the result of fee_note(marks). This call uses the default passing line.
+9. Print the result of fee_note(marks, 30).
+10. Print the result of upi_line(""Ananya"", bill, ""Canteen"").
+
+Sample input:
+
+```
+3
+45
+35
+```
+
+Expected output:
+
+```
+135
+Retry
+Pass
+Ananya paid Rs 135 to Canteen
+```
+
+The expected output above is what print() shows. The input() prompts appear while the program waits and are not part of that output.
+
+Constraints:
+
+- Use one .py file.
+- Define every function before its first call.
+- Do not use a loop inside the functions.
+- The three prompts must match the text above exactly.
+
+### Submission Instruction
+- Code all the points in VS Code in a single .py file
+- Run the code and verify it works
+- Submit the code in the code editor / answer box in the LMS",,,,,,,,,,,,,6ab51d175289de104ef53fa0,0.5,markdown,"plate_cost(3, 45) returns 135, and that number is stored in bill and printed. fee_note(35) omits the second argument, so passing is 40. 35 >= 40 is false, so the call returns Retry. fee_note(35, 30) uses 30 as the line. 35 >= 30 is true, so it returns Pass. upi_line joins the name, str(135), and Canteen into one sentence and returns it for the last print.
+
+```python
+def plate_cost(plates, rate):
+    total = plates * rate
+    return total
+
+def fee_note(marks, passing=40):
+    if marks >= passing:
+        return ""Pass""
+    else:
+        return ""Retry""
+
+def upi_line(payer, amount, receiver):
+    text = payer + "" paid Rs "" + str(amount) + "" to "" + receiver
+    return text
+
+plates = int(input(""Type plates: ""))
+rate = int(input(""Type rate: ""))
+bill = plate_cost(plates, rate)
+print(bill)
+marks = int(input(""Type marks: ""))
+print(fee_note(marks))
+print(fee_note(marks, 30))
+print(upi_line(""Ananya"", bill, ""Canteen""))
+```
+
+Alternative approach: fee_note can store the word in a name and use one return after if and else, instead of returning inside each branch. The calls and the printed lines stay the same. plate_cost can return plates * rate on one line without a total name."

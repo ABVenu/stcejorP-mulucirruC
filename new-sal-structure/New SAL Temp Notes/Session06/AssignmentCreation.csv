@@ -1,0 +1,306 @@
+questionType,contentType,contentBody,intAnswer,prepTime(in_seconds),floatAnswer.max,floatAnswer.min,fitbAnswer,mcscAnswer,subjectiveAnswer,option.1,option.2,option.3,option.4,mcmcAnswer,tagRelationships,difficultyLevel,answerExplanationType,answerExplanation
+mcsc,markdown,"What do the two `print` calls display?
+
+```python
+score = 10
+
+def bump():
+    score = 4
+    return score
+
+print(bump())
+print(score)
+```",,,,,,2,,`4` on the first line and `4` on the second line,`4` on the first line and `10` on the second line,`10` on the first line and `10` on the second line,`None` on the first line and `10` on the second line,,6ab51d1f5289de104ef53faf,0,markdown,"**Answer Explanation:**
+`score = 10` creates a global name. Inside `bump`, the line `score = 4` creates a local name with the same spelling. That local assignment does not edit the global. `return score` sends the local value `4` back, so the first print is `4`. The second print reads the global name, which is still `10`.
+
+**Why other options are wrong:**
+- Option 1: The global would become `4` only if `bump` contained `global score` before the assignment.
+- Option 3: The function returns the local `4`, so the first line is not the global `10`.
+- Option 4: `return score` is present, so the first print is `4`, not `None`."
+mcsc,markdown,"What is printed on the last line?
+
+```python
+total = 0
+
+def add(amount):
+    global total
+    total = total + amount
+    return total
+
+print(add(5))
+print(add(3))
+print(total)
+```",,,,,,4,,`0`,`5`,`3`,`8`,,6ab51d1f5289de104ef53faf,0,markdown,"**Answer Explanation:**
+`global total` tells Python to update the global name. `add(5)` sets `total` to `0 + 5`, which is `5`. `add(3)` sets `total` to `5 + 3`, which is `8`. The last print reads that same global, so it prints `8`.
+
+**Why other options are wrong:**
+- Option 1: `0` is only the value before either call runs.
+- Option 2: `5` is the total after the first call, before `3` is added.
+- Option 3: `3` is the second argument. The stored total is `5 + 3`."
+mcsc,markdown,"What does this call print?
+
+```python
+def add_all(*args):
+    total = 0
+    for n in args:
+        total = total + n
+    return total
+
+print(add_all(2, 3, 4))
+```",,,,,,1,,`9`,`2`,"`(2, 3, 4)`",`None`,,6ab51d1f5289de104ef53faf,0,markdown,"**Answer Explanation:**
+`*args` collects the positional values `2`, `3`, and `4`. The loop starts at `0`, then adds `2` to make `2`, adds `3` to make `5`, and adds `4` to make `9`. `return total` sends `9` back, and that is what is printed.
+
+**Why other options are wrong:**
+- Option 2: `2` is only the first value, before `3` and `4` are added.
+- Option 3: The function returns the sum. It does not return the bundle of arguments.
+- Option 4: The function has a `return`, so the printed result is not `None`."
+mcsc,markdown,"What does this call print?
+
+```python
+double = lambda n: n * 2
+print(double(7))
+```",,,,,,3,,`lambda n: n * 2`,`None`,`14`,`7`,,6ab51d1f5289de104ef53faf,0,markdown,"**Answer Explanation:**
+A lambda's result is the value of the expression after the colon. `double(7)` evaluates `7 * 2`, which is `14`. The call uses parentheses, the same way a function defined with `def` is called.
+
+**Why other options are wrong:**
+- Option 1: The call runs the lambda. It does not print the lambda expression as text.
+- Option 2: The expression is the result. A missing `return` keyword does not make a lambda return `None`.
+- Option 4: `7` is the argument. The expression multiplies that argument by `2`."
+mcsc,markdown,"What does this call print?
+
+```python
+def report(code, *args):
+    total = 0
+    for n in args:
+        total = total + n
+    return str(total)
+
+print(report(""X"", 4, 6))
+```",,,,,,2,,`X`,`10`,`X10`,`46`,,6ab51d1f5289de104ef53faf,0.5,markdown,"**Answer Explanation:**
+`""X""` fills the required parameter `code`. The star collects only the later positional values, so `args` holds `4` and `6`. The loop adds those numbers: `4 + 6` is `10`. `str(total)` produces the text `""10""`, and the print shows `10`. The value in `code` is never joined onto that text.
+
+**Why other options are wrong:**
+- Option 1: `""X""` is stored in `code`, but the returned value is the sum of `args`.
+- Option 3: The `return` line does not concatenate `code` with the total.
+- Option 4: Gluing the digits `4` and `6` would be text joining. This loop adds the numbers."
+mcsc,markdown,"What does this call print?
+
+```python
+def fact(n):
+    if n == 0:
+        return 1
+    return n * fact(n - 1)
+
+print(fact(3))
+```",,,,,,4,,`0`,`3`,`1`,`6`,,6ab51d1f5289de104ef53faf,0.5,markdown,"**Answer Explanation:**
+`fact(3)` calls `fact(2)`, which calls `fact(1)`, which calls `fact(0)`. `fact(0)` matches the base case, returns `1`, and does not call `fact` again. On the way back, `fact(1)` returns `1 * 1`, which is `1`. `fact(2)` returns `2 * 1`, which is `2`. `fact(3)` returns `3 * 2`, which is `6`.
+
+**Why other options are wrong:**
+- Option 1: The base case returns `1`. A base case of `0` would force every product above it to `0`.
+- Option 2: `3` is the starting argument. The printed result is `3` multiplied by `fact(2)`.
+- Option 3: `1` is what `fact(0)` and `fact(1)` return. `fact(3)` still multiplies by `3` and by `2`."
+mcmc,markdown,"Select every correct statement about this code.
+
+```python
+fee = 20
+
+def show():
+    print(fee)
+
+def change():
+    fee = 5
+    return fee
+```",,,,,,,,`show()` prints `20` because it reads the global `fee` and does not assign to `fee`.,`change()` updates the global `fee` to `5`.,"After `result = change()`, the global `fee` is still `20`.",A name assigned inside a function is local unless `global` names that same variable.,"1, 3, 4",6ab51d1f5289de104ef53faf,0.5,markdown,"**Answer Explanation:**
+`show` never assigns to `fee`, so Python uses the global value `20`. `change` does assign `fee = 5`, and it has no `global` line, so that assignment creates a local `fee`. The returned local value is `5`, while the global `fee` stays `20`. Option 4 states that same rule: an assignment inside a function creates a local name unless `global` is used.
+
+**Why other options are wrong:**
+- Option 2: `change` does not declare `global fee`. The assignment creates a separate local name and leaves the global at `20`."
+mcmc,markdown,"Select every correct statement.
+
+```python
+show = lambda a, b: a + b
+
+def note(**kwargs):
+    for label in kwargs:
+        print(label)
+        print(kwargs[label])
+```",,,,,,,,"`show(2, 3)` returns `5`, because the expression after the colon is the result.","A lambda must include the keyword `return`, or the call returns `None`.","`note(city=""Pune"", code=4)` prints each label and then the value stored under that label.",`**kwargs` collects extra positional numbers in the same way `*args` does.,"1, 3",6ab51d1f5289de104ef53faf,0.5,markdown,"**Answer Explanation:**
+`show(2, 3)` evaluates `2 + 3`, which is `5`. That expression is the lambda result, with no `return` keyword. `note` collects keyword arguments. For the call shown, the loop first uses the label `city` and the value `""Pune""`, then the label `code` and the value `4`. `kwargs[label]` is how each value is fetched.
+
+**Why other options are wrong:**
+- Option 2: A lambda does not use `return`. The expression after the colon is the result.
+- Option 4: `*args` collects extra positional values. `**kwargs` collects named extras written as `name=value`."
+mcmc,markdown,"Select every correct statement.
+
+```python
+def countdown(n):
+    if n == 0:
+        print(""Done"")
+        return
+    print(n)
+    countdown(n - 1)
+
+def bad(n):
+    print(n)
+    bad(n - 1)
+```",,,,,,,,"`countdown(2)` prints `2`, then `1`, then `Done`.",`if n == 0` is the base case of `countdown` because that branch does not call `countdown` again.,"`bad(2)` prints `2`, `1`, and `0`, then stops because the argument became `0`.",A recursive call chain that never reaches a base case ends with `RecursionError`.,"1, 2, 4",6ab51d1f5289de104ef53faf,1,markdown,"**Answer Explanation:**
+`countdown(2)` prints `2` and calls `countdown(1)`. That call prints `1` and calls `countdown(0)`. The call with `0` prints `Done` and returns, so the chain stops. The `if n == 0` branch is the base case because it does not call `countdown`. `bad` has no such branch. Each call prints `n` and calls `bad(n - 1)`, including `0` and negative numbers, until the chain is too long and Python raises `RecursionError`.
+
+**Why other options are wrong:**
+- Option 3: Reaching `0` does not stop `bad`, because nothing returns before the next call. The calls continue past `0`."
+mcmc,markdown,"Select every correct statement.
+
+```python
+box = 9
+
+def take(*args):
+    total = 0
+    for n in args:
+        total = total + n
+    return total
+
+def set_box(value):
+    global box
+    box = value
+
+triple = lambda n: n * 3
+```",,,,,,,,`take()` returns `0` because the loop never runs.,"After `set_box(2)`, the global `box` is still `9`.","`triple(4)` returns `12`, and the lambda does not use the keyword `return`.","`take(1, ""2"")` adds the two arguments and returns `3`.","1, 3",6ab51d1f5289de104ef53faf,1,markdown,"**Answer Explanation:**
+`take()` receives no positional extras, so the loop body never runs and the returned total stays `0`. `triple(4)` evaluates `4 * 3`, which is `12`. A lambda returns that expression without a `return` keyword.
+
+**Why other options are wrong:**
+- Option 2: `set_box` declares `global box` before assigning, so the global `box` becomes `2`.
+- Option 4: `1` is a number and `""2""` is text. Adding them raises `TypeError`. The call does not return `3`."
+subjective,markdown,"Write one Python program that completes Question 1 through Question 8 in order. Print only the values described below, in that order.
+
+Question 1. Set a global name `counter` to `0`. Define `add_one` so that it uses `global`, adds `1` to `counter`, and returns `counter`. Call `add_one` twice. Print each returned value, then print `counter`.
+
+Question 2. Define `local_value` so that it assigns a local `counter` of `7` and returns that local value. Do not use `global` in this function. Print the returned value, then print the global `counter`.
+
+Question 3. Define `sum_of(*args)` so that it returns the sum of the numbers it receives. A call with no arguments returns `0`. Print `sum_of(10, 20, 30)` and print `sum_of()`.
+
+Question 4. Define `scored(name, *args)` so that it adds only the numbers after `name` and returns `name`, one space, and that total converted with `str`. Print `scored(""Ria"", 8, 12)`.
+
+Question 5. Define `show_labels(**kwargs)` so that it prints each label and then the value stored under that label. Call `show_labels(item=""pen"", price=15)`.
+
+Question 6. Set `bill` to a lambda with parameters `qty` and `rate` that multiplies them. Print `bill(4, 25)`.
+
+Question 7. Define a recursive function `factorial`. When `n == 0`, return `1`. Otherwise return `n * factorial(n - 1)`. Print `factorial(5)`.
+
+Question 8. Define a recursive function `countdown`. When `n == 0`, print `Stop` and return. Otherwise print `n`, then call `countdown(n - 1)`. Call `countdown(3)`.
+
+### Sample Output
+
+```text
+1
+2
+2
+7
+2
+60
+0
+Ria 20
+item
+pen
+price
+15
+100
+120
+3
+2
+1
+Stop
+```
+
+### Constraints
+
+- Use one `.py` file.
+- Do not call `input()`.
+- Do not store the results in a list, set, tuple, or dictionary.
+- Question 3 must use `*args`. Question 5 must use `**kwargs`. Question 6 must use `lambda`.
+- Question 7 and Question 8 must call themselves and must include a base case.
+- Print the values in the order shown. Extra headings are not required.
+
+### Submission Instruction
+
+- Code all the points mentioned in VS Code in a single `.py` file.
+- Run the code and verify it is working.
+- Then submit the code in the code editor/answer box in the LMS.",,,,,,,,,,,,,6ab51d1f5289de104ef53faf,0.5,markdown,"Question 1 updates one shared `counter` because `global` is declared before the assignment. The first call changes `0` to `1`. The second call changes `1` to `2`. Printing `counter` afterward still shows `2`.
+
+Question 2 assigns `counter = 7` inside the function with no `global` line, so that name is local. The return value is `7`. The global `counter` from Question 1 is still `2`.
+
+Question 3 starts a total at `0` and adds each value in `args`. `10 + 20 + 30` is `60`. With no arguments, the loop never runs, so the total stays `0`.
+
+Question 4 stores `""Ria""` in `name` and `8` and `12` in `args`. The sum is `20`. The returned text is `Ria 20`.
+
+Question 5 walks the keyword labels in call order. It prints `item`, then `pen`, then `price`, then `15`.
+
+Question 6 evaluates `4 * 25`, which is `100`. The expression after the colon is the result.
+
+Question 7 expands `factorial(5)` through `factorial(0)`. The base case returns `1`. The multiplications on the way back are `1 * 1`, `2 * 1`, `3 * 2`, `4 * 6`, and `5 * 24`, so the printed result is `120`.
+
+Question 8 prints `3`, `2`, and `1`, then the base case prints `Stop` and returns.
+
+```python
+counter = 0
+
+def add_one():
+    global counter
+    counter = counter + 1
+    return counter
+
+print(add_one())
+print(add_one())
+print(counter)
+
+def local_value():
+    counter = 7
+    return counter
+
+print(local_value())
+print(counter)
+
+def sum_of(*args):
+    total = 0
+    for n in args:
+        total = total + n
+    return total
+
+print(sum_of(10, 20, 30))
+print(sum_of())
+
+def scored(name, *args):
+    total = 0
+    for n in args:
+        total = total + n
+    return name + "" "" + str(total)
+
+print(scored(""Ria"", 8, 12))
+
+def show_labels(**kwargs):
+    for label in kwargs:
+        print(label)
+        print(kwargs[label])
+
+show_labels(item=""pen"", price=15)
+
+bill = lambda qty, rate: qty * rate
+print(bill(4, 25))
+
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))
+
+def countdown(n):
+    if n == 0:
+        print(""Stop"")
+        return
+    print(n)
+    countdown(n - 1)
+
+countdown(3)
+```
+
+One alternative for Question 7 is a `while` loop that starts at `1` and multiplies downward until `n` reaches `0`. The required function stays recursive, with the `n == 0` base case, because Question 7 asks for that form."
