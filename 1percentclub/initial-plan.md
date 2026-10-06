@@ -192,10 +192,6 @@ Review before a second cohort.
 
 ## 10. Best suitable names
 
-Shortlist only. The name can wait until this cohort has results. Luminaries is already Scaler’s, so it is not on this list. Eminences is the word in that same family.
-
-First choice is Masai Guild. Second choice is Masai Forge. The other rows stay on the shortlist.
-
 | Name | How the name looks | What it says |
 | --- | --- | --- |
 | Guild | Masai Guild, The Guild, Masai Guild Club | First choice. A group of skilled practitioners. Works for students and experienced members. Selective, and it does not sound like an award. |
