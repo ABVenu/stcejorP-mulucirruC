@@ -204,6 +204,23 @@ School-wide internship figures, not Luminaries figures: 96% of eligible students
 
 Innovation Lab site claims, for the lab portfolio as a whole (industry startups included): 20+ startups, ₹400 crore+ portfolio valuation, $3M+ funds raised. Incubated names on the site include Gahan AI, Maximem, xSpecies AI, Handa Uncle, Lemnisca Bio Tech, and Antimattr. These are not the 23 fellows.
 
+## Indian edtechs doing the same thing
+
+These are the school companies in the same category as Scaler. The career-course companies checked in the same pass, Kalvium, NxtWave, Coding Ninjas, AlmaBetter, UpGrad, Sunstone, and Mesa School, did not show a public picked-student fund or a Luminaries-style room. Kalvium runs a work-integrated BTech inside partner universities. NxtWave’s CCBP is a certification and placement product.
+
+Every row that writes a cheque is a full-time campus, or an open application that asks for a prototype. None is a part-time batch selecting on assignment marks.
+
+| Company | Who gets in | What they put on the table | How they pick |
+| --- | --- | --- | --- |
+| [Scaler School of Technology](https://www.scaler.com/school-of-technology/) | 23 students already on the residential campus | Luminaries: mentors and dinners, no disclosed cheque. The AI & Business page claims a ₹2 crore+ student seed pool. The one written grant found was ₹10 lakh to NeoSapien, an outside startup. | Invite inside the campus |
+| [Newton School of Technology, StartX](https://www.newtonschool.co/newton-school-of-technology-nst/nst-entrepreneurship) | Only students enrolled at NST. An idea or a prototype is required. Launched 2 Dec 2024 with Pratik Poddar (Nexus) and Varun Mayya. | Fund size ₹1 crore. Up to ₹10 lakh pre-seed if users, revenue, market, and team clear a bar. A smaller build grant, up to ₹50,000. Mentors and monthly founder workshops. | Prototype review, then about 2 months of MVP evaluation |
+| [Polaris School of Technology, Tech Combinator](https://www.bweducation.com/article/edtech-startup-classplus-launches-offline-btech-college-in-bengaluru-527268) | Students on the Bengaluru BTech campus | Pitch on campus. An approved idea can receive up to $10,000, about ₹8.2 lakh. A student wrote that Sajith Pai of Blume ran it like a Shark Tank and that some batchmates were approved. That is a student account, not a published portfolio. | A pitch |
+| [Polaris Fellowship](https://fellowship.polariscampus.com/) | Any Indian UG, PG, or PhD student, or a 2026 graduate. Not only Polaris students. 10 seats. | 6 months living in Bengaluru inside companies such as Blume, Classplus, and InMobi. ₹6 lakh stipend plus ₹4 lakh in tech credits. | What they have shipped. The program says CGPA is ignored. Applications for 2026 closed 28 June. |
+| [Masters’ Union, Founder Fellowship](https://mastersunion.org/new-initiatives) | MU students who build instead of taking the placement | ₹50,000 a month for up to a year, then a demo day. MU says 30+ students, 25+ startups, ₹1.2 crore+ in its own grants, and ₹20 crore+ raised by those startups. Those figures are MU’s. | Selected from its own students |
+| [Masters’ Union Ventures, Dropout Fund](https://ventures.mastersunion.org/) | Builders under 25, including people who are not MU students | Up to ₹15 lakh, a year inside the MU ecosystem, mentorship | An application, not a class rank |
+| [Tetr College, Under 20 fund](https://inc42.com/buzz/tetr-college-floats-fund-to-back-student-entrepreneurs/) | Age 20 or under as of 31 Dec 2024, worldwide. A portion is reserved for Tetr’s own students. | $10 million fund. Cheques of $10,000 to $100,000. At least 20 ideas. | A pitch. Open beyond the campus. |
+| [Physics Wallah, School of Startups / SeedX](https://www.schoolofstartups.live/) | Aarambh alumni, PW Institute of Innovation students, and PW employees. Others can enter through Aarambh. | SeedX: up to ₹50 lakh. One round shortlisted 10 startups to pitch PW’s CXOs. A separate AI challenge in August 2026 advertised a ₹10 crore pool and was open to college students nationally. | A screen, then a pitch. Not a grade cutoff inside one batch. |
+
 ## What other organisations do
 
 Four programs are the public versions of “pick a few young builders, put operators in the room, attach capital.” None of them is an edtech company. None of them has a full-time or residential student body. They do not select in-house students, because they have no batch. People apply from outside. Course marks are not the screen.

@@ -3,35 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Re-Imagining Foundation Course</title>
+  <title>Masai Curriculum Projects</title>
   <style>
     body {
       margin: 0;
       min-height: 100vh;
-      display: grid;
-      place-items: center;
-      font-family: Georgia, serif;
       background: #eef5f0;
       color: #0f3d2c;
+      font-family: Georgia, serif;
     }
-    a {
-      display: inline-block;
-      padding: 0.9rem 1.4rem;
-      border-radius: 999px;
-      background: #1f6b4a;
-      color: #fff;
+    main {
+      width: min(40rem, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 3.5rem 0 4rem;
+    }
+    h1 { margin: 0 0 0.4rem; font-size: 2.2rem; }
+    .lead {
+      margin: 0 0 1.75rem;
       font-family: sans-serif;
-      font-weight: 700;
+      color: #5c6f64;
+    }
+    ol {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.85rem;
+    }
+    li a {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.15rem 0.9rem;
+      padding: 1.1rem 1.15rem;
+      background: #fff;
+      border: 1px solid #c5d9ce;
+      border-radius: 16px;
+      color: inherit;
       text-decoration: none;
     }
-    p { font-family: sans-serif; color: #5c6f64; }
+    li a:hover { border-color: #1f6b4a; }
+    .num {
+      grid-row: 1 / span 2;
+      align-self: center;
+      font-family: sans-serif;
+      font-weight: 700;
+      color: #1f6b4a;
+    }
+    strong { font-size: 1.2rem; }
+    span {
+      font-family: sans-serif;
+      color: #5c6f64;
+    }
   </style>
 </head>
 <body>
-  <main style="text-align:center;padding:2rem">
-    <h1>Re-Imagining Foundation Course</h1>
-    <p>AIML · Beginner and Expert paths</p>
-    <a href="sal-linking-to-outcomes/reports/V1/Unlock-Cadence-Demo/Unlock-Cadence-Demo.html">Open the Foundation plan</a>
+  <main>
+    <h1>Masai Curriculum Projects</h1>
+    <p class="lead">Choose a project to open its reports.</p>
+    <ol>
+      <li>
+        <a href="reimaginingfoundationcourse/">
+          <span class="num">1</span>
+          <strong>Re-Imagining Foundation Course</strong>
+          <span>AIML · Beginner and Expert paths</span>
+        </a>
+      </li>
+      <li>
+        <a href="onepercentclub/">
+          <span class="num">2</span>
+          <strong>1% Club</strong>
+          <span>Initial plan and existing case study</span>
+        </a>
+      </li>
+    </ol>
   </main>
 </body>
 </html>
