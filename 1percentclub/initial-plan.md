@@ -194,8 +194,12 @@ Review before a second cohort.
 
 Shortlist only. The name can wait until this cohort has results. Luminaries is already Scaler’s, so it is not on this list. Eminences is the word in that same family.
 
+First choice is Masai Guild. Second choice is Masai Forge. The other rows stay on the shortlist.
+
 | Name | How the name looks | What it says |
 | --- | --- | --- |
+| Guild | Masai Guild, The Guild, Masai Guild Club | First choice. A group of skilled practitioners. Works for students and experienced members. Selective, and it does not sound like an award. |
+| Forge | Masai Forge, The Forge, Masai Forge Club | Second choice. More energetic, and it fits work on real problems. Suits students better than experienced members. |
 | Savants | The Savants Club, Masai Savants, Masai Savants Club | Deep specialists. |
 | Laureates | The Laureates Club, Masai Laureates, Masai Laureates Club | People a panel has already chosen. |
 | Fellows | The Fellows Club, Masai Fellows, Masai Fellows Club | Members of a learned cohort. |
