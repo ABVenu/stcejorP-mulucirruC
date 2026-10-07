@@ -1,30 +1,73 @@
 # Initial plan
 
-One pilot cohort. Handpick a high bar, then put those people on small, real problems that the BD team has already brought in from companies. After the hackathon, the group splits into two tracks.
+## 1. Problem statement
 
-Placement is the product. Students spend 8 weeks on the problems. A problem statement is given, they solve it, and they present it at the deadline. The week-1 statement is presented in week 3, and that presentation is the one session that month. Interviews open there for people who hold the bar. Experienced people use the same give-and-present rhythm, then 4 weeks on networking and the pitch. Investment does not hold up the start. It is a separate agreement, and only if Masai actually invests.
+Masai wants to build an **exclusive club for its top students**.
 
-The club works when each side gets something that costs them little.
+The club helps its members to:
 
-| Who | What they get | What it costs |
-| --- | --- | --- |
-| Students and experienced people | A visible edge: company problems, a written record, and a path to an interview or a network | The 90% screen and the hackathon. Membership has to be earned. |
-| Companies | A short, pre-vetted list, for a small amount of their time | A scoped problem, a named assessor, an interview, and written feedback. No stipend. |
-| Masai | Placements, and a selective club that means something | BD time, mentor time, and one cohort run properly before a second one |
+- **Start companies.** Masai connects them with VCs and fund raisers who back innovation.
+- **Solve real problems.** Government-level problems, and B2B problems that companies bring.
+- **Earn.** Stipends and bounties.
+- **Grow.** Network, growth opportunities, and summits.
 
-## 1. Before the cohort opens
+The club needs people with an innovation mindset and a problem-solving mindset. Masai has to find them inside a part-time learner base, where online scores alone are easy to copy. So the club picks through a screen and a hackathon, and then tests people on real problems.
 
-Nothing opens until the companies are signed.
+## 2. Mission and vision
 
-BD signs 4 to 6 pilot companies. Each company supplies 2 to 3 small problems, tagged for the Students track or the Experienced track, with a named assessor. Each track runs 2 of those problems. The rest are spare, so one company dropping out does not stop the cohort.
+**Vision.** An exclusive club that builds an innovation and startup path, and at the same time gets its top students a job that is clearly better than a regular placement: a good salary, or a good company, or a good role.
 
-Ask each company, before signing, how many weeks its hiring cycle takes. That answer decides whether that company needs an interview window after week 8. Offers and notice periods sit outside the cohort either way.
+**Mission.**
 
-Each problem is real enough that the company cares about the answer, and small enough to finish inside the cadence below. The submission is an evaluation exercise. It is not a claim on the company's product. Sharing the work outside the assessment needs the company's permission.
+- Find the top students and put them on real problems brought by BD and by companies.
+- Use BD to open interviews, internships for freshers, and consultant roles for experienced members.
+- Use the experienced members' own companies and networks. Where an experienced member brings their company in as a hiring partner, Masai signs that MoU, and that member gets a good incentive from Masai.
+- Listen to problem statements from experienced members as well. Those problems can become startup ideas.
+- Connect freshers with experienced members, so the fresher gets help with a job, or with building something.
 
-## 2. Screening
+## 3. Target audience
 
-Target 100. All three bars must be cleared.
+- Masai's **part-time students**.
+- Mixed backgrounds and mixed experience, from new learners to working professionals.
+- Time with Masai: **2 to 4 hours a week, for 4 to 6 months**.
+
+### By specialisation
+
+| Specialisation | Working | NWNS | Studying, I/II year | Studying, pre-final | Studying, final year | Overall |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| PM | 203 | 83 | 5 | 17 | 11 | 319 |
+| CSE | 24 | 22 | 35 | 37 | 9 | 127 |
+| DM | 57 | 43 | 4 | 6 | 17 | 127 |
+| BA | 56 | 54 | 6 | 5 | 5 | 126 |
+| AI | 35 | 21 | 11 | 22 | 9 | 99 |
+| ML | 4 | 20 | 23 | 12 | 4 | 63 |
+| DS | 14 | 16 | 7 | 8 | 7 | 52 |
+| DevOpsCloud | 1 | 4 | 0 | 1 | 3 | 9 |
+| Cybersecurity | 3 | 0 | 1 | 0 | 3 | 7 |
+| DA | 2 | 0 | 0 | 0 | 0 | 2 |
+
+## 4. Solution
+
+### Challenge
+
+The club has to work for the audience recorded above. The sheets are here:
+
+- [Specialisation and current status](documents/learners-by-status.png)
+- [Availability by specialisation](documents/available-by-specialisation.png)
+- [Learners by zone](documents/learners-by-zone.png)
+- [Experience and salary](documents/experience-by-salary.png)
+- [Existing case study](existing-case-study.md)
+
+- **612 of 933** on the salary sheet are freshers. The majority of the pool are freshers, and they need a good job. This club is for the top students, and the job has to be different from the regular placement cell: a good salary, or a good company, or a good role.
+- Most experienced members join for a certification. Some join for a promotion in the job they already have.
+- Everyone is part-time, **2 to 4 hours a week, for 4 to 6 months**. Spotting an innovation mindset here is harder than at edtechs that handpick full-time residential degree students on campus, most of whom missed the JEE cutoff.
+- The specialisation table above shows the mix: working, NWNS, and students in I/II year, pre-final year, and final year.
+
+### What we run
+
+One pilot cohort. Screening, then the hackathon, then the program below.
+
+**Tentative screening.** Target **100** students. All three bars must be cleared.
 
 | Bar | Cut |
 | --- | --- |
@@ -32,165 +75,93 @@ Target 100. All three bars must be cleared.
 | Attendance | More than 90% |
 | Eval score | More than 90% |
 
-If fewer than 100 clear all three, take the next highest combined scores. Do not go below 80% on any one bar. If that still leaves a short list, invite that shorter list. Do not fill the hackathon with scores under the floor.
+If fewer than 100 clear all three, take the next highest combined scores. No bar goes below 80%. If the list is still short, invite that shorter list.
 
-## 3. Invite and hackathon
+**Hackathon.** Everyone who clears the screen is invited.
 
-Invite everyone who cleared the screen.
+- A timed hackathon on a real problem statement.
+- The hackathon runs for **1 day or 2 days**, depending on the problem statement.
+- Team or individual participation is decided later.
+- At the deadline, members give a demo to the mentors.
+- Mentors assess in real time, and the members are selected from that assessment.
+- **30** are selected and placed on a track.
 
-- One hackathon. Two problem sets, one suited to each track.
-- Mentors assess the work.
-- Select 30 in total, and place each person on a track.
-- Tell each selected person exactly what that track offers, including what is committed and what is only possible.
-- The hackathon is the gate. The company problems start after it.
+### How the typical program runs after selection
 
-## 4. Two tracks
+Problem solving is **8 weeks for both tracks**.
 
-The hackathon is shared. The months after it are not.
+- Members work on **3 to 6** problem statements.
+- Each statement is **1 week or 2 weeks**. The company or the government decides that length from the type of problem. It is decided later.
+- The statement is given, solved, and presented at its deadline.
+- One mentor summit in these 8 weeks, both tracks.
+- Hold the bar, and you take the next problem. Miss it, and you leave with written feedback.
 
-There is no weekly class. A problem has two moments: the statement is given, and the solution is presented at the deadline. The live session is that presentation, once in a month. A statement given in week 1 is presented in week 3. The next statement is given at that presentation and presented at the next month's session.
-
-| | Students | Experienced |
+| When | Students | Experienced |
 | --- | --- | --- |
-| Goal | An interview with the company whose problem they solved | Network, growth, and a pitch if the idea is strong |
-| Length | 8 weeks | 10 weeks. Second presentation in week 7, then network and pitch through week 10 |
-| Work | 2 company problems | 2 company problems |
-| Cadence | One session a month. Statement given, solved, presented at the deadline | Same cadence. The second presentation opens the pitch phase |
-| Payoff | Interviews from the week-3 presentation, plus written feedback | Four weeks with company leaders and peers, and a pitch day if an idea earns it |
-
-People who hold the bar move to the next problem. People who miss it leave that problem with written feedback. They are not left in silence, and they are not carried forward. There is no recovery round.
-
-### Students
-
-Eight weeks cover two problems and two sessions. The week-1 statement is presented in week 3. People who hold that bar start interviews then, and receive the second statement. They present it in week 7. An interview is the commitment. An offer is the company's decision after that, and it can land after the 8 weeks.
-
-### Experienced
-
-A job may be the wrong outcome. They get the same two problems: statement in week 1, presented in week 3, then a second statement presented in week 7. Week 7 is the start of the network and pitch phase, which runs through week 10. It is not an open-ended tail.
-
-If Masai invests in one of those startups, a share of the employees comes from Masai alumni and from this club. That share is set in the investment agreement before the pitch. It is not part of the company agreement that starts the cohort.
-
-## 5. Mentor summit
-
-One summit in the cohort, in week 6, both tracks together with the mentors.
-
-It is not a third problem session. The presentations stay in week 3 and week 7. The summit is the one time the whole selected group and the mentors are in the same room: the work so far, the week-7 presentation coming next, and the experienced track's network and pitch phase.
-
-## 6. The agreement
-
-BD brings the companies, the problem statements, and a company willing to interview the people who solve its problem. A problem with no interview path is a class exercise, and it does not go on the calendar.
-
-Before the cohort starts, BD and the company sign an MoU, or a written workflow if a full MoU is too heavy. It locks five things.
-
-| In the MoU or workflow | What it locks |
-| --- | --- |
-| The problem | The statement, the track it is tagged for, and the person at the company who owns it. The submission is an evaluation exercise. Sharing it outside needs permission. |
-| The rhythm | One session a month. The problem statement is given, members solve it, and they present at the deadline. A statement given in week 1 is presented in week 3. A named company assessor is in the room for that presentation, with the Masai mentors. |
-| Hiring | Interviews open at the week-3 presentation for members who hold the bar. Anyone who holds the bar at the week-7 presentation and is not already in process is interviewed then. Written feedback either way. A fast-track past an early screening round is included only where that company agrees to it. This is not a promise of a job. The company also states how many weeks its hiring cycle takes. |
-| Endorsement | Written feedback for those who clear the assessments, and approval of a certificate co-signed by Masai and the company. A reference or an introduction is at the assessor's discretion. |
-| The startup case | Not in this agreement. If Masai invests later, the employee share is a separate agreement, signed before the pitch. |
-
-No MoU or written workflow, no company on the calendar.
-
-## 7. Perks
-
-Say these in two lists when members are told what they are joining. Committed is what this pilot will do. Possible is what can happen, and is not promised.
-
-Endorsement is earned. A letter or a certificate for everyone would make it meaningless. Only people who clear the assessments receive one. The wording names the problem and the level reached. Assessors write only for people they will actually vouch for. The certificate carries a verification link or ID so an employer can confirm it.
-
-### Committed, all members
-
-1. Selective status. The 90% screen and a mentor-assessed hackathon. Membership is a signal because most people were not picked.
-2. Real company problems the company actually cares about, scoped as evaluation exercises. Each track does 2. A statement is given, solved, and presented at the deadline.
-3. Mentor assessment of the work.
-4. A written record after each assessment, and again at the end of the track.
-5. The peer group of people who also cleared the hackathon.
-6. A clear bar. Hold it, and you move to the next problem. Miss it, and you leave with feedback.
-7. One mentor summit, in week 6.
-8. A Masai credential for members who clear the assessments. Where the company has signed, that credential is the co-signed certificate.
-
-### Committed on the Students track
-
-1. An interview from the week-3 presentation if that presentation held the bar, and an interview after the week-7 presentation for anyone who holds the bar then and is not already in process.
-2. Written feedback from that company, including for people who are not hired.
-3. The company sees the work before it sees the resume.
-
-### Committed on the Experienced track
-
-1. Two problems on the same give-and-present rhythm, with the same written record.
-2. From week 7: company leaders and peers, the second presentation, and the pitch phase.
-3. Mentor guidance on the next step, not only on the submission.
-
-### Possible
-
-These depend on the company, the assessor, or an idea being strong enough. They are not part of the offer.
-
-1. Permission to show the solved problem as a portfolio piece.
-2. A fast-track that skips an early screening round.
-3. A LinkedIn recommendation from an assessor, for someone that assessor will vouch for.
-4. A reference to a later employer, at the assessor's discretion.
-5. A warm introduction, at the endorser's discretion.
-6. Named recognition, with a company quote, for the strongest work.
-7. A pitch day, if an experienced-track idea is strong enough.
-8. Investment, and any alumni hiring preference inside that investment. Separate agreement, and it may not happen.
-
-### Not promised
-
-- A job. The agreement promises an interview and written feedback.
-- A stipend. No company is paying one.
-- Investment, or a named famous mentor.
-- An endorsement for every member.
-
-## 8. Weeks
-
-Screening and the hackathon happen before week 1. There is no weekly class. One session in a month, and that session is the deadline. The problem statement is given, members solve it, and they present at that deadline. A statement given in week 1 is presented in week 3. The next statement is given in that same session and presented at the next month's session.
+| 8 weeks | 3 to 6 problems. Each problem is 1 week or 2 weeks. | The same problems and the same 8 weeks. |
+| During the 8 weeks | One mentor summit, with the experienced track. | The same summit. |
+| After the 8 weeks | An interview, or an internship, or a stipend, for those who held the bar. | Their perks: network, growth, and the VC pitch. |
 
 ```mermaid
 flowchart TD
-    screen["Screen to about 100"] --> hack["Hackathon"]
-    hack --> pick["Select 30 and place on a track"]
-    pick --> given["Week 1, Problem 1 statement given"]
-    given --> present["Week 3, one session, present Problem 1, Problem 2 given"]
-    present --> summit["Week 6, one mentor summit"]
-    summit --> present2["Week 7, one session, present Problem 2"]
-    present2 --> close["Students, week 8, written close"]
-    present2 --> pitch["Experienced, weeks 8-10, network and pitch"]
-    close --> offers["Offers after week 8"]
+    screen["Screen to about 100"] --> hack["Hackathon, 1 or 2 days, demo, select 30"]
+    hack --> work["8 weeks, 3 to 6 problems, 1 or 2 weeks each, one mentor summit"]
+    work --> students["Students: interview, or internship, or stipend"]
+    work --> experienced["Experienced: network, growth, VC pitch"]
 ```
 
-### Students: 8 weeks
+## 5. Perks
 
-| Week | What happens |
-| --- | --- |
-| 1 | Problem 1 statement is given. They solve it. No session. |
-| 3 | The month's session. Present Problem 1. Interviews open for anyone who holds the bar. Problem 2 statement is given. |
-| 6 | Mentor summit, once, with the experienced track. Not a problem session. |
-| 7 | The next month's session. Present Problem 2. |
-| 8 | Written close. Interviews continue for anyone who held the week-7 bar and is not already in process. |
+| # | Perk | Who gets it |
+| --- | --- | --- |
+| 1 | VC and funding connect | Experienced track, when the pitch holds up |
+| 2 | Real problems: B2B and government | All members |
+| 3 | Summit: exclusive network and growth | All members |
+| 4 | Placement: assured interview, internship, or stipend | Members who hold the bar |
+| 5 | Endorsement | Members who complete the 8 weeks |
 
-Offers and notice periods come after week 8. A company whose hiring cycle needs longer gets a 3 to 4 week interview window after week 8. That window is for that company, not a longer program for everyone.
+### 1. VC and funding connect
 
-### Experienced: 10 weeks
+- Masai connects the pitch to VCs and fund raisers.
+- This starts after the 8 weeks of problem solving.
+- The VC decides whether to fund.
 
-| Week | What happens |
-| --- | --- |
-| 1 | Problem 1 statement is given. They solve it. No session. |
-| 3 | The month's session, with the students. Present Problem 1. Problem 2 statement is given. |
-| 6 | The same mentor summit. Not a second summit, and not a problem session. |
-| 7 | Present Problem 2. This session opens the network and pitch phase. |
-| 8–10 | Network and pitch. No new problem. Pitch day in week 10 if an idea has held up. Investment, if any, is a separate agreement before that pitch. |
+### 2. Real problems: B2B and government
 
-## 9. After this cohort
+- BD, in collaboration with companies, brings the problems. They may be company-level problems or government-level problems.
+- A proper mentor assessment will be decided later.
+- Bounty: where the owner attaches a reward to a problem, the member who solves it earns it. The owner sets this in the agreement.
+- Hold the bar, and you take the next problem. Miss it, and you leave with written feedback.
 
-Review before a second cohort.
+### 3. Summit: exclusive network and growth
 
-- The week of the first interview, and the week of the offer
-- Offers per member
-- Whether each company would join again
-- Where people left the track
-- Whether the 90% screen was too strict or too loose
+- One summit during the 8 weeks of problem solving.
+- Both tracks, with the mentors. Only the 30 selected.
+- It is a meeting, not a problem deadline.
 
-## 10. Best suitable names
+### 4. Placement: assured interview, internship, or stipend
+
+- After the 8 weeks, a student who has held the bar gets an **interview, or an internship, or a stipend**.
+- The partner signs this before the cohort opens. That is what "assured" means.
+- A full-time job offer is the employer's later decision.
+- If a partner's hiring cycle needs longer than the placement window, add 3 to 4 weeks for that partner only.
+
+### 5. Endorsement
+
+- One endorsement for the whole 8 weeks. It is not given after every problem statement.
+- It is a certificate that the person is a problem solver. For example: "XYZ is a problem solver."
+- It is given by a mentor, or by the company, or by Masai.
+- It is a prestigious certificate.
+
+## 6. BD Team's Involvement
+
+- BD brings companies that have the potential to hire.
+- For freshers, that means an internship. For experienced members, that means a consultant position.
+- The companies test the students with the problem statement.
+- BD should prioritise bringing companies that work closely with the government, and that bring government-level problem statements.
+- BD brings a network of VCs and founders who are willing to fund, or at least to listen to the pitches.
+
+## 7. Names
 
 | Name | How the name looks | What it says |
 | --- | --- | --- |
@@ -201,5 +172,3 @@ Review before a second cohort.
 | Fellows | The Fellows Club, Masai Fellows, Masai Fellows Club | Members of a learned cohort. |
 | Mavens | The Mavens Club, Masai Mavens, Masai Mavens Club | The people others consult. |
 | Eminences | The Eminences Club, Masai Eminences, Masai Eminences Club | People who already stand out in the field. |
-
-Left until after the pilot: the final name and brand, a headline mentor, any fee charged to companies, and investment as its own track.
