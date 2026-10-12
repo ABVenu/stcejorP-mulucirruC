@@ -75,7 +75,7 @@
   <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
   <script>
     marked.setOptions({ gfm: true });
-    fetch("../Physical%20AI%20Curriculum.md")
+    fetch("../reports/Physical%20AI%20Curriculum.md")
       .then(function (response) {
         if (!response.ok) throw new Error("Could not load Physical AI Curriculum.md");
         return response.text();
@@ -109,7 +109,7 @@
             link.setAttribute("rel", "noopener noreferrer");
             return;
           }
-          if (href.charAt(0) !== "/") link.setAttribute("href", "../" + href);
+          if (href.charAt(0) !== "/") link.setAttribute("href", "../reports/" + href);
         });
         doc.hidden = false;
         document.getElementById("status").remove();
