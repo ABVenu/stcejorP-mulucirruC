@@ -157,3 +157,18 @@ Makes collaboration between humans and robots usable and safe.
 ### NLP Engineer (Natural Language Processing)
 
 Develops systems that understand, process, or generate language.
+
+---
+
+# Laboratories
+
+A laboratory is not part of this curriculum, and it is not mandatory. Every course is completed online, in software and simulation.
+
+The Aerospace Engineering department at IIT Kharagpur lists its facilities on the [department site](https://www.iitkgp.ac.in/department/AE). Two of those facilities are public:
+
+- [Aeromodelling Lab](http://www.ae.iitkgp.ac.in/aeroweb/footerlinks/aero_model.php). Model building in composites, balsa, and thermocol, an engine test bench, and tools for model aircraft.
+- [Computer Lab](http://www.ae.iitkgp.ac.in/aeroweb/footerlinks/comp_lab.php). Shared computers on the institute network, with Windows and Linux applications.
+
+Neither lab is a course, a credit, or a required visit.
+
+After a subject such as Dynamics of Autonomous Machines, Robot Mechanics, or Simulation of Robotic Systems, an instructor may use the Aeromodelling Lab for a live demonstration of a physical model. The demonstration is for the class to watch. It does not replace the simulation work, and a learner who does not attend it still completes the course.
