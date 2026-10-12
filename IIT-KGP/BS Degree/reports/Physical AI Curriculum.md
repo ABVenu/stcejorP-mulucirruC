@@ -1,4 +1,4 @@
-# B.S. in Artificial Intelligence and Autonomous Systems, with Physical AI
+# B.S. in Artificial Intelligence and Autonomous Systems
 
 Survey and references: [Initial Findings.md](Initial%20Findings.md)
 
@@ -75,7 +75,7 @@ A policy, a model that turns an image and a task into a command, efficient AI so
 - Differential Equations is the mathematics the next semester’s controller is written in.
 - Semester 4 adds neural models, Software Engineering, and Applied Control Systems on a simple plant.
 - Simulation of Robotic Systems runs the machines in a twin and exports a labelled synthetic set.
-- An aircraft is one machine in that twin.
+- An aircraft is one machine in that twin, used as a supplied model. The equations of that aircraft are taught in Dynamics of Autonomous Machines.
 - The machine-learning project is individual, presented live, and built beside the software-engineering course.
 
 ## YEAR 3 — Applied Artificial Intelligence
@@ -89,7 +89,7 @@ A policy, a model that turns an image and a task into a command, efficient AI so
 | Human-Machine Interaction | Computer Vision Project |
 | Vision Studio | Applied Intelligence Project |
 
-- This is the hiring year. Machine learning, deep learning, and computer vision are complete, each with a project.
+- This is the hiring year. Machine learning, deep learning, and computer vision are complete, with three projects behind them: the machine-learning project, the computer-vision project, and the applied intelligence project.
 - Computer Vision uses a webcam or a phone camera, and includes a camera model, calibration, and detection.
 - Linux and Systems Programming is the command line and enough C to read machine software.
 - Real-Time Systems is software and timing in a simulator.
@@ -105,7 +105,7 @@ A policy, a model that turns an image and a task into a command, efficient AI so
 | Semester 7 | Semester 8 |
 | --- | --- |
 | Reinforcement and Imitation Learning | Reliable and Safe Learning |
-| Robot Software | Physical AI: Perception to Action |
+| Robot Software | Perception to Action |
 | Guidance and Navigation | Autonomy Project II |
 | Multi-Robot and Swarm Systems | Technology and Society |
 | Efficient AI Software | Professional Portfolio |
@@ -116,8 +116,8 @@ A policy, a model that turns an image and a task into a command, efficient AI so
 - Guidance and Navigation includes path planning and SLAM. The swarm course uses that planner.
 - Efficient AI Software runs a smaller model under a size and latency limit.
 - Autonomy Project I sets up the twin and the task.
-- Physical AI: Perception to Action turns a camera image and a short task into a command, scored in the simulator.
-- Autonomy Project II uses the synthetic set, the policy, and that command.
+- Perception to Action turns a camera image and a short task into a command, scored in the simulator.
+- Autonomy Project II uses the synthetic set, the policy, and that command. It is presented live.
 - The result another person can check is a detection list, a map, or a route that changes when a zone is closed.
 - The write-up states what would still have to be checked on a real machine.
 
@@ -134,7 +134,7 @@ The credits in this table are the same temporary numbers as above. They do not r
 | After Year 1 | 36 | Foundation Certificate | Mathematics, Python, object-oriented programming, data, a first learning course, physics, and AI and robotics |
 | After Year 2 | 72 | Diploma | Machine learning, deep learning, differential equations, robot mechanics, applied control, software engineering, and simulation, plus a machine-learning project |
 | After Year 3 | 108 | B.Sc. in Artificial Intelligence and Autonomous Systems | Machine learning, deep learning, and computer vision with 3D data, plus natural language and generative AI, sensor fusion, and two further projects |
-| After Year 4 | 141 | B.S. in Artificial Intelligence and Autonomous Systems | The B.Sc., plus imitation and reinforcement learning, a perception-to-action model, efficient AI software, and a defended autonomy project |
+| After Year 4 | 141 | B.S. in Artificial Intelligence and Autonomous Systems | The B.Sc., plus imitation and reinforcement learning, a perception-to-action model, efficient AI software, and a completed autonomy project |
 
 ---
 
@@ -146,6 +146,10 @@ The work is practical: projects an employer can run, and machines practised in s
 
 Develops applications that analyze data and enable automated decision-making.
 
+### Computer Vision Engineer
+
+Builds systems that detect and measure from images and video.
+
 ### Robotics Engineer
 
 Builds the software of robotic systems for industrial, logistics, or service applications.
@@ -154,9 +158,9 @@ Builds the software of robotic systems for industrial, logistics, or service app
 
 Programs intelligent applications and integrates AI into existing systems.
 
-### Human-Robot Interaction Designer
+### Human-Robot Interaction
 
-Makes collaboration between humans and robots usable and safe.
+Works on how a person directs and stops a robot safely.
 
 ### NLP Engineer (Natural Language Processing)
 
