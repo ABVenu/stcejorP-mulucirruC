@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Initial findings</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f3f6fa;
+      color: #1c2836;
+      font-family: Georgia, serif;
+    }
+    header {
+      padding: 1.25rem 1.5rem;
+      background: #0e2a47;
+    }
+    header a {
+      margin-right: 1rem;
+      color: #fff;
+      font-family: sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    main {
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+      line-height: 1.55;
+    }
+    #doc h1 {
+      margin-top: 0;
+      color: #0e2a47;
+      font-size: 2rem;
+      border-bottom: 2px solid #0e2a47;
+      padding-bottom: 0.45rem;
+    }
+    #doc h2 { margin: 2rem 0 0.75rem; color: #0e2a47; font-size: 1.45rem; }
+    #doc h3 { margin: 1.4rem 0 0.5rem; color: #1a4470; font-size: 1.15rem; }
+    #doc h4 { margin: 1.1rem 0 0.4rem; color: #1a4470; font-size: 1.05rem; }
+    #doc .indent { margin: 0 0 0.4rem 1.6rem; }
+    #doc .indent-deep { margin: 0 0 0.4rem 3.2rem; }
+    #doc p { margin: 0.45rem 0 0.8rem; }
+    #doc ul, #doc ol { margin: 0.4rem 0 1rem; padding-left: 1.3rem; }
+    #doc li { margin: 0.2rem 0; }
+    #doc hr { border: 0; border-top: 1px solid #c5d4e2; margin: 1.75rem 0; }
+    #doc table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-family: sans-serif;
+      font-size: 0.95rem;
+    }
+    #doc th, #doc td {
+      border: 1px solid #c5d4e2;
+      padding: 0.55rem 0.7rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    #doc th { background: #e7f0f8; color: #0e2a47; }
+    #doc a { color: #1a4470; }
+    #doc strong { color: #0e2a47; }
+    #status { font-family: sans-serif; color: #5c6b7a; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../../index.html">Projects</a>
+    <a href="../">IIT-KGP BS Degree</a>
+  </header>
+  <main>
+    <p id="status">Loading the findings…</p>
+    <article id="doc" hidden></article>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
+  <script>
+    marked.setOptions({ gfm: true });
+    fetch("../BS%20Degree/Initial%20Findings.md")
+      .then(function (response) {
+        if (!response.ok) throw new Error("Could not load Initial Findings.md");
+        return response.text();
+      })
+      .then(function (markdown) {
+        var doc = document.getElementById("doc");
+        doc.innerHTML = marked.parse(markdown);
+        var kids = Array.prototype.slice.call(doc.children);
+        for (var i = kids.length - 1; i >= 0; i--) {
+          var match = /^H([1-6])$/.exec(kids[i].tagName || "");
+          var level = match ? Number(match[1]) : 0;
+          if (level < 3) continue;
+          var wrap = document.createElement("div");
+          wrap.className = level === 3 ? "indent" : "indent-deep";
+          var k = i + 1;
+          while (k < kids.length && kids[k].parentNode === doc && !/^H[1-6]$/.test(kids[k].tagName || "")) {
+            wrap.appendChild(kids[k]);
+            k++;
+          }
+          if (wrap.childNodes.length) kids[i].insertAdjacentElement("afterend", wrap);
+        }
+        doc.querySelectorAll("a").forEach(function (link) {
+          var href = link.getAttribute("href") || "";
+          if (!href || href.charAt(0) === "#" || href.indexOf("mailto:") === 0) return;
+          if (href.indexOf("http") === 0) {
+            link.setAttribute("target", "_blank");
+            link.setAttribute("rel", "noopener noreferrer");
+            return;
+          }
+          if (href.charAt(0) !== "/") link.setAttribute("href", "../BS%20Degree/" + href);
+        });
+        doc.hidden = false;
+        document.getElementById("status").remove();
+      })
+      .catch(function (error) {
+        document.getElementById("status").textContent = error.message + ". Open this page from the site root so the markdown file can load.";
+      });
+  </script>
+</body>
+</html>
