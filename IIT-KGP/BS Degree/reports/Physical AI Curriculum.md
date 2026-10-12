@@ -8,6 +8,8 @@ Survey and references: [Initial Findings.md](Initial%20Findings.md)
 
 A 141-credit, eight-semester programme of 47 courses. Each course is 3 credits. Semesters 1 to 7 have six courses. Semester 8 has five.
 
+These credit numbers are temporary. They are a working shape for this draft. They are not the final credit scheme.
+
 Intelligence and robotics appear in every semester. The fourth year is where autonomous intelligence becomes specialist.
 
 ## YEAR 1
@@ -124,6 +126,8 @@ A policy, a model that turns an image and a task into a command, efficient AI so
 # Your Degree. Your Timeline.
 
 An award at the end of each year. A learner who stops can return to the next year. Courses already passed are not repeated.
+
+The credits in this table are the same temporary numbers as above. They do not represent a finalised credit total.
 
 | Exit point | Credits | Award | What is finished |
 | --- | --- | --- | --- |
