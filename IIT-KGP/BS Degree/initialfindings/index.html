@@ -65,7 +65,7 @@
 </head>
 <body>
   <header>
-    <a href="../../index.html">Projects</a>
+    <a href="../../../index.html">Projects</a>
     <a href="../">IIT-KGP BS Degree</a>
   </header>
   <main>
@@ -75,7 +75,7 @@
   <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
   <script>
     marked.setOptions({ gfm: true });
-    fetch("../BS%20Degree/Initial%20Findings.md")
+    fetch("../Initial%20Findings.md")
       .then(function (response) {
         if (!response.ok) throw new Error("Could not load Initial Findings.md");
         return response.text();
@@ -105,7 +105,7 @@
             link.setAttribute("rel", "noopener noreferrer");
             return;
           }
-          if (href.charAt(0) !== "/") link.setAttribute("href", "../BS%20Degree/" + href);
+          if (href.charAt(0) !== "/") link.setAttribute("href", "../" + href);
         });
         doc.hidden = false;
         document.getElementById("status").remove();
